@@ -1395,6 +1395,209 @@
               ]
             }
           }
+        },
+        {
+          "x": 0,
+          "y": 70,
+          "z": 2001,
+          "width": 150,
+          "height": 210,
+          "config": {
+            "__powerbi-vcs-embedded-json__": {
+              "name": "50b6b29a1399a4ab92ca",
+              "layouts": [
+                {
+                  "id": 0,
+                  "position": {
+                    "x": 0,
+                    "y": 70,
+                    "width": 150,
+                    "height": 210,
+                    "z": 2001
+                  }
+                }
+              ],
+              "singleVisual": {
+                "visualType": "card",
+                "projections": {
+                  "Values": [
+                    {
+                      "queryRef": "Sum(Receita.Valor realizado mensal)"
+                    }
+                  ]
+                },
+                "prototypeQuery": {
+                  "Version": 2,
+                  "From": [
+                    {
+                      "Name": "r",
+                      "Entity": "Receita",
+                      "Type": 0
+                    }
+                  ],
+                  "Select": [
+                    {
+                      "Aggregation": {
+                        "Expression": {
+                          "Column": {
+                            "Expression": {
+                              "SourceRef": {
+                                "Source": "r"
+                              }
+                            },
+                            "Property": "Valor realizado mensal"
+                          }
+                        },
+                        "Function": 0
+                      },
+                      "Name": "Sum(Receita.Valor realizado mensal)"
+                    }
+                  ],
+                  "OrderBy": [
+                    {
+                      "Direction": 2,
+                      "Expression": {
+                        "Aggregation": {
+                          "Expression": {
+                            "Column": {
+                              "Expression": {
+                                "SourceRef": {
+                                  "Source": "r"
+                                }
+                              },
+                              "Property": "Valor realizado mensal"
+                            }
+                          },
+                          "Function": 0
+                        }
+                      }
+                    }
+                  ]
+                },
+                "drillFilterOtherVisuals": true,
+                "hasDefaultSort": true
+              }
+            }
+          },
+          "filters": {
+            "__powerbi-vcs-embedded-json__": []
+          },
+          "query": {
+            "__powerbi-vcs-embedded-json__": {
+              "Commands": [
+                {
+                  "SemanticQueryDataShapeCommand": {
+                    "Query": {
+                      "Version": 2,
+                      "From": [
+                        {
+                          "Name": "r",
+                          "Entity": "Receita",
+                          "Type": 0
+                        }
+                      ],
+                      "Select": [
+                        {
+                          "Aggregation": {
+                            "Expression": {
+                              "Column": {
+                                "Expression": {
+                                  "SourceRef": {
+                                    "Source": "r"
+                                  }
+                                },
+                                "Property": "Valor realizado mensal"
+                              }
+                            },
+                            "Function": 0
+                          },
+                          "Name": "Sum(Receita.Valor realizado mensal)"
+                        }
+                      ]
+                    },
+                    "Binding": {
+                      "Primary": {
+                        "Groupings": [
+                          {
+                            "Projections": [
+                              0
+                            ]
+                          }
+                        ]
+                      },
+                      "DataReduction": {
+                        "DataVolume": 3,
+                        "Primary": {
+                          "Top": {}
+                        }
+                      },
+                      "Version": 1
+                    },
+                    "ExecutionMetricsKind": 1
+                  }
+                }
+              ]
+            }
+          },
+          "dataTransforms": {
+            "__powerbi-vcs-embedded-json__": {
+              "projectionOrdering": {
+                "Values": [
+                  0
+                ]
+              },
+              "queryMetadata": {
+                "Select": [
+                  {
+                    "Restatement": "Valor realizado mensal",
+                    "Name": "Sum(Receita.Valor realizado mensal)",
+                    "Type": 1,
+                    "Format": "0.00"
+                  }
+                ]
+              },
+              "visualElements": [
+                {
+                  "DataRoles": [
+                    {
+                      "Name": "Values",
+                      "Projection": 0,
+                      "isActive": false
+                    }
+                  ]
+                }
+              ],
+              "selects": [
+                {
+                  "displayName": "Valor realizado mensal",
+                  "format": "0.00",
+                  "queryName": "Sum(Receita.Valor realizado mensal)",
+                  "roles": {
+                    "Values": true
+                  },
+                  "type": {
+                    "category": null,
+                    "underlyingType": 259
+                  },
+                  "expr": {
+                    "Aggregation": {
+                      "Expression": {
+                        "Column": {
+                          "Expression": {
+                            "SourceRef": {
+                              "Entity": "Receita"
+                            }
+                          },
+                          "Property": "Valor realizado mensal"
+                        }
+                      },
+                      "Function": 0
+                    }
+                  }
+                }
+              ]
+            }
+          }
         }
       ],
       "config": {
