@@ -1,0 +1,1458 @@
+{
+  "id": 0,
+  "resourcePackages": [
+    {
+      "resourcePackage": {
+        "name": "SharedResources",
+        "type": 2,
+        "items": [
+          {
+            "type": 202,
+            "path": "BaseThemes/CY22SU03.json",
+            "name": "CY22SU03"
+          }
+        ],
+        "disabled": false
+      }
+    }
+  ],
+  "sections": [
+    {
+      "id": 0,
+      "name": "ReportSection",
+      "displayName": "Página 1",
+      "filters": {
+        "__powerbi-vcs-embedded-json__": []
+      },
+      "ordinal": 0,
+      "visualContainers": [
+        {
+          "x": 173.40425531914894,
+          "y": 0,
+          "z": 0,
+          "width": 763.8297872340426,
+          "height": 279.7872340425532,
+          "config": {
+            "__powerbi-vcs-embedded-json__": {
+              "name": "4433132ae34a5d2f09ee",
+              "layouts": [
+                {
+                  "id": 0,
+                  "position": {
+                    "x": 173.40425531914894,
+                    "y": 0,
+                    "z": 0,
+                    "width": 763.8297872340426,
+                    "height": 279.7872340425532
+                  }
+                }
+              ],
+              "singleVisual": {
+                "visualType": "tableEx",
+                "projections": {
+                  "Values": [
+                    {
+                      "queryRef": "Sum(Calendário.Ano)"
+                    },
+                    {
+                      "queryRef": "Sum(Receita.Valor atual mensal)"
+                    },
+                    {
+                      "queryRef": "Sum(Receita.Valor previsto)"
+                    },
+                    {
+                      "queryRef": "Sum(Receita.Valor realizado mensal)"
+                    },
+                    {
+                      "queryRef": "Sum(Despesa.Val Empenhado Total)"
+                    },
+                    {
+                      "queryRef": "Sum(Despesa.Val Liquidado Total)"
+                    },
+                    {
+                      "queryRef": "Calendário.Date.Variation.Hierarquia de datas.Mês"
+                    }
+                  ]
+                },
+                "prototypeQuery": {
+                  "Version": 2,
+                  "From": [
+                    {
+                      "Name": "r",
+                      "Entity": "Receita",
+                      "Type": 0
+                    },
+                    {
+                      "Name": "d",
+                      "Entity": "Despesa",
+                      "Type": 0
+                    },
+                    {
+                      "Name": "c",
+                      "Entity": "Calendário",
+                      "Type": 0
+                    }
+                  ],
+                  "Select": [
+                    {
+                      "Aggregation": {
+                        "Expression": {
+                          "Column": {
+                            "Expression": {
+                              "SourceRef": {
+                                "Source": "r"
+                              }
+                            },
+                            "Property": "Valor atual mensal"
+                          }
+                        },
+                        "Function": 0
+                      },
+                      "Name": "Sum(Receita.Valor atual mensal)"
+                    },
+                    {
+                      "Aggregation": {
+                        "Expression": {
+                          "Column": {
+                            "Expression": {
+                              "SourceRef": {
+                                "Source": "r"
+                              }
+                            },
+                            "Property": "Valor previsto"
+                          }
+                        },
+                        "Function": 0
+                      },
+                      "Name": "Sum(Receita.Valor previsto)"
+                    },
+                    {
+                      "Aggregation": {
+                        "Expression": {
+                          "Column": {
+                            "Expression": {
+                              "SourceRef": {
+                                "Source": "r"
+                              }
+                            },
+                            "Property": "Valor realizado mensal"
+                          }
+                        },
+                        "Function": 0
+                      },
+                      "Name": "Sum(Receita.Valor realizado mensal)"
+                    },
+                    {
+                      "Aggregation": {
+                        "Expression": {
+                          "Column": {
+                            "Expression": {
+                              "SourceRef": {
+                                "Source": "d"
+                              }
+                            },
+                            "Property": "Val Empenhado Total"
+                          }
+                        },
+                        "Function": 0
+                      },
+                      "Name": "Sum(Despesa.Val Empenhado Total)"
+                    },
+                    {
+                      "Aggregation": {
+                        "Expression": {
+                          "Column": {
+                            "Expression": {
+                              "SourceRef": {
+                                "Source": "d"
+                              }
+                            },
+                            "Property": "Val Liquidado Total"
+                          }
+                        },
+                        "Function": 0
+                      },
+                      "Name": "Sum(Despesa.Val Liquidado Total)"
+                    },
+                    {
+                      "Column": {
+                        "Expression": {
+                          "SourceRef": {
+                            "Source": "c"
+                          }
+                        },
+                        "Property": "Ano"
+                      },
+                      "Name": "Sum(Calendário.Ano)"
+                    },
+                    {
+                      "HierarchyLevel": {
+                        "Expression": {
+                          "Hierarchy": {
+                            "Expression": {
+                              "PropertyVariationSource": {
+                                "Expression": {
+                                  "SourceRef": {
+                                    "Source": "c"
+                                  }
+                                },
+                                "Name": "Variation",
+                                "Property": "Date"
+                              }
+                            },
+                            "Hierarchy": "Hierarquia de datas"
+                          }
+                        },
+                        "Level": "Mês"
+                      },
+                      "Name": "Calendário.Date.Variation.Hierarquia de datas.Mês"
+                    }
+                  ]
+                },
+                "drillFilterOtherVisuals": true
+              }
+            }
+          },
+          "filters": {
+            "__powerbi-vcs-embedded-json__": []
+          },
+          "query": {
+            "__powerbi-vcs-embedded-json__": {
+              "Commands": [
+                {
+                  "SemanticQueryDataShapeCommand": {
+                    "Query": {
+                      "Version": 2,
+                      "From": [
+                        {
+                          "Name": "r",
+                          "Entity": "Receita",
+                          "Type": 0
+                        },
+                        {
+                          "Name": "d",
+                          "Entity": "Despesa",
+                          "Type": 0
+                        },
+                        {
+                          "Name": "c",
+                          "Entity": "Calendário",
+                          "Type": 0
+                        }
+                      ],
+                      "Select": [
+                        {
+                          "Aggregation": {
+                            "Expression": {
+                              "Column": {
+                                "Expression": {
+                                  "SourceRef": {
+                                    "Source": "r"
+                                  }
+                                },
+                                "Property": "Valor atual mensal"
+                              }
+                            },
+                            "Function": 0
+                          },
+                          "Name": "Sum(Receita.Valor atual mensal)"
+                        },
+                        {
+                          "Aggregation": {
+                            "Expression": {
+                              "Column": {
+                                "Expression": {
+                                  "SourceRef": {
+                                    "Source": "r"
+                                  }
+                                },
+                                "Property": "Valor previsto"
+                              }
+                            },
+                            "Function": 0
+                          },
+                          "Name": "Sum(Receita.Valor previsto)"
+                        },
+                        {
+                          "Aggregation": {
+                            "Expression": {
+                              "Column": {
+                                "Expression": {
+                                  "SourceRef": {
+                                    "Source": "r"
+                                  }
+                                },
+                                "Property": "Valor realizado mensal"
+                              }
+                            },
+                            "Function": 0
+                          },
+                          "Name": "Sum(Receita.Valor realizado mensal)"
+                        },
+                        {
+                          "Aggregation": {
+                            "Expression": {
+                              "Column": {
+                                "Expression": {
+                                  "SourceRef": {
+                                    "Source": "d"
+                                  }
+                                },
+                                "Property": "Val Empenhado Total"
+                              }
+                            },
+                            "Function": 0
+                          },
+                          "Name": "Sum(Despesa.Val Empenhado Total)"
+                        },
+                        {
+                          "Aggregation": {
+                            "Expression": {
+                              "Column": {
+                                "Expression": {
+                                  "SourceRef": {
+                                    "Source": "d"
+                                  }
+                                },
+                                "Property": "Val Liquidado Total"
+                              }
+                            },
+                            "Function": 0
+                          },
+                          "Name": "Sum(Despesa.Val Liquidado Total)"
+                        },
+                        {
+                          "Column": {
+                            "Expression": {
+                              "SourceRef": {
+                                "Source": "c"
+                              }
+                            },
+                            "Property": "Ano"
+                          },
+                          "Name": "Sum(Calendário.Ano)"
+                        },
+                        {
+                          "HierarchyLevel": {
+                            "Expression": {
+                              "Hierarchy": {
+                                "Expression": {
+                                  "PropertyVariationSource": {
+                                    "Expression": {
+                                      "SourceRef": {
+                                        "Source": "c"
+                                      }
+                                    },
+                                    "Name": "Variation",
+                                    "Property": "Date"
+                                  }
+                                },
+                                "Hierarchy": "Hierarquia de datas"
+                              }
+                            },
+                            "Level": "Mês"
+                          },
+                          "Name": "Calendário.Date.Variation.Hierarquia de datas.Mês"
+                        }
+                      ]
+                    },
+                    "Binding": {
+                      "Primary": {
+                        "Groupings": [
+                          {
+                            "Projections": [
+                              0,
+                              1,
+                              2,
+                              3,
+                              4,
+                              5,
+                              6
+                            ],
+                            "Subtotal": 1
+                          }
+                        ]
+                      },
+                      "DataReduction": {
+                        "DataVolume": 3,
+                        "Primary": {
+                          "Window": {
+                            "Count": 500
+                          }
+                        }
+                      },
+                      "Version": 1
+                    },
+                    "ExecutionMetricsKind": 1
+                  }
+                }
+              ]
+            }
+          },
+          "dataTransforms": {
+            "__powerbi-vcs-embedded-json__": {
+              "projectionOrdering": {
+                "Values": [
+                  5,
+                  0,
+                  1,
+                  2,
+                  3,
+                  4,
+                  6
+                ]
+              },
+              "queryMetadata": {
+                "Select": [
+                  {
+                    "Restatement": "Valor atual mensal",
+                    "Name": "Sum(Receita.Valor atual mensal)",
+                    "Type": 1,
+                    "Format": "0.00"
+                  },
+                  {
+                    "Restatement": "Valor previsto",
+                    "Name": "Sum(Receita.Valor previsto)",
+                    "Type": 1,
+                    "Format": "0.00"
+                  },
+                  {
+                    "Restatement": "Valor realizado mensal",
+                    "Name": "Sum(Receita.Valor realizado mensal)",
+                    "Type": 1,
+                    "Format": "0.00"
+                  },
+                  {
+                    "Restatement": "Val Empenhado Total",
+                    "Name": "Sum(Despesa.Val Empenhado Total)",
+                    "Type": 1,
+                    "Format": "0.00"
+                  },
+                  {
+                    "Restatement": "Val Liquidado Total",
+                    "Name": "Sum(Despesa.Val Liquidado Total)",
+                    "Type": 1,
+                    "Format": "0.00"
+                  },
+                  {
+                    "Restatement": "Ano",
+                    "Name": "Sum(Calendário.Ano)",
+                    "Type": 3,
+                    "Format": "0"
+                  },
+                  {
+                    "Restatement": "Mês",
+                    "Name": "Calendário.Date.Variation.Hierarquia de datas.Mês",
+                    "Type": 2048
+                  }
+                ]
+              },
+              "visualElements": [
+                {
+                  "DataRoles": [
+                    {
+                      "Name": "Values",
+                      "Projection": 5,
+                      "isActive": false
+                    },
+                    {
+                      "Name": "Values",
+                      "Projection": 0,
+                      "isActive": false
+                    },
+                    {
+                      "Name": "Values",
+                      "Projection": 1,
+                      "isActive": false
+                    },
+                    {
+                      "Name": "Values",
+                      "Projection": 2,
+                      "isActive": false
+                    },
+                    {
+                      "Name": "Values",
+                      "Projection": 3,
+                      "isActive": false
+                    },
+                    {
+                      "Name": "Values",
+                      "Projection": 4,
+                      "isActive": false
+                    },
+                    {
+                      "Name": "Values",
+                      "Projection": 6,
+                      "isActive": false
+                    }
+                  ]
+                }
+              ],
+              "selects": [
+                {
+                  "displayName": "Valor atual mensal",
+                  "format": "0.00",
+                  "queryName": "Sum(Receita.Valor atual mensal)",
+                  "roles": {
+                    "Values": true
+                  },
+                  "type": {
+                    "category": null,
+                    "underlyingType": 259
+                  },
+                  "expr": {
+                    "Aggregation": {
+                      "Expression": {
+                        "Column": {
+                          "Expression": {
+                            "SourceRef": {
+                              "Entity": "Receita"
+                            }
+                          },
+                          "Property": "Valor atual mensal"
+                        }
+                      },
+                      "Function": 0
+                    }
+                  }
+                },
+                {
+                  "displayName": "Valor previsto",
+                  "format": "0.00",
+                  "queryName": "Sum(Receita.Valor previsto)",
+                  "roles": {
+                    "Values": true
+                  },
+                  "type": {
+                    "category": null,
+                    "underlyingType": 259
+                  },
+                  "expr": {
+                    "Aggregation": {
+                      "Expression": {
+                        "Column": {
+                          "Expression": {
+                            "SourceRef": {
+                              "Entity": "Receita"
+                            }
+                          },
+                          "Property": "Valor previsto"
+                        }
+                      },
+                      "Function": 0
+                    }
+                  }
+                },
+                {
+                  "displayName": "Valor realizado mensal",
+                  "format": "0.00",
+                  "queryName": "Sum(Receita.Valor realizado mensal)",
+                  "roles": {
+                    "Values": true
+                  },
+                  "type": {
+                    "category": null,
+                    "underlyingType": 259
+                  },
+                  "expr": {
+                    "Aggregation": {
+                      "Expression": {
+                        "Column": {
+                          "Expression": {
+                            "SourceRef": {
+                              "Entity": "Receita"
+                            }
+                          },
+                          "Property": "Valor realizado mensal"
+                        }
+                      },
+                      "Function": 0
+                    }
+                  }
+                },
+                {
+                  "displayName": "Val Empenhado Total",
+                  "format": "0.00",
+                  "queryName": "Sum(Despesa.Val Empenhado Total)",
+                  "roles": {
+                    "Values": true
+                  },
+                  "type": {
+                    "category": null,
+                    "underlyingType": 259
+                  },
+                  "expr": {
+                    "Aggregation": {
+                      "Expression": {
+                        "Column": {
+                          "Expression": {
+                            "SourceRef": {
+                              "Entity": "Despesa"
+                            }
+                          },
+                          "Property": "Val Empenhado Total"
+                        }
+                      },
+                      "Function": 0
+                    }
+                  }
+                },
+                {
+                  "displayName": "Val Liquidado Total",
+                  "format": "0.00",
+                  "queryName": "Sum(Despesa.Val Liquidado Total)",
+                  "roles": {
+                    "Values": true
+                  },
+                  "type": {
+                    "category": null,
+                    "underlyingType": 259
+                  },
+                  "expr": {
+                    "Aggregation": {
+                      "Expression": {
+                        "Column": {
+                          "Expression": {
+                            "SourceRef": {
+                              "Entity": "Despesa"
+                            }
+                          },
+                          "Property": "Val Liquidado Total"
+                        }
+                      },
+                      "Function": 0
+                    }
+                  }
+                },
+                {
+                  "displayName": "Ano",
+                  "format": "0",
+                  "queryName": "Sum(Calendário.Ano)",
+                  "roles": {
+                    "Values": true
+                  },
+                  "type": {
+                    "category": null,
+                    "underlyingType": 260
+                  },
+                  "expr": {
+                    "Column": {
+                      "Expression": {
+                        "SourceRef": {
+                          "Entity": "Calendário"
+                        }
+                      },
+                      "Property": "Ano"
+                    }
+                  }
+                },
+                {
+                  "displayName": "Mês",
+                  "queryName": "Calendário.Date.Variation.Hierarquia de datas.Mês",
+                  "roles": {
+                    "Values": true
+                  },
+                  "type": {
+                    "category": "Months",
+                    "underlyingType": 131585
+                  },
+                  "expr": {
+                    "HierarchyLevel": {
+                      "Expression": {
+                        "Hierarchy": {
+                          "Expression": {
+                            "PropertyVariationSource": {
+                              "Expression": {
+                                "SourceRef": {
+                                  "Entity": "Calendário"
+                                }
+                              },
+                              "Name": "Variation",
+                              "Property": "Date"
+                            }
+                          },
+                          "Hierarchy": "Hierarquia de datas"
+                        }
+                      },
+                      "Level": "Mês"
+                    }
+                  }
+                }
+              ]
+            }
+          }
+        },
+        {
+          "x": 173.40425531914894,
+          "y": 304.25531914893617,
+          "z": 1000,
+          "width": 767.0212765957448,
+          "height": 300,
+          "config": {
+            "__powerbi-vcs-embedded-json__": {
+              "name": "9469f652bed51f201f30",
+              "layouts": [
+                {
+                  "id": 0,
+                  "position": {
+                    "x": 173.40425531914894,
+                    "y": 304.25531914893617,
+                    "z": 1000,
+                    "width": 767.0212765957448,
+                    "height": 300
+                  }
+                }
+              ],
+              "singleVisual": {
+                "visualType": "lineChart",
+                "projections": {
+                  "Y": [
+                    {
+                      "queryRef": "Sum(Receita.Valor realizado mensal)"
+                    },
+                    {
+                      "queryRef": "Sum(Despesa.Val Liquidado Total)"
+                    }
+                  ],
+                  "Category": [
+                    {
+                      "queryRef": "Calendário.Date.Variation.Hierarquia de datas.Mês",
+                      "active": true
+                    }
+                  ]
+                },
+                "prototypeQuery": {
+                  "Version": 2,
+                  "From": [
+                    {
+                      "Name": "r",
+                      "Entity": "Receita",
+                      "Type": 0
+                    },
+                    {
+                      "Name": "c",
+                      "Entity": "Calendário",
+                      "Type": 0
+                    },
+                    {
+                      "Name": "d",
+                      "Entity": "Despesa",
+                      "Type": 0
+                    }
+                  ],
+                  "Select": [
+                    {
+                      "Aggregation": {
+                        "Expression": {
+                          "Column": {
+                            "Expression": {
+                              "SourceRef": {
+                                "Source": "r"
+                              }
+                            },
+                            "Property": "Valor realizado mensal"
+                          }
+                        },
+                        "Function": 0
+                      },
+                      "Name": "Sum(Receita.Valor realizado mensal)"
+                    },
+                    {
+                      "HierarchyLevel": {
+                        "Expression": {
+                          "Hierarchy": {
+                            "Expression": {
+                              "PropertyVariationSource": {
+                                "Expression": {
+                                  "SourceRef": {
+                                    "Source": "c"
+                                  }
+                                },
+                                "Name": "Variation",
+                                "Property": "Date"
+                              }
+                            },
+                            "Hierarchy": "Hierarquia de datas"
+                          }
+                        },
+                        "Level": "Mês"
+                      },
+                      "Name": "Calendário.Date.Variation.Hierarquia de datas.Mês"
+                    },
+                    {
+                      "Aggregation": {
+                        "Expression": {
+                          "Column": {
+                            "Expression": {
+                              "SourceRef": {
+                                "Source": "d"
+                              }
+                            },
+                            "Property": "Val Liquidado Total"
+                          }
+                        },
+                        "Function": 0
+                      },
+                      "Name": "Sum(Despesa.Val Liquidado Total)"
+                    }
+                  ]
+                },
+                "drillFilterOtherVisuals": true
+              }
+            }
+          },
+          "filters": {
+            "__powerbi-vcs-embedded-json__": []
+          },
+          "query": {
+            "__powerbi-vcs-embedded-json__": {
+              "Commands": [
+                {
+                  "SemanticQueryDataShapeCommand": {
+                    "Query": {
+                      "Version": 2,
+                      "From": [
+                        {
+                          "Name": "r",
+                          "Entity": "Receita",
+                          "Type": 0
+                        },
+                        {
+                          "Name": "c",
+                          "Entity": "Calendário",
+                          "Type": 0
+                        },
+                        {
+                          "Name": "d",
+                          "Entity": "Despesa",
+                          "Type": 0
+                        }
+                      ],
+                      "Select": [
+                        {
+                          "Aggregation": {
+                            "Expression": {
+                              "Column": {
+                                "Expression": {
+                                  "SourceRef": {
+                                    "Source": "r"
+                                  }
+                                },
+                                "Property": "Valor realizado mensal"
+                              }
+                            },
+                            "Function": 0
+                          },
+                          "Name": "Sum(Receita.Valor realizado mensal)"
+                        },
+                        {
+                          "HierarchyLevel": {
+                            "Expression": {
+                              "Hierarchy": {
+                                "Expression": {
+                                  "PropertyVariationSource": {
+                                    "Expression": {
+                                      "SourceRef": {
+                                        "Source": "c"
+                                      }
+                                    },
+                                    "Name": "Variation",
+                                    "Property": "Date"
+                                  }
+                                },
+                                "Hierarchy": "Hierarquia de datas"
+                              }
+                            },
+                            "Level": "Mês"
+                          },
+                          "Name": "Calendário.Date.Variation.Hierarquia de datas.Mês"
+                        },
+                        {
+                          "Aggregation": {
+                            "Expression": {
+                              "Column": {
+                                "Expression": {
+                                  "SourceRef": {
+                                    "Source": "d"
+                                  }
+                                },
+                                "Property": "Val Liquidado Total"
+                              }
+                            },
+                            "Function": 0
+                          },
+                          "Name": "Sum(Despesa.Val Liquidado Total)"
+                        }
+                      ],
+                      "OrderBy": [
+                        {
+                          "Direction": 1,
+                          "Expression": {
+                            "HierarchyLevel": {
+                              "Expression": {
+                                "Hierarchy": {
+                                  "Expression": {
+                                    "PropertyVariationSource": {
+                                      "Expression": {
+                                        "SourceRef": {
+                                          "Source": "c"
+                                        }
+                                      },
+                                      "Name": "Variation",
+                                      "Property": "Date"
+                                    }
+                                  },
+                                  "Hierarchy": "Hierarquia de datas"
+                                }
+                              },
+                              "Level": "Mês"
+                            }
+                          }
+                        }
+                      ]
+                    },
+                    "Binding": {
+                      "Primary": {
+                        "Groupings": [
+                          {
+                            "Projections": [
+                              0,
+                              1,
+                              2
+                            ]
+                          }
+                        ]
+                      },
+                      "DataReduction": {
+                        "DataVolume": 4,
+                        "Primary": {
+                          "Window": {
+                            "Count": 1000
+                          }
+                        }
+                      },
+                      "Version": 1
+                    },
+                    "ExecutionMetricsKind": 1
+                  }
+                }
+              ]
+            }
+          },
+          "dataTransforms": {
+            "__powerbi-vcs-embedded-json__": {
+              "projectionOrdering": {
+                "Y": [
+                  0,
+                  2
+                ],
+                "Category": [
+                  1
+                ]
+              },
+              "projectionActiveItems": {
+                "Category": [
+                  {
+                    "queryRef": "Calendário.Date.Variation.Hierarquia de datas.Mês",
+                    "suppressConcat": false
+                  }
+                ]
+              },
+              "queryMetadata": {
+                "Select": [
+                  {
+                    "Restatement": "Valor realizado mensal",
+                    "Name": "Sum(Receita.Valor realizado mensal)",
+                    "Type": 1,
+                    "Format": "0.00"
+                  },
+                  {
+                    "Restatement": "Mês",
+                    "Name": "Calendário.Date.Variation.Hierarquia de datas.Mês",
+                    "Type": 2048
+                  },
+                  {
+                    "Restatement": "Val Liquidado Total",
+                    "Name": "Sum(Despesa.Val Liquidado Total)",
+                    "Type": 1,
+                    "Format": "0.00"
+                  }
+                ]
+              },
+              "visualElements": [
+                {
+                  "DataRoles": [
+                    {
+                      "Name": "Y",
+                      "Projection": 0,
+                      "isActive": false
+                    },
+                    {
+                      "Name": "Y",
+                      "Projection": 2,
+                      "isActive": false
+                    },
+                    {
+                      "Name": "Category",
+                      "Projection": 1,
+                      "isActive": true
+                    }
+                  ]
+                }
+              ],
+              "selects": [
+                {
+                  "displayName": "Valor realizado mensal",
+                  "format": "0.00",
+                  "queryName": "Sum(Receita.Valor realizado mensal)",
+                  "roles": {
+                    "Y": true
+                  },
+                  "type": {
+                    "category": null,
+                    "underlyingType": 259
+                  },
+                  "expr": {
+                    "Aggregation": {
+                      "Expression": {
+                        "Column": {
+                          "Expression": {
+                            "SourceRef": {
+                              "Entity": "Receita"
+                            }
+                          },
+                          "Property": "Valor realizado mensal"
+                        }
+                      },
+                      "Function": 0
+                    }
+                  }
+                },
+                {
+                  "displayName": "Mês",
+                  "queryName": "Calendário.Date.Variation.Hierarquia de datas.Mês",
+                  "roles": {
+                    "Category": true
+                  },
+                  "sort": 1,
+                  "sortOrder": 0,
+                  "type": {
+                    "category": "Months",
+                    "underlyingType": 131585
+                  },
+                  "expr": {
+                    "HierarchyLevel": {
+                      "Expression": {
+                        "Hierarchy": {
+                          "Expression": {
+                            "PropertyVariationSource": {
+                              "Expression": {
+                                "SourceRef": {
+                                  "Entity": "Calendário"
+                                }
+                              },
+                              "Name": "Variation",
+                              "Property": "Date"
+                            }
+                          },
+                          "Hierarchy": "Hierarquia de datas"
+                        }
+                      },
+                      "Level": "Mês"
+                    }
+                  }
+                },
+                {
+                  "displayName": "Val Liquidado Total",
+                  "format": "0.00",
+                  "queryName": "Sum(Despesa.Val Liquidado Total)",
+                  "roles": {
+                    "Y": true
+                  },
+                  "type": {
+                    "category": null,
+                    "underlyingType": 259
+                  },
+                  "expr": {
+                    "Aggregation": {
+                      "Expression": {
+                        "Column": {
+                          "Expression": {
+                            "SourceRef": {
+                              "Entity": "Despesa"
+                            }
+                          },
+                          "Property": "Val Liquidado Total"
+                        }
+                      },
+                      "Function": 0
+                    }
+                  }
+                }
+              ]
+            }
+          }
+        },
+        {
+          "x": 0,
+          "y": 0,
+          "z": 2000,
+          "width": 150,
+          "height": 70.2127659574468,
+          "config": {
+            "__powerbi-vcs-embedded-json__": {
+              "name": "1bbb2f9a7aecc425e257",
+              "layouts": [
+                {
+                  "id": 0,
+                  "position": {
+                    "x": 0,
+                    "y": 0,
+                    "z": 2000,
+                    "width": 150,
+                    "height": 70.2127659574468
+                  }
+                }
+              ],
+              "singleVisual": {
+                "visualType": "slicer",
+                "projections": {
+                  "Values": [
+                    {
+                      "queryRef": "Calendário.Date.Variation.Hierarquia de datas.Ano",
+                      "active": true
+                    }
+                  ]
+                },
+                "prototypeQuery": {
+                  "Version": 2,
+                  "From": [
+                    {
+                      "Name": "c",
+                      "Entity": "Calendário",
+                      "Type": 0
+                    }
+                  ],
+                  "Select": [
+                    {
+                      "HierarchyLevel": {
+                        "Expression": {
+                          "Hierarchy": {
+                            "Expression": {
+                              "PropertyVariationSource": {
+                                "Expression": {
+                                  "SourceRef": {
+                                    "Source": "c"
+                                  }
+                                },
+                                "Name": "Variation",
+                                "Property": "Date"
+                              }
+                            },
+                            "Hierarchy": "Hierarquia de datas"
+                          }
+                        },
+                        "Level": "Ano"
+                      },
+                      "Name": "Calendário.Date.Variation.Hierarquia de datas.Ano"
+                    }
+                  ],
+                  "OrderBy": [
+                    {
+                      "Direction": 1,
+                      "Expression": {
+                        "HierarchyLevel": {
+                          "Expression": {
+                            "Hierarchy": {
+                              "Expression": {
+                                "PropertyVariationSource": {
+                                  "Expression": {
+                                    "SourceRef": {
+                                      "Source": "c"
+                                    }
+                                  },
+                                  "Name": "Variation",
+                                  "Property": "Date"
+                                }
+                              },
+                              "Hierarchy": "Hierarquia de datas"
+                            }
+                          },
+                          "Level": "Ano"
+                        }
+                      }
+                    }
+                  ]
+                },
+                "drillFilterOtherVisuals": true,
+                "hasDefaultSort": true,
+                "objects": {
+                  "data": [
+                    {
+                      "properties": {
+                        "mode": {
+                          "expr": {
+                            "Literal": {
+                              "Value": "'Dropdown'"
+                            }
+                          }
+                        }
+                      }
+                    }
+                  ],
+                  "general": [
+                    {
+                      "properties": {}
+                    }
+                  ]
+                }
+              }
+            }
+          },
+          "filters": {
+            "__powerbi-vcs-embedded-json__": []
+          },
+          "query": {
+            "__powerbi-vcs-embedded-json__": {
+              "Commands": [
+                {
+                  "SemanticQueryDataShapeCommand": {
+                    "Query": {
+                      "Version": 2,
+                      "From": [
+                        {
+                          "Name": "c",
+                          "Entity": "Calendário",
+                          "Type": 0
+                        }
+                      ],
+                      "Select": [
+                        {
+                          "HierarchyLevel": {
+                            "Expression": {
+                              "Hierarchy": {
+                                "Expression": {
+                                  "PropertyVariationSource": {
+                                    "Expression": {
+                                      "SourceRef": {
+                                        "Source": "c"
+                                      }
+                                    },
+                                    "Name": "Variation",
+                                    "Property": "Date"
+                                  }
+                                },
+                                "Hierarchy": "Hierarquia de datas"
+                              }
+                            },
+                            "Level": "Ano"
+                          },
+                          "Name": "Calendário.Date.Variation.Hierarquia de datas.Ano"
+                        }
+                      ],
+                      "OrderBy": [
+                        {
+                          "Direction": 1,
+                          "Expression": {
+                            "HierarchyLevel": {
+                              "Expression": {
+                                "Hierarchy": {
+                                  "Expression": {
+                                    "PropertyVariationSource": {
+                                      "Expression": {
+                                        "SourceRef": {
+                                          "Source": "c"
+                                        }
+                                      },
+                                      "Name": "Variation",
+                                      "Property": "Date"
+                                    }
+                                  },
+                                  "Hierarchy": "Hierarquia de datas"
+                                }
+                              },
+                              "Level": "Ano"
+                            }
+                          }
+                        }
+                      ]
+                    },
+                    "Binding": {
+                      "Primary": {
+                        "Groupings": [
+                          {
+                            "Projections": [
+                              0
+                            ]
+                          }
+                        ]
+                      },
+                      "DataReduction": {
+                        "DataVolume": 3,
+                        "Primary": {
+                          "Window": {}
+                        }
+                      },
+                      "IncludeEmptyGroups": true,
+                      "Version": 1
+                    },
+                    "ExecutionMetricsKind": 1
+                  }
+                }
+              ]
+            }
+          },
+          "dataTransforms": {
+            "__powerbi-vcs-embedded-json__": {
+              "objects": {
+                "data": [
+                  {
+                    "properties": {
+                      "mode": {
+                        "expr": {
+                          "Literal": {
+                            "Value": "'Dropdown'"
+                          }
+                        }
+                      }
+                    }
+                  }
+                ],
+                "general": [
+                  {
+                    "properties": {}
+                  }
+                ]
+              },
+              "projectionOrdering": {
+                "Values": [
+                  0
+                ]
+              },
+              "projectionActiveItems": {
+                "Values": [
+                  {
+                    "queryRef": "Calendário.Date.Variation.Hierarquia de datas.Ano",
+                    "suppressConcat": false
+                  }
+                ]
+              },
+              "queryMetadata": {
+                "Select": [
+                  {
+                    "Restatement": "Ano",
+                    "Name": "Calendário.Date.Variation.Hierarquia de datas.Ano",
+                    "Type": 3
+                  }
+                ]
+              },
+              "visualElements": [
+                {
+                  "DataRoles": [
+                    {
+                      "Name": "Values",
+                      "Projection": 0,
+                      "isActive": true
+                    }
+                  ]
+                }
+              ],
+              "selects": [
+                {
+                  "displayName": "Ano",
+                  "queryName": "Calendário.Date.Variation.Hierarquia de datas.Ano",
+                  "roles": {
+                    "Values": true
+                  },
+                  "sort": 1,
+                  "sortOrder": 0,
+                  "type": {
+                    "category": "Years",
+                    "underlyingType": 66308
+                  },
+                  "expr": {
+                    "HierarchyLevel": {
+                      "Expression": {
+                        "Hierarchy": {
+                          "Expression": {
+                            "PropertyVariationSource": {
+                              "Expression": {
+                                "SourceRef": {
+                                  "Entity": "Calendário"
+                                }
+                              },
+                              "Name": "Variation",
+                              "Property": "Date"
+                            }
+                          },
+                          "Hierarchy": "Hierarquia de datas"
+                        }
+                      },
+                      "Level": "Ano"
+                    }
+                  }
+                }
+              ]
+            }
+          }
+        }
+      ],
+      "config": {
+        "__powerbi-vcs-embedded-json__": {}
+      },
+      "displayOption": 1,
+      "width": 1280,
+      "height": 720
+    }
+  ],
+  "config": {
+    "__powerbi-vcs-embedded-json__": {
+      "version": "5.30",
+      "themeCollection": {
+        "baseTheme": {
+          "name": "CY22SU03",
+          "version": "5.32",
+          "type": 2
+        }
+      },
+      "activeSectionIndex": 0,
+      "defaultDrillFilterOtherVisuals": true,
+      "linguisticSchemaSyncVersion": 2,
+      "settings": {
+        "useNewFilterPaneExperience": true,
+        "allowChangeFilterTypes": true,
+        "useStylableVisualContainerHeader": true,
+        "exportDataMode": 1
+      },
+      "objects": {
+        "section": [
+          {
+            "properties": {
+              "verticalAlignment": {
+                "expr": {
+                  "Literal": {
+                    "Value": "'Top'"
+                  }
+                }
+              }
+            }
+          }
+        ],
+        "outspacePane": [
+          {
+            "properties": {
+              "expanded": {
+                "expr": {
+                  "Literal": {
+                    "Value": "false"
+                  }
+                }
+              }
+            }
+          }
+        ]
+      }
+    }
+  },
+  "layoutOptimization": 0
+}

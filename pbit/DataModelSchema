@@ -1,0 +1,4219 @@
+{
+  "name": "cf1705ca-e9f3-4618-867e-19ce9f28b69a",
+  "compatibilityLevel": 1550,
+  "createdTimestamp": "2022-05-27T10:21:15.56-03:00",
+  "lastUpdate": "2022-07-04T15:56:50.45-03:00",
+  "lastSchemaUpdate": "2022-05-27T10:21:15.56-03:00",
+  "lastProcessed": "2022-06-27T13:44:45.903333-03:00",
+  "model": {
+    "culture": "pt-BR",
+    "dataAccessOptions": {
+      "legacyRedirects": true,
+      "returnErrorValuesAsNull": true
+    },
+    "defaultPowerBIDataSourceVersion": "powerBI_V3",
+    "sourceQueryCulture": "pt-BR",
+    "modifiedTime": "2022-05-30T12:27:42.613333",
+    "structureModifiedTime": "2022-06-26T16:32:07.696667",
+    "tables": [
+      {
+        "name": "Receita",
+        "lineageTag": "f9c0a759-cf04-42fd-bd80-8bd816451a59",
+        "modifiedTime": "2022-05-30T16:52:12.7",
+        "structureModifiedTime": "2022-06-26T16:32:07.696667",
+        "columns": [
+          {
+            "type": "rowNumber",
+            "name": "RowNumber-2662979B-1795-4F74-8F37-6A1BA8059B61",
+            "dataType": "int64",
+            "isHidden": true,
+            "isUnique": true,
+            "isKey": true,
+            "isNullable": false,
+            "modifiedTime": "2022-05-30T12:27:42.673333",
+            "structureModifiedTime": "2022-05-30T12:27:42.643333",
+            "refreshedTime": "1699-12-31T00:00:00",
+            "attributeHierarchy": {
+              "state": "ready",
+              "modifiedTime": "2022-06-27T16:44:46.566667",
+              "refreshedTime": "2022-06-27T16:44:46.566667"
+            }
+          },
+          {
+            "name": "Exercicio",
+            "dataType": "dateTime",
+            "sourceColumn": "Exercicio",
+            "formatString": "General Date",
+            "lineageTag": "0d983a62-cae7-4381-9efd-1db7bd03d0bb",
+            "summarizeBy": "none",
+            "modifiedTime": "2022-05-30T15:34:25.133333",
+            "structureModifiedTime": "2022-06-07T17:19:34.316667",
+            "refreshedTime": "1699-12-31T00:00:00",
+            "attributeHierarchy": {
+              "state": "ready",
+              "modifiedTime": "2022-06-27T16:44:46.566667",
+              "refreshedTime": "2022-06-27T16:44:46.566667"
+            },
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic",
+                "modifiedTime": "2022-05-30T12:27:45.09"
+              }
+            ]
+          },
+          {
+            "name": "Ano exercicio",
+            "dataType": "int64",
+            "sourceColumn": "Ano exercicio",
+            "formatString": "0",
+            "lineageTag": "eda9adaf-d265-49d9-8c85-c3f394248703",
+            "summarizeBy": "sum",
+            "modifiedTime": "2022-06-07T17:19:16.386667",
+            "structureModifiedTime": "2022-05-30T12:27:45.076667",
+            "refreshedTime": "1699-12-31T00:00:00",
+            "attributeHierarchy": {
+              "state": "ready",
+              "modifiedTime": "2022-06-27T16:44:46.566667",
+              "refreshedTime": "2022-06-27T16:44:46.566667"
+            },
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic",
+                "modifiedTime": "2022-05-30T12:27:45.09"
+              }
+            ]
+          },
+          {
+            "name": "Cod unidade orcamentaria",
+            "dataType": "int64",
+            "sourceColumn": "Cod unidade orcamentaria",
+            "formatString": "0",
+            "lineageTag": "ac99c748-68d0-4e00-b03f-cc076a20794b",
+            "summarizeBy": "sum",
+            "modifiedTime": "2022-05-30T15:48:41.623333",
+            "structureModifiedTime": "2022-05-30T12:27:45.076667",
+            "refreshedTime": "1699-12-31T00:00:00",
+            "attributeHierarchy": {
+              "state": "ready",
+              "modifiedTime": "2022-06-27T16:44:46.566667",
+              "refreshedTime": "2022-06-27T16:44:46.566667"
+            },
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic",
+                "modifiedTime": "2022-05-30T12:27:45.09"
+              }
+            ]
+          },
+          {
+            "name": "Cod natureza receita",
+            "dataType": "int64",
+            "sourceColumn": "Cod natureza receita",
+            "formatString": "0",
+            "lineageTag": "1ae6f1c7-a73f-47ad-af4d-fe9a1d5a4b4f",
+            "summarizeBy": "sum",
+            "modifiedTime": "2022-05-30T15:49:17.83",
+            "structureModifiedTime": "2022-05-30T12:27:45.076667",
+            "refreshedTime": "1699-12-31T00:00:00",
+            "attributeHierarchy": {
+              "state": "ready",
+              "modifiedTime": "2022-06-27T16:44:46.566667",
+              "refreshedTime": "2022-06-27T16:44:46.566667"
+            },
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic",
+                "modifiedTime": "2022-05-30T12:27:45.09"
+              }
+            ]
+          },
+          {
+            "name": "Cod destinacao recurso",
+            "dataType": "string",
+            "sourceColumn": "Cod destinacao recurso",
+            "lineageTag": "203329eb-4204-43b8-8f6b-c27fd6a3e71d",
+            "summarizeBy": "none",
+            "modifiedTime": "2022-05-30T17:53:20.673333",
+            "structureModifiedTime": "2022-05-30T12:27:45.076667",
+            "refreshedTime": "1699-12-31T00:00:00",
+            "attributeHierarchy": {
+              "state": "ready",
+              "modifiedTime": "2022-06-27T16:44:46.573333",
+              "refreshedTime": "2022-06-27T16:44:46.573333"
+            },
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic",
+                "modifiedTime": "2022-05-30T12:27:45.09"
+              },
+              {
+                "name": "PBI_ChangedProperties",
+                "value": {
+                  "__powerbi-vcs-embedded-json__": [
+                    "DataType"
+                  ]
+                },
+                "modifiedTime": "2022-05-30T17:53:20.673333"
+              }
+            ]
+          },
+          {
+            "name": "Valor previsto",
+            "dataType": "double",
+            "sourceColumn": "Valor previsto",
+            "formatString": "0.00",
+            "lineageTag": "66abbb40-0126-4a49-bfa3-05a7fdfc6301",
+            "summarizeBy": "sum",
+            "modifiedTime": "2022-05-30T17:51:49.88",
+            "structureModifiedTime": "2022-05-30T12:27:45.076667",
+            "refreshedTime": "1699-12-31T00:00:00",
+            "attributeHierarchy": {
+              "state": "ready",
+              "modifiedTime": "2022-06-27T16:44:46.57",
+              "refreshedTime": "2022-06-27T16:44:46.57"
+            },
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic",
+                "modifiedTime": "2022-05-30T12:27:45.09"
+              },
+              {
+                "name": "PBI_ChangedProperties",
+                "value": {
+                  "__powerbi-vcs-embedded-json__": [
+                    "FormatString"
+                  ]
+                },
+                "modifiedTime": "2022-05-30T17:51:49.88"
+              }
+            ]
+          },
+          {
+            "name": "Valor atual mensal",
+            "dataType": "double",
+            "sourceColumn": "Valor atual mensal",
+            "formatString": "0.00",
+            "lineageTag": "b58bdb79-0ed4-4736-a046-66b10fbc93b9",
+            "summarizeBy": "sum",
+            "modifiedTime": "2022-05-30T17:51:56.48",
+            "structureModifiedTime": "2022-05-30T12:27:45.076667",
+            "refreshedTime": "1699-12-31T00:00:00",
+            "attributeHierarchy": {
+              "state": "ready",
+              "modifiedTime": "2022-06-27T16:44:46.57",
+              "refreshedTime": "2022-06-27T16:44:46.57"
+            },
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic",
+                "modifiedTime": "2022-05-30T12:27:45.09"
+              },
+              {
+                "name": "PBI_ChangedProperties",
+                "value": {
+                  "__powerbi-vcs-embedded-json__": [
+                    "FormatString"
+                  ]
+                },
+                "modifiedTime": "2022-05-30T17:51:56.48"
+              }
+            ]
+          },
+          {
+            "name": "Valor realizado mensal",
+            "dataType": "double",
+            "sourceColumn": "Valor realizado mensal",
+            "formatString": "0.00",
+            "lineageTag": "baf37caa-0d8d-4d72-8a44-1c9f38711597",
+            "summarizeBy": "sum",
+            "modifiedTime": "2022-05-30T17:51:43.883333",
+            "structureModifiedTime": "2022-05-30T12:27:45.076667",
+            "refreshedTime": "1699-12-31T00:00:00",
+            "attributeHierarchy": {
+              "state": "ready",
+              "modifiedTime": "2022-06-27T16:44:46.58",
+              "refreshedTime": "2022-06-27T16:44:46.58"
+            },
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic",
+                "modifiedTime": "2022-05-30T12:27:45.09"
+              },
+              {
+                "name": "PBI_ChangedProperties",
+                "value": {
+                  "__powerbi-vcs-embedded-json__": [
+                    "FormatString"
+                  ]
+                },
+                "modifiedTime": "2022-05-30T17:51:43.883333"
+              }
+            ]
+          },
+          {
+            "name": "Nivel_1",
+            "dataType": "string",
+            "sourceColumn": "Nivel_1",
+            "lineageTag": "e5f06236-8a8a-42a6-885f-3b54429f83d1",
+            "summarizeBy": "none",
+            "modifiedTime": "2022-05-30T12:27:45.076667",
+            "structureModifiedTime": "2022-05-30T12:27:45.076667",
+            "refreshedTime": "1699-12-31T00:00:00",
+            "attributeHierarchy": {
+              "state": "ready",
+              "modifiedTime": "2022-06-27T16:44:46.566667",
+              "refreshedTime": "2022-06-27T16:44:46.566667"
+            },
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic",
+                "modifiedTime": "2022-05-30T12:27:45.09"
+              }
+            ]
+          },
+          {
+            "name": "Nivel_2",
+            "dataType": "string",
+            "sourceColumn": "Nivel_2",
+            "lineageTag": "1cd1358c-1527-4b19-8df1-5209b9360762",
+            "summarizeBy": "none",
+            "modifiedTime": "2022-05-30T12:27:45.076667",
+            "structureModifiedTime": "2022-05-30T12:27:45.076667",
+            "refreshedTime": "1699-12-31T00:00:00",
+            "attributeHierarchy": {
+              "state": "ready",
+              "modifiedTime": "2022-06-27T16:44:46.57",
+              "refreshedTime": "2022-06-27T16:44:46.57"
+            },
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic",
+                "modifiedTime": "2022-05-30T12:27:45.09"
+              }
+            ]
+          },
+          {
+            "name": "Nivel_3",
+            "dataType": "string",
+            "sourceColumn": "Nivel_3",
+            "lineageTag": "9081e9a8-28bf-4a2c-8492-28e15db03b2c",
+            "summarizeBy": "none",
+            "modifiedTime": "2022-05-30T12:27:45.076667",
+            "structureModifiedTime": "2022-05-30T12:27:45.076667",
+            "refreshedTime": "1699-12-31T00:00:00",
+            "attributeHierarchy": {
+              "state": "ready",
+              "modifiedTime": "2022-06-27T16:44:46.566667",
+              "refreshedTime": "2022-06-27T16:44:46.566667"
+            },
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic",
+                "modifiedTime": "2022-05-30T12:27:45.09"
+              }
+            ]
+          },
+          {
+            "name": "Nivel_4",
+            "dataType": "string",
+            "sourceColumn": "Nivel_4",
+            "lineageTag": "7250990c-be07-40bb-854f-c33320e5853f",
+            "summarizeBy": "none",
+            "modifiedTime": "2022-05-30T12:27:45.076667",
+            "structureModifiedTime": "2022-05-30T12:27:45.076667",
+            "refreshedTime": "1699-12-31T00:00:00",
+            "attributeHierarchy": {
+              "state": "ready",
+              "modifiedTime": "2022-06-27T16:44:46.566667",
+              "refreshedTime": "2022-06-27T16:44:46.566667"
+            },
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic",
+                "modifiedTime": "2022-05-30T12:27:45.09"
+              }
+            ]
+          },
+          {
+            "name": "Nivel_5",
+            "dataType": "string",
+            "sourceColumn": "Nivel_5",
+            "lineageTag": "3e6f63fd-5c9a-47da-b4e4-f5c3bc4d0a05",
+            "summarizeBy": "none",
+            "modifiedTime": "2022-05-30T12:27:45.076667",
+            "structureModifiedTime": "2022-05-30T12:27:45.076667",
+            "refreshedTime": "1699-12-31T00:00:00",
+            "attributeHierarchy": {
+              "state": "ready",
+              "modifiedTime": "2022-06-27T16:44:46.566667",
+              "refreshedTime": "2022-06-27T16:44:46.566667"
+            },
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic",
+                "modifiedTime": "2022-05-30T12:27:45.09"
+              }
+            ]
+          },
+          {
+            "name": "Nivel_6",
+            "dataType": "string",
+            "sourceColumn": "Nivel_6",
+            "lineageTag": "fb03f3ca-7883-42e7-b97b-c7f4727248b3",
+            "summarizeBy": "none",
+            "modifiedTime": "2022-05-30T12:27:45.076667",
+            "structureModifiedTime": "2022-05-30T12:27:45.076667",
+            "refreshedTime": "1699-12-31T00:00:00",
+            "attributeHierarchy": {
+              "state": "ready",
+              "modifiedTime": "2022-06-27T16:44:46.566667",
+              "refreshedTime": "2022-06-27T16:44:46.566667"
+            },
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic",
+                "modifiedTime": "2022-05-30T12:27:45.09"
+              }
+            ]
+          },
+          {
+            "name": "Nome natureza receita",
+            "dataType": "string",
+            "sourceColumn": "Nome natureza receita",
+            "lineageTag": "49b1939a-033e-4756-8834-faa119b58b3b",
+            "summarizeBy": "none",
+            "modifiedTime": "2022-05-30T15:58:29.4",
+            "structureModifiedTime": "2022-05-30T12:27:45.076667",
+            "refreshedTime": "1699-12-31T00:00:00",
+            "attributeHierarchy": {
+              "state": "ready",
+              "modifiedTime": "2022-06-27T16:44:46.586667",
+              "refreshedTime": "2022-06-27T16:44:46.586667"
+            },
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic",
+                "modifiedTime": "2022-05-30T12:27:45.09"
+              }
+            ]
+          },
+          {
+            "name": "Nome res natureza receita",
+            "dataType": "string",
+            "sourceColumn": "Nome res natureza receita",
+            "lineageTag": "1e8bc869-91cb-4c30-87ac-506d5ed6178f",
+            "summarizeBy": "none",
+            "modifiedTime": "2022-05-30T15:58:48.35",
+            "structureModifiedTime": "2022-05-30T12:27:45.076667",
+            "refreshedTime": "1699-12-31T00:00:00",
+            "attributeHierarchy": {
+              "state": "ready",
+              "modifiedTime": "2022-06-27T16:44:46.58",
+              "refreshedTime": "2022-06-27T16:44:46.58"
+            },
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic",
+                "modifiedTime": "2022-05-30T12:27:45.09"
+              }
+            ]
+          },
+          {
+            "name": "Cod Natureza receita Pai",
+            "dataType": "string",
+            "sourceColumn": "Cod Natureza receita Pai",
+            "lineageTag": "0d43a7d5-8eeb-42e0-90ed-3feb6a626b45",
+            "summarizeBy": "none",
+            "modifiedTime": "2022-05-30T18:59:02.223333",
+            "structureModifiedTime": "2022-05-30T12:27:45.076667",
+            "refreshedTime": "1699-12-31T00:00:00",
+            "attributeHierarchy": {
+              "state": "ready",
+              "modifiedTime": "2022-06-27T16:44:46.566667",
+              "refreshedTime": "2022-06-27T16:44:46.566667"
+            },
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic",
+                "modifiedTime": "2022-05-30T12:27:45.09"
+              },
+              {
+                "name": "PBI_ChangedProperties",
+                "value": {
+                  "__powerbi-vcs-embedded-json__": [
+                    "DataType"
+                  ]
+                },
+                "modifiedTime": "2022-05-30T18:59:02.223333"
+              }
+            ]
+          },
+          {
+            "name": "Cod natureza receita redutora",
+            "dataType": "int64",
+            "sourceColumn": "Cod natureza receita redutora",
+            "formatString": "0",
+            "lineageTag": "dd5b2f98-fd91-4d84-ba30-1af9113d5127",
+            "summarizeBy": "sum",
+            "modifiedTime": "2022-05-30T16:11:09.116667",
+            "structureModifiedTime": "2022-05-30T12:27:45.076667",
+            "refreshedTime": "1699-12-31T00:00:00",
+            "attributeHierarchy": {
+              "state": "ready",
+              "modifiedTime": "2022-06-27T16:44:46.566667",
+              "refreshedTime": "2022-06-27T16:44:46.566667"
+            },
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic",
+                "modifiedTime": "2022-05-30T12:27:45.09"
+              }
+            ]
+          },
+          {
+            "name": "Cod esfera orcamentaria",
+            "dataType": "int64",
+            "sourceColumn": "Cod esfera orcamentaria",
+            "formatString": "0",
+            "lineageTag": "25b550f7-0671-42c2-8bab-712a678df906",
+            "summarizeBy": "sum",
+            "modifiedTime": "2022-05-30T16:11:38.193333",
+            "structureModifiedTime": "2022-05-30T12:27:45.076667",
+            "refreshedTime": "1699-12-31T00:00:00",
+            "attributeHierarchy": {
+              "state": "ready",
+              "modifiedTime": "2022-06-27T16:44:46.566667",
+              "refreshedTime": "2022-06-27T16:44:46.566667"
+            },
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic",
+                "modifiedTime": "2022-05-30T12:27:45.09"
+              }
+            ]
+          },
+          {
+            "name": "Cod natureza receita restituidora",
+            "dataType": "int64",
+            "sourceColumn": "Cod natureza receita restituidora",
+            "formatString": "0",
+            "lineageTag": "28e5740a-409d-4f9f-a7cd-e1ae7b1355d8",
+            "summarizeBy": "sum",
+            "modifiedTime": "2022-05-30T16:12:02.993333",
+            "structureModifiedTime": "2022-05-30T12:27:45.076667",
+            "refreshedTime": "1699-12-31T00:00:00",
+            "attributeHierarchy": {
+              "state": "ready",
+              "modifiedTime": "2022-06-27T16:44:46.566667",
+              "refreshedTime": "2022-06-27T16:44:46.566667"
+            },
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic",
+                "modifiedTime": "2022-05-30T12:27:45.09"
+              }
+            ]
+          },
+          {
+            "name": "Ind tipo natureza receita",
+            "dataType": "string",
+            "sourceColumn": "Ind tipo natureza receita",
+            "lineageTag": "a9c904e8-67f8-4e71-a658-0096523f1615",
+            "summarizeBy": "none",
+            "modifiedTime": "2022-05-30T17:52:27.156667",
+            "structureModifiedTime": "2022-05-30T12:27:45.076667",
+            "refreshedTime": "1699-12-31T00:00:00",
+            "attributeHierarchy": {
+              "state": "ready",
+              "modifiedTime": "2022-06-27T16:44:46.566667",
+              "refreshedTime": "2022-06-27T16:44:46.566667"
+            },
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic",
+                "modifiedTime": "2022-05-30T12:27:45.09"
+              },
+              {
+                "name": "PBI_ChangedProperties",
+                "value": {
+                  "__powerbi-vcs-embedded-json__": [
+                    "DataType"
+                  ]
+                },
+                "modifiedTime": "2022-05-30T17:52:27.156667"
+              }
+            ]
+          },
+          {
+            "name": "Nome unidade orcamentaria",
+            "dataType": "string",
+            "sourceColumn": "Nome unidade orcamentaria",
+            "lineageTag": "97ec8d36-7c65-41cf-a453-29c3c108f6f5",
+            "summarizeBy": "none",
+            "modifiedTime": "2022-05-30T16:12:47.566667",
+            "structureModifiedTime": "2022-05-30T12:27:45.076667",
+            "refreshedTime": "1699-12-31T00:00:00",
+            "attributeHierarchy": {
+              "state": "ready",
+              "modifiedTime": "2022-06-27T16:44:46.57",
+              "refreshedTime": "2022-06-27T16:44:46.57"
+            },
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic",
+                "modifiedTime": "2022-05-30T12:27:45.09"
+              }
+            ]
+          },
+          {
+            "name": "Nome res unidade orcamentaria",
+            "dataType": "string",
+            "sourceColumn": "Nome res unidade orcamentaria",
+            "lineageTag": "e7e13cb6-4049-48e1-a21a-6369eab5a23a",
+            "summarizeBy": "none",
+            "modifiedTime": "2022-05-30T16:13:33.923333",
+            "structureModifiedTime": "2022-05-30T12:27:45.076667",
+            "refreshedTime": "1699-12-31T00:00:00",
+            "attributeHierarchy": {
+              "state": "ready",
+              "modifiedTime": "2022-06-27T16:44:46.57",
+              "refreshedTime": "2022-06-27T16:44:46.57"
+            },
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic",
+                "modifiedTime": "2022-05-30T12:27:45.09"
+              }
+            ]
+          },
+          {
+            "name": "Num base CNPJ",
+            "dataType": "string",
+            "sourceColumn": "Num base CNPJ",
+            "lineageTag": "df5bcba0-9e2e-460d-a114-f75497ce47c4",
+            "summarizeBy": "none",
+            "modifiedTime": "2022-05-30T17:52:15.87",
+            "structureModifiedTime": "2022-05-30T12:27:45.076667",
+            "refreshedTime": "1699-12-31T00:00:00",
+            "attributeHierarchy": {
+              "state": "ready",
+              "modifiedTime": "2022-06-27T16:44:46.57",
+              "refreshedTime": "2022-06-27T16:44:46.57"
+            },
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic",
+                "modifiedTime": "2022-05-30T12:27:45.09"
+              },
+              {
+                "name": "PBI_ChangedProperties",
+                "value": {
+                  "__powerbi-vcs-embedded-json__": [
+                    "DataType"
+                  ]
+                },
+                "modifiedTime": "2022-05-30T17:52:15.87"
+              }
+            ]
+          },
+          {
+            "name": "Num filial CNPJ",
+            "dataType": "string",
+            "sourceColumn": "Num filial CNPJ",
+            "lineageTag": "ac65602a-b85e-443e-bf44-d33d914b9c8e",
+            "summarizeBy": "none",
+            "modifiedTime": "2022-05-30T17:52:02.78",
+            "structureModifiedTime": "2022-05-30T12:27:45.076667",
+            "refreshedTime": "1699-12-31T00:00:00",
+            "attributeHierarchy": {
+              "state": "ready",
+              "modifiedTime": "2022-06-27T16:44:46.57",
+              "refreshedTime": "2022-06-27T16:44:46.57"
+            },
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic",
+                "modifiedTime": "2022-05-30T12:27:45.09"
+              },
+              {
+                "name": "PBI_ChangedProperties",
+                "value": {
+                  "__powerbi-vcs-embedded-json__": [
+                    "DataType"
+                  ]
+                },
+                "modifiedTime": "2022-05-30T17:52:02.78"
+              }
+            ]
+          },
+          {
+            "name": "Num digito CNPJ",
+            "dataType": "string",
+            "sourceColumn": "Num digito CNPJ",
+            "lineageTag": "cfff0071-306e-43a0-b05d-ee35d1d16279",
+            "summarizeBy": "none",
+            "modifiedTime": "2022-05-30T17:52:08.623333",
+            "structureModifiedTime": "2022-05-30T12:27:45.076667",
+            "refreshedTime": "1699-12-31T00:00:00",
+            "attributeHierarchy": {
+              "state": "ready",
+              "modifiedTime": "2022-06-27T16:44:46.57",
+              "refreshedTime": "2022-06-27T16:44:46.57"
+            },
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic",
+                "modifiedTime": "2022-05-30T12:27:45.09"
+              },
+              {
+                "name": "PBI_ChangedProperties",
+                "value": {
+                  "__powerbi-vcs-embedded-json__": [
+                    "DataType"
+                  ]
+                },
+                "modifiedTime": "2022-05-30T17:52:08.623333"
+              }
+            ]
+          },
+          {
+            "name": "Cod poder orcamento",
+            "dataType": "int64",
+            "sourceColumn": "Cod poder orcamento",
+            "formatString": "0",
+            "lineageTag": "ad5207a5-2d1e-4187-9871-b075899df9a2",
+            "summarizeBy": "sum",
+            "modifiedTime": "2022-05-30T16:13:56.583333",
+            "structureModifiedTime": "2022-05-30T12:27:45.076667",
+            "refreshedTime": "1699-12-31T00:00:00",
+            "attributeHierarchy": {
+              "state": "ready",
+              "modifiedTime": "2022-06-27T16:44:46.57",
+              "refreshedTime": "2022-06-27T16:44:46.57"
+            },
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic",
+                "modifiedTime": "2022-05-30T12:27:45.09"
+              }
+            ]
+          },
+          {
+            "name": "Nome poder orcamento",
+            "dataType": "string",
+            "sourceColumn": "Nome poder orcamento",
+            "lineageTag": "44a2a543-51fa-48ca-b21f-684f9b0c0ab1",
+            "summarizeBy": "none",
+            "modifiedTime": "2022-05-30T16:15:33.8",
+            "structureModifiedTime": "2022-05-30T12:27:45.076667",
+            "refreshedTime": "1699-12-31T00:00:00",
+            "attributeHierarchy": {
+              "state": "ready",
+              "modifiedTime": "2022-06-27T16:44:46.57",
+              "refreshedTime": "2022-06-27T16:44:46.57"
+            },
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic",
+                "modifiedTime": "2022-05-30T12:27:45.09"
+              }
+            ]
+          },
+          {
+            "name": "Cod orgao orcamento",
+            "dataType": "int64",
+            "sourceColumn": "Cod orgao orcamento",
+            "formatString": "0",
+            "lineageTag": "03ea0441-b1b0-41c3-8cbf-237929878350",
+            "summarizeBy": "sum",
+            "modifiedTime": "2022-05-30T16:15:17.05",
+            "structureModifiedTime": "2022-05-30T12:27:45.076667",
+            "refreshedTime": "1699-12-31T00:00:00",
+            "attributeHierarchy": {
+              "state": "ready",
+              "modifiedTime": "2022-06-27T16:44:46.57",
+              "refreshedTime": "2022-06-27T16:44:46.57"
+            },
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic",
+                "modifiedTime": "2022-05-30T12:27:45.09"
+              }
+            ]
+          },
+          {
+            "name": "Cod classif unidade orcamentaria",
+            "dataType": "int64",
+            "sourceColumn": "Cod classif unidade orcamentaria",
+            "formatString": "0",
+            "lineageTag": "edfa3988-cc05-4576-aecf-3810f452f87f",
+            "summarizeBy": "sum",
+            "modifiedTime": "2022-05-30T16:15:00.826667",
+            "structureModifiedTime": "2022-05-30T12:27:45.076667",
+            "refreshedTime": "1699-12-31T00:00:00",
+            "attributeHierarchy": {
+              "state": "ready",
+              "modifiedTime": "2022-06-27T16:44:46.57",
+              "refreshedTime": "2022-06-27T16:44:46.57"
+            },
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic",
+                "modifiedTime": "2022-05-30T12:27:45.09"
+              }
+            ]
+          },
+          {
+            "name": "Cod tipo administracao",
+            "dataType": "int64",
+            "sourceColumn": "Cod tipo administracao",
+            "formatString": "0",
+            "lineageTag": "2c374b1f-914d-472b-a4a9-a7c50186b1b4",
+            "summarizeBy": "sum",
+            "modifiedTime": "2022-05-30T16:16:30.08",
+            "structureModifiedTime": "2022-05-30T12:27:45.076667",
+            "refreshedTime": "1699-12-31T00:00:00",
+            "attributeHierarchy": {
+              "state": "ready",
+              "modifiedTime": "2022-06-27T16:44:46.57",
+              "refreshedTime": "2022-06-27T16:44:46.57"
+            },
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic",
+                "modifiedTime": "2022-05-30T12:27:45.09"
+              }
+            ]
+          },
+          {
+            "name": "Nome orgao orcamento",
+            "dataType": "string",
+            "sourceColumn": "Nome orgao orcamento",
+            "lineageTag": "cbdf0dc2-00dd-47af-8228-663cd6db71c1",
+            "summarizeBy": "none",
+            "modifiedTime": "2022-05-30T16:16:09.116667",
+            "structureModifiedTime": "2022-05-30T12:27:45.076667",
+            "refreshedTime": "1699-12-31T00:00:00",
+            "attributeHierarchy": {
+              "state": "ready",
+              "modifiedTime": "2022-06-27T16:44:46.57",
+              "refreshedTime": "2022-06-27T16:44:46.57"
+            },
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic",
+                "modifiedTime": "2022-05-30T12:27:45.09"
+              }
+            ]
+          },
+          {
+            "name": "Sigla orgao orcamento",
+            "dataType": "string",
+            "sourceColumn": "Sigla orgao orcamento",
+            "lineageTag": "f830a0e1-ee3e-437d-a7d5-58aad8a009be",
+            "summarizeBy": "none",
+            "modifiedTime": "2022-05-30T16:15:56.046667",
+            "structureModifiedTime": "2022-05-30T12:27:45.076667",
+            "refreshedTime": "1699-12-31T00:00:00",
+            "attributeHierarchy": {
+              "state": "ready",
+              "modifiedTime": "2022-06-27T16:44:46.566667",
+              "refreshedTime": "2022-06-27T16:44:46.566667"
+            },
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic",
+                "modifiedTime": "2022-05-30T12:27:45.09"
+              }
+            ]
+          },
+          {
+            "name": "Nome destinacao recurso",
+            "dataType": "string",
+            "sourceColumn": "Nome destinacao recurso",
+            "lineageTag": "83e25e54-0d95-4096-a365-bbbf177be85d",
+            "summarizeBy": "none",
+            "modifiedTime": "2022-05-30T16:17:50.18",
+            "structureModifiedTime": "2022-05-30T12:27:45.076667",
+            "refreshedTime": "1699-12-31T00:00:00",
+            "attributeHierarchy": {
+              "state": "ready",
+              "modifiedTime": "2022-06-27T16:44:46.576667",
+              "refreshedTime": "2022-06-27T16:44:46.576667"
+            },
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic",
+                "modifiedTime": "2022-05-30T12:27:45.09"
+              }
+            ]
+          },
+          {
+            "name": "Cod identificador de uso",
+            "dataType": "string",
+            "sourceColumn": "Cod identificador de uso",
+            "lineageTag": "e0fab1ed-fbe2-4dd5-ba34-f220e2b6ddd5",
+            "summarizeBy": "none",
+            "modifiedTime": "2022-05-30T17:53:04.65",
+            "structureModifiedTime": "2022-05-30T12:27:45.076667",
+            "refreshedTime": "1699-12-31T00:00:00",
+            "attributeHierarchy": {
+              "state": "ready",
+              "modifiedTime": "2022-06-27T16:44:46.566667",
+              "refreshedTime": "2022-06-27T16:44:46.566667"
+            },
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic",
+                "modifiedTime": "2022-05-30T12:27:45.09"
+              },
+              {
+                "name": "PBI_ChangedProperties",
+                "value": {
+                  "__powerbi-vcs-embedded-json__": [
+                    "DataType"
+                  ]
+                },
+                "modifiedTime": "2022-05-30T17:53:04.65"
+              }
+            ]
+          },
+          {
+            "name": "Cod fonte recurso",
+            "dataType": "string",
+            "sourceColumn": "Cod fonte recurso",
+            "lineageTag": "5aa249f6-58cf-46f7-a27b-5699510005ea",
+            "summarizeBy": "none",
+            "modifiedTime": "2022-05-30T17:53:14.626667",
+            "structureModifiedTime": "2022-05-30T12:27:45.076667",
+            "refreshedTime": "1699-12-31T00:00:00",
+            "attributeHierarchy": {
+              "state": "ready",
+              "modifiedTime": "2022-06-27T16:44:46.57",
+              "refreshedTime": "2022-06-27T16:44:46.57"
+            },
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic",
+                "modifiedTime": "2022-05-30T12:27:45.09"
+              },
+              {
+                "name": "PBI_ChangedProperties",
+                "value": {
+                  "__powerbi-vcs-embedded-json__": [
+                    "DataType"
+                  ]
+                },
+                "modifiedTime": "2022-05-30T17:53:14.626667"
+              }
+            ]
+          },
+          {
+            "name": "Cod subfonte recurso",
+            "dataType": "string",
+            "sourceColumn": "Cod subfonte recurso",
+            "lineageTag": "4fd86dc8-cea2-4868-929e-5efeb67a0956",
+            "summarizeBy": "none",
+            "modifiedTime": "2022-05-30T17:52:54.47",
+            "structureModifiedTime": "2022-05-30T12:27:45.076667",
+            "refreshedTime": "1699-12-31T00:00:00",
+            "attributeHierarchy": {
+              "state": "ready",
+              "modifiedTime": "2022-06-27T16:44:46.57",
+              "refreshedTime": "2022-06-27T16:44:46.57"
+            },
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic",
+                "modifiedTime": "2022-05-30T12:27:45.09"
+              },
+              {
+                "name": "PBI_ChangedProperties",
+                "value": {
+                  "__powerbi-vcs-embedded-json__": [
+                    "DataType"
+                  ]
+                },
+                "modifiedTime": "2022-05-30T17:52:54.47"
+              }
+            ]
+          },
+          {
+            "name": "Nome subfonte recurso",
+            "dataType": "string",
+            "sourceColumn": "Nome subfonte recurso",
+            "lineageTag": "420ab043-177f-46ed-b4f0-3b54b4d6fe4c",
+            "summarizeBy": "none",
+            "modifiedTime": "2022-05-30T16:19:07.46",
+            "structureModifiedTime": "2022-05-30T12:27:45.076667",
+            "refreshedTime": "1699-12-31T00:00:00",
+            "attributeHierarchy": {
+              "state": "ready",
+              "modifiedTime": "2022-06-27T16:44:46.57",
+              "refreshedTime": "2022-06-27T16:44:46.57"
+            },
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic",
+                "modifiedTime": "2022-05-30T12:27:45.09"
+              }
+            ]
+          },
+          {
+            "name": "Nome idenficador de uso",
+            "dataType": "string",
+            "sourceColumn": "Nome idenficador de uso",
+            "lineageTag": "1c03daed-5566-4de1-a0cc-e0e7bcd4fd8b",
+            "summarizeBy": "none",
+            "modifiedTime": "2022-05-30T16:18:53.036667",
+            "structureModifiedTime": "2022-05-30T12:27:45.076667",
+            "refreshedTime": "1699-12-31T00:00:00",
+            "attributeHierarchy": {
+              "state": "ready",
+              "modifiedTime": "2022-06-27T16:44:46.566667",
+              "refreshedTime": "2022-06-27T16:44:46.566667"
+            },
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic",
+                "modifiedTime": "2022-05-30T12:27:45.09"
+              }
+            ]
+          },
+          {
+            "name": "Nome tipo administracao",
+            "dataType": "string",
+            "sourceColumn": "Nome tipo administracao",
+            "lineageTag": "edd04a74-7baf-4c0a-a1c3-5bdee6eca7e8",
+            "summarizeBy": "none",
+            "modifiedTime": "2022-05-30T16:18:36.74",
+            "structureModifiedTime": "2022-05-30T12:27:45.076667",
+            "refreshedTime": "1699-12-31T00:00:00",
+            "attributeHierarchy": {
+              "state": "ready",
+              "modifiedTime": "2022-06-27T16:44:46.57",
+              "refreshedTime": "2022-06-27T16:44:46.57"
+            },
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic",
+                "modifiedTime": "2022-05-30T12:27:45.09"
+              }
+            ]
+          },
+          {
+            "name": "Mês  Receita",
+            "dataType": "int64",
+            "sourceColumn": "Mês  Receita",
+            "formatString": "0",
+            "lineageTag": "ca753e0b-b592-4c3e-a2d1-a67c7e25fea3",
+            "summarizeBy": "sum",
+            "modifiedTime": "2022-06-13T18:06:05.266667",
+            "structureModifiedTime": "2022-06-13T18:06:04.886667",
+            "refreshedTime": "1699-12-31T00:00:00",
+            "attributeHierarchy": {
+              "state": "ready",
+              "modifiedTime": "2022-06-27T16:44:46.566667",
+              "refreshedTime": "2022-06-27T16:44:46.566667"
+            },
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic",
+                "modifiedTime": "2022-06-13T18:06:04.886667"
+              }
+            ]
+          },
+          {
+            "name": "Nivel_7",
+            "dataType": "string",
+            "sourceColumn": "Nivel_7",
+            "lineageTag": "0651d8b4-fd0f-4e36-99e7-c2c7ca00157f",
+            "summarizeBy": "none",
+            "modifiedTime": "2022-06-13T18:06:05.266667",
+            "structureModifiedTime": "2022-06-13T18:06:04.973333",
+            "refreshedTime": "1699-12-31T00:00:00",
+            "attributeHierarchy": {
+              "state": "ready",
+              "modifiedTime": "2022-06-27T16:44:46.57",
+              "refreshedTime": "2022-06-27T16:44:46.57"
+            },
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic",
+                "modifiedTime": "2022-06-13T18:06:04.973333"
+              }
+            ]
+          },
+          {
+            "name": "Valor previsto restituição",
+            "dataType": "double",
+            "sourceColumn": "Valor previsto restituição",
+            "lineageTag": "1e81dd00-f77f-4896-b9c7-20373d81994f",
+            "summarizeBy": "sum",
+            "modifiedTime": "2022-06-13T18:06:05.266667",
+            "structureModifiedTime": "2022-06-13T18:06:05.016667",
+            "refreshedTime": "1699-12-31T00:00:00",
+            "attributeHierarchy": {
+              "state": "ready",
+              "modifiedTime": "2022-06-27T16:44:46.566667",
+              "refreshedTime": "2022-06-27T16:44:46.566667"
+            },
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic",
+                "modifiedTime": "2022-06-13T18:06:05.016667"
+              },
+              {
+                "name": "PBI_FormatHint",
+                "value": {
+                  "__powerbi-vcs-embedded-json__": {
+                    "isGeneralNumber": true
+                  }
+                },
+                "modifiedTime": "2022-06-13T18:06:05.016667"
+              }
+            ]
+          },
+          {
+            "name": "Valor previsto redução",
+            "dataType": "double",
+            "sourceColumn": "Valor previsto redução",
+            "lineageTag": "02d7018d-b1ef-4530-8d46-c3231884b8fb",
+            "summarizeBy": "sum",
+            "modifiedTime": "2022-06-13T18:06:05.266667",
+            "structureModifiedTime": "2022-06-13T18:06:05.05",
+            "refreshedTime": "1699-12-31T00:00:00",
+            "attributeHierarchy": {
+              "state": "ready",
+              "modifiedTime": "2022-06-27T16:44:46.566667",
+              "refreshedTime": "2022-06-27T16:44:46.566667"
+            },
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic",
+                "modifiedTime": "2022-06-13T18:06:05.05"
+              },
+              {
+                "name": "PBI_FormatHint",
+                "value": {
+                  "__powerbi-vcs-embedded-json__": {
+                    "isGeneralNumber": true
+                  }
+                },
+                "modifiedTime": "2022-06-13T18:06:05.05"
+              }
+            ]
+          },
+          {
+            "name": "Valor Atual mensal restituição",
+            "dataType": "double",
+            "sourceColumn": "Valor Atual mensal restituição",
+            "lineageTag": "2695b332-0647-4954-8a62-6f977f35efbe",
+            "summarizeBy": "sum",
+            "modifiedTime": "2022-06-13T18:06:05.266667",
+            "structureModifiedTime": "2022-06-13T18:06:05.083333",
+            "refreshedTime": "1699-12-31T00:00:00",
+            "attributeHierarchy": {
+              "state": "ready",
+              "modifiedTime": "2022-06-27T16:44:46.57",
+              "refreshedTime": "2022-06-27T16:44:46.57"
+            },
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic",
+                "modifiedTime": "2022-06-13T18:06:05.083333"
+              },
+              {
+                "name": "PBI_FormatHint",
+                "value": {
+                  "__powerbi-vcs-embedded-json__": {
+                    "isGeneralNumber": true
+                  }
+                },
+                "modifiedTime": "2022-06-13T18:06:05.083333"
+              }
+            ]
+          },
+          {
+            "name": "Valor atual mensal redução",
+            "dataType": "double",
+            "sourceColumn": "Valor atual mensal redução",
+            "lineageTag": "4715e2e6-021f-44bb-9ddc-f1176c5f6f42",
+            "summarizeBy": "sum",
+            "modifiedTime": "2022-06-13T18:06:05.266667",
+            "structureModifiedTime": "2022-06-13T18:06:05.12",
+            "refreshedTime": "1699-12-31T00:00:00",
+            "attributeHierarchy": {
+              "state": "ready",
+              "modifiedTime": "2022-06-27T16:44:46.57",
+              "refreshedTime": "2022-06-27T16:44:46.57"
+            },
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic",
+                "modifiedTime": "2022-06-13T18:06:05.12"
+              },
+              {
+                "name": "PBI_FormatHint",
+                "value": {
+                  "__powerbi-vcs-embedded-json__": {
+                    "isGeneralNumber": true
+                  }
+                },
+                "modifiedTime": "2022-06-13T18:06:05.12"
+              }
+            ]
+          },
+          {
+            "name": "Valor realizado mensal restituição",
+            "dataType": "double",
+            "sourceColumn": "Valor realizado mensal restituição",
+            "lineageTag": "22fffdab-913f-4059-81b2-8c9ee72289b0",
+            "summarizeBy": "sum",
+            "modifiedTime": "2022-06-13T18:06:05.266667",
+            "structureModifiedTime": "2022-06-13T18:06:05.156667",
+            "refreshedTime": "1699-12-31T00:00:00",
+            "attributeHierarchy": {
+              "state": "ready",
+              "modifiedTime": "2022-06-27T16:44:46.57",
+              "refreshedTime": "2022-06-27T16:44:46.57"
+            },
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic",
+                "modifiedTime": "2022-06-13T18:06:05.156667"
+              },
+              {
+                "name": "PBI_FormatHint",
+                "value": {
+                  "__powerbi-vcs-embedded-json__": {
+                    "isGeneralNumber": true
+                  }
+                },
+                "modifiedTime": "2022-06-13T18:06:05.156667"
+              }
+            ]
+          },
+          {
+            "name": "Valor realizado mensal redução",
+            "dataType": "double",
+            "sourceColumn": "Valor realizado mensal redução",
+            "lineageTag": "e3ef3561-f1a0-408b-b92b-d87d75a6fff0",
+            "summarizeBy": "sum",
+            "modifiedTime": "2022-06-13T18:06:05.266667",
+            "structureModifiedTime": "2022-06-13T18:06:05.193333",
+            "refreshedTime": "1699-12-31T00:00:00",
+            "attributeHierarchy": {
+              "state": "ready",
+              "modifiedTime": "2022-06-27T16:44:46.57",
+              "refreshedTime": "2022-06-27T16:44:46.57"
+            },
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic",
+                "modifiedTime": "2022-06-13T18:06:05.193333"
+              },
+              {
+                "name": "PBI_FormatHint",
+                "value": {
+                  "__powerbi-vcs-embedded-json__": {
+                    "isGeneralNumber": true
+                  }
+                },
+                "modifiedTime": "2022-06-13T18:06:05.193333"
+              }
+            ]
+          },
+          {
+            "name": "dtc_ultima_atualizacao",
+            "dataType": "dateTime",
+            "sourceColumn": "dtc_ultima_atualizacao",
+            "formatString": "General Date",
+            "lineageTag": "527942b3-8d7e-42c6-851f-763a3d484e94",
+            "summarizeBy": "none",
+            "modifiedTime": "2022-06-26T16:32:07.81",
+            "structureModifiedTime": "2022-06-26T16:32:07.696667",
+            "refreshedTime": "1699-12-31T00:00:00",
+            "attributeHierarchy": {
+              "state": "ready",
+              "modifiedTime": "2022-06-27T16:44:46.57",
+              "refreshedTime": "2022-06-27T16:44:46.57"
+            },
+            "variations": [
+              {
+                "name": "Variation",
+                "relationship": "df84c7a9-9281-4a97-b938-8a9a576b4a18",
+                "defaultHierarchy": {
+                  "table": "LocalDateTable_cc1828ec-18c1-4466-8bc0-bf1f7becc7ac",
+                  "hierarchy": "Hierarquia de datas"
+                },
+                "isDefault": true
+              }
+            ],
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic",
+                "modifiedTime": "2022-06-26T16:32:07.696667"
+              }
+            ]
+          }
+        ],
+        "partitions": [
+          {
+            "name": "Receita-eae06203-f7ad-4fd7-9f46-51588fcf8dc5",
+            "mode": "import",
+            "state": "ready",
+            "modifiedTime": "2022-06-27T16:43:30.08",
+            "refreshedTime": "2022-06-27T16:44:45.903333",
+            "source": {
+              "type": "m",
+              "expression": "let\n    Fonte = Sql.Database(\"PCORPORATIVO\\BDP_CORPORATIVO\", \"bd_bdce_fiplan\", [Query=\"Select  #(lf)#(tab)   CAST(CAST(orig.ano_exercicio AS char(4)) + '-' + CAST(orig.mes_receita_contabil_mensal AS char(2)) + '-1' AS date) AS exercicio,#(lf)       orig.ano_exercicio                                     , #(lf)       orig.mes_receita_contabil_mensal                       ,#(lf)       orig.cod_unidade_orcamentaria                          ,#(lf)orig.cod_natureza_receita,#(lf)#(tab)   orig.cod_destinacao_recurso                            ,#(lf)       SUBSTRING(CAST(orig.cod_natureza_receita AS char(20)), 1, 1) AS Nivel_1,#(lf)     #(lf)       SUBSTRING(CAST(orig.cod_natureza_receita AS char(20)), 1, 2) AS Nivel_2,#(lf)       SUBSTRING(CAST(orig.cod_natureza_receita AS char(20)), 1, 3) AS Nivel_3,#(lf)       SUBSTRING(CAST(orig.cod_natureza_receita AS char(20)), 1, 4) AS Nivel_4,#(lf)       SUBSTRING(CAST(orig.cod_natureza_receita AS char(20)), 1, 6) AS Nivel_5,#(lf)       SUBSTRING(CAST(orig.cod_natureza_receita AS char(20)), 1, 7) AS Nivel_6,#(lf)       SUBSTRING(CAST(orig.cod_natureza_receita AS char(20)), 1, 8) AS Nivel_7,#(lf)     #(lf)       vw_natureza_receita.nom_natureza_receita AS nom_natureza_receita,#(lf)       vw_natureza_receita.nom_res_natureza_receita AS nom_res_natureza_receita,#(lf)       vw_natureza_receita.cod_natureza_receita_pai AS cod_natureza_receita_pai,#(lf)       vw_natureza_receita.cod_natureza_receita_redutora AS  cod_natureza_receita_redutora,#(lf)       vw_natureza_receita.cod_esfera_orcamentaria AS cod_esfera_orcamentaria,#(lf)       vw_natureza_receita.cod_natureza_receita_restitui AS cod_natureza_receita_restitui,#(lf)       vw_natureza_receita.ind_tipo_natureza_receita AS ind_tipo_natureza_receita,#(lf)       vw_unidade_orcamentaria.nom_unidade_orcamentaria AS nom_unidade_orcamentaria,#(lf)       vw_unidade_orcamentaria.nom_res_unidade_orcamentaria AS nom_res_unidade_orcamentaria,#(lf)       vw_unidade_orcamentaria.num_base_cnpj AS num_base_cnpj,#(lf)       vw_unidade_orcamentaria.num_filial_cnpj AS num_filial_cnpj,#(lf)       vw_unidade_orcamentaria.num_dig_cnpj AS num_dig_cnpj,#(lf)       vw_unidade_orcamentaria.cod_poder_orcamento AS cod_poder_orcamento,#(lf)       poder_orcamento.nom_poder_orcamento AS nom_poder_orcamento,#(lf)       vw_unidade_orcamentaria.cod_orgao_orcamento AS cod_orgao_orcamento,#(lf)       vw_unidade_orcamentaria.cod_classif_unid_orcamentaria AS cod_classif_unid_orcamentaria,#(lf)       vw_unidade_orcamentaria.cod_tipo_administracao AS cod_tipo_administracao,#(lf)       vw_orgao_orcamento.nom_orgao_orcamento AS nom_orgao_orcamento,#(lf)       vw_orgao_orcamento.sgl_orgao_orcamento AS sgl_orgao_orcamento,#(lf)       destinacao_recurso.nom_destinacao_recurso AS nom_destinacao_recurso,#(lf)       destinacao_recurso.cod_identificador_uso AS cod_identificador_uso,#(lf)       destinacao_recurso.cod_fonte_recurso AS cod_fonte_recurso,#(lf)       destinacao_recurso.cod_subfonte_recurso AS cod_subfonte_recurso,#(lf)       vw_subfonte_recurso.nom_subfonte_recurso AS nom_subfonte_recurso,#(lf)       vw_identificador_uso.nom_identificador_uso AS nom_identificador_uso,#(lf)       tipo_administracao.nom_tipo_administracao AS nom_tipo_administracao,#(lf)#(lf)#(tab)   isnull(orig.val_previsto,0)  as val_previsto                                    ,#(lf)#(tab)   isnull(orig.val_atual_mensal,0)     as val_atual_mensal                             ,#(lf)#(tab)   isnull(orig.val_realizado_mensal,0)  as val_realizado_mensal                          ,#(lf)#(tab)   isnull(rest.val_previsto_restitui,0) as  val_previsto_restitui                            ,#(lf)       isnull(redut.val_previsto_redutora,0) as   val_previsto_reduz                            ,#(lf)#(tab)   isnull(rest.val_atual_mensal_restitui,0) as   val_atual_mensal_restitui                        ,#(lf)#(tab)   isnull(redut.val_atual_mensal_redutora,0) as   val_atual_mensal_reduz                       ,#(lf)#(tab)   isnull(redut.val_realizado_mensal_redutora,0) as   val_realizado_mensal_reduz                   ,#(lf)#(tab)   isnull(rest.val_realizado_mensal_restitui,0) as  val_realizado_mensal_restitui                     ,#(lf)#(tab)   orig.dtc_ultima_atualizacao#(lf)  from  (#(tab)    #(lf)#(tab)#(tab)#(tab)#(tab)#(tab)  select #(lf)#(tab)#(tab)#(tab)#(tab)      tab.ano_exercicio#(tab)                            ,#(lf)#(tab)#(tab)#(tab)#(tab)#(tab)  tab.cod_natureza_receita#(tab)                    ,#(lf)#(tab)#(tab)#(tab)#(tab)#(tab)  tab.cod_natureza_receita_redutora#(tab)                ,#(lf)#(tab)#(tab)#(tab)#(tab)#(tab)  tab.cod_natureza_receita_restitui#(tab)                ,#(tab)#(tab)#(tab)#(tab)#(lf)#(tab)#(tab)#(tab)#(tab)#(tab)  tab.mes_receita_contabil_mensal#(tab)            ,#(lf)#(tab)#(tab)#(tab)#(tab)#(tab)  tab.cod_unidade_orcamentaria#(tab)                ,#(tab)#(tab)#(tab)#(tab)#(lf)#(tab)#(tab)#(tab)#(tab)#(tab)  tab.cod_destinacao_recurso                    ,#(lf)#(tab)#(tab)#(tab)#(tab)#(tab)  sum(tab.val_atual_mensal)    as val_atual_mensal      ,#(lf)#(tab)#(tab)#(tab)#(tab)#(tab)  sum(tab.val_previsto)        as val_previsto          ,#(lf)#(tab)#(tab)#(tab)#(tab)#(tab)  sum(tab.val_realizado_mensal) as val_realizado_mensal  ,#(lf)#(tab)#(tab)#(tab)#(tab)#(tab)  max(tab.dtc_ultima_atualizacao)     as dtc_ultima_atualizacao #(lf)#(tab)#(tab)#(tab)#(tab)#(tab)from #(lf)#(tab)#(tab)#(tab)#(tab)#(tab)#(tab)#(tab)(#(tab)select #(tab)  NR.ano_exercicio#(tab)                            ,#(lf)#(tab)#(tab)#(tab)#(tab)#(tab)#(tab)#(tab)#(tab)#(tab)#(tab)  NR.cod_natureza_receita#(tab)                    ,#(lf)#(tab)#(tab)#(tab)#(tab)#(tab)#(tab)#(tab)#(tab)#(tab)#(tab)  cod_natureza_receita_redutora#(tab)                ,#(lf)#(tab)#(tab)#(tab)#(tab)#(tab)#(tab)#(tab)#(tab)#(tab)#(tab)  cod_natureza_receita_restitui#(tab)                ,#(tab)#(tab)#(tab)#(tab)#(lf)#(tab)#(tab)#(tab)#(tab)#(tab)#(tab)#(tab)#(tab)#(tab)#(tab)  RCM.mes_receita_contabil_mensal#(tab)            ,#(lf)#(tab)#(tab)#(tab)#(tab)#(tab)#(tab)#(tab)#(tab)#(tab)#(tab)  RCM.cod_unidade_orcamentaria#(tab)                ,#(tab)#(tab)#(tab)#(tab)#(lf)#(tab)#(tab)#(tab)#(tab)#(tab)#(tab)#(tab)#(tab)#(tab)#(tab)  RCM.cod_destinacao_recurso                    ,#(lf)#(tab)#(tab)#(tab)#(tab)#(tab)#(tab)#(tab)#(tab)#(tab)#(tab)  rcm.val_atual_mensal    as val_atual_mensal      ,#(lf)#(tab)#(tab)#(tab)#(tab)#(tab)#(tab)#(tab)#(tab)#(tab)#(tab)  rcm.val_previsto        as val_previsto          ,#(lf)#(tab)#(tab)#(tab)#(tab)#(tab)#(tab)#(tab)#(tab)#(tab)#(tab)  rcm.val_realizado_mensal as val_realizado_mensal  ,#(lf)#(tab)#(tab)#(tab)#(tab)#(tab)#(tab)#(tab)#(tab)#(tab)#(tab)  rcm.dtc_ultima_atualizacao      as dtc_ultima_atualizacao#(lf)#(tab)#(tab)#(tab)#(tab)#(tab)#(tab)#(tab)#(tab)#(tab) from natureza_receita   NR#(lf)#(tab)#(tab)#(tab)#(tab)#(tab)#(tab)#(tab)   inner join receita_contabil_mensal  RCM#(lf)#(tab)#(tab)#(tab)#(tab)#(tab)#(tab)#(tab)#(tab)#(tab)   on NR.ano_exercicio = RCM.ano_exercicio#(lf)#(tab)#(tab)#(tab)#(tab)#(tab)#(tab)#(tab)#(tab)#(tab)  and NR.cod_natureza_receita = RCM.COD_natureza_receita#(lf) #(lf)#(tab)#(tab)#(tab)#(tab)#(tab)  union#(lf)#(tab)#(tab)#(tab)#(tab)#(tab)  #(lf)#(tab)#(tab)#(tab)#(tab)#(tab)#(tab)#(tab)#(tab)#(tab) select   NR.ano_exercicio#(tab)                     ,#(lf)#(tab)#(tab)#(tab)#(tab)#(tab)#(tab)#(tab)#(tab)#(tab)  NR.cod_natureza_receita#(tab)                    ,#(tab)#(tab)#(tab)#(tab)#(tab)  #(lf)#(tab)#(tab)#(tab)#(tab)#(tab)#(tab)#(tab)#(tab)#(tab)   cod_natureza_receita_redutora#(tab)                ,#(lf)#(tab)#(tab)#(tab)#(tab)#(tab)#(tab)#(tab)#(tab)#(tab)#(tab)cod_natureza_receita_restitui#(tab)                ,#(tab)#(tab)#(tab)#(tab)#(tab)#(lf)#(tab)#(tab)#(tab)#(tab)#(tab)#(tab)#(tab)#(tab)#(tab)  RCM.mes_receita_contabil_mensal#(tab)            ,#(lf)#(tab)#(tab)#(tab)#(tab)#(tab)#(tab)#(tab)#(tab)#(tab)  RCM.cod_unidade_orcamentaria#(tab)                ,#(tab)#(tab)#(tab)#(tab)#(lf)#(tab)#(tab)#(tab)#(tab)#(tab)#(tab)#(tab)#(tab)#(tab)  RCM.cod_destinacao_recurso                    ,#(tab)#(lf)#(tab)#(tab)#(tab)#(tab)#(tab)#(tab)#(tab)#(tab)#(tab)  0 as val_atual_mensal      ,#(lf)#(tab)#(tab)#(tab)#(tab)#(tab)#(tab)#(tab)#(tab)#(tab)  0 as val_previsto          ,#(lf)#(tab)#(tab)#(tab)#(tab)#(tab)#(tab)#(tab)#(tab)#(tab)  0 as val_realizado_mensal  ,#(lf)#(tab)#(tab)#(tab)#(tab)#(tab)#(tab)#(tab)#(tab)#(tab)  rcm.dtc_ultima_atualizacao as dtc_ultima_atualizacao#(lf)#(tab)#(tab)#(tab)#(tab)#(tab)#(tab)#(tab)#(tab) from natureza_receita   NR#(lf)#(tab)#(tab)#(tab)#(tab)#(tab)#(tab)#(tab)#(tab)inner join receita_contabil_mensal  RCM#(lf)#(tab)#(tab)#(tab)#(tab)#(tab)#(tab)#(tab)#(tab)   on NR.ano_exercicio = RCM.ano_exercicio#(lf)#(tab)#(tab)#(tab)#(tab)#(tab)#(tab)#(tab)#(tab)  and NR.cod_natureza_receita_restitui = RCM.cod_natureza_receita#(lf)#(tab)#(tab)#(tab)#(tab)#(tab)#(tab)#(tab)#(tab)#(lf)#(tab)#(tab)#(tab)#(tab)#(tab)#(tab)#(tab)#(tab)union#(lf)#(lf)#(tab)#(tab)#(tab)#(tab)#(tab)#(tab)#(tab)#(tab) select  #(lf)#(tab)#(tab)#(tab)#(tab)#(tab)#(tab)#(tab)#(tab) NR.ano_exercicio#(tab)                            ,#(lf)#(tab)#(tab)#(tab)#(tab)#(tab)#(tab)#(tab)#(tab)  NR.cod_natureza_receita#(tab)                    ,#(tab)#(tab)#(tab)#(tab)#(tab)  #(lf)#(tab)#(tab)#(tab)#(tab)#(tab)#(tab)#(tab)#(tab)  cod_natureza_receita_redutora#(tab)                ,#(lf)#(tab)#(tab)#(tab)#(tab)#(tab)#(tab)#(tab)#(tab)  cod_natureza_receita_restitui#(tab)                ,#(tab)#(tab)#(tab)#(tab)#(tab)#(lf)#(tab)#(tab)#(tab)#(tab)#(tab)#(tab)#(tab)#(tab)  RCM.mes_receita_contabil_mensal#(tab)            ,#(lf)#(tab)#(tab)#(tab)#(tab)#(tab)#(tab)#(tab)#(tab)  RCM.cod_unidade_orcamentaria#(tab)                ,#(tab)#(tab)#(tab)#(tab)#(lf)#(tab)#(tab)#(tab)#(tab)#(tab)#(tab)#(tab)#(tab)  RCM.cod_destinacao_recurso                    ,#(tab)#(lf)#(tab)#(tab)#(tab)#(tab)#(tab)#(tab)#(tab)#(tab)  0 as val_atual_mensal      ,#(lf)#(tab)#(tab)#(tab)#(tab)#(tab)#(tab)#(tab)#(tab)  0 as val_previsto          ,#(lf)#(tab)#(tab)#(tab)#(tab)#(tab)#(tab)#(tab)#(tab)  0 as val_realizado_mensal  ,#(lf)#(tab)#(tab)#(tab)#(tab)#(tab)#(tab)#(tab)#(tab) rcm.dtc_ultima_atualizacao as dtc_ultima_atualizacao#(lf)#(tab)#(tab)#(tab)#(tab)#(tab)#(tab)#(tab)#(tab)from natureza_receita   NR #(lf)#(tab)#(tab)#(tab)#(tab)#(tab)#(tab)#(tab)inner join receita_contabil_mensal  RCM#(lf)#(tab)#(tab)#(tab)#(tab)#(tab)#(tab)#(tab)   on NR.ano_exercicio = RCM.ano_exercicio#(lf)#(tab)#(tab)#(tab)#(tab)#(tab)#(tab)#(tab)  and NR.cod_natureza_receita_redutora = RCM.cod_natureza_receita #(lf)#(tab)#(tab)#(tab)#(tab)#(tab)#(tab)#(tab)  ) tab#(tab)  #(lf)#(tab)#(tab)#(tab)#(tab)#(tab)#(tab)#(tab)  #(lf)#(tab)#(tab)#(tab)#(tab)group by tab.ano_exercicio#(tab)                            ,#(lf)#(tab)#(tab)#(tab)#(tab)#(tab)  tab.cod_natureza_receita#(tab)                    ,#(lf)#(tab)#(tab)#(tab)#(tab)#(tab)  tab.cod_natureza_receita_redutora#(tab)                ,#(lf)#(tab)#(tab)#(tab)#(tab)#(tab)  tab.cod_natureza_receita_restitui#(tab)                ,#(tab)#(tab)#(tab)#(tab)#(lf)#(tab)#(tab)#(tab)#(tab)#(tab)  tab.mes_receita_contabil_mensal#(tab)            ,#(lf)#(tab)#(tab)#(tab)#(tab)#(tab)  tab.cod_unidade_orcamentaria#(tab)                ,#(tab)#(tab)#(tab)#(tab)#(lf)#(tab)#(tab)#(tab)#(tab)#(tab)  tab.cod_destinacao_recurso  #(lf)#(tab)#(tab)#(tab)#(tab)#(tab)#(tab)#(tab)#(tab)#(lf)#(tab)#(tab)#(tab)#(tab)#(tab)#(tab)#(tab)#(tab) #(lf)#(tab)#(tab)) as orig #(lf)#(lf)#(tab)#(tab)left join#(lf)#(tab)#(tab)#(lf)#(tab)#(tab)(#(lf)#(lf)#(tab)#(tab)#(tab)   select NR.ano_exercicio#(tab)                            ,#(lf)#(tab)#(tab)#(tab)#(tab)#(tab)  NR.cod_natureza_receita#(tab)                    ,#(tab)#(tab)#(tab)#(tab)#(tab)  #(lf)#(tab)#(tab)#(tab)#(tab)#(tab)  cod_natureza_receita_restitui#(tab)                ,#(tab)#(tab)#(tab)#(tab)#(lf)#(tab)#(tab)#(tab)#(tab)#(tab)  RCM.mes_receita_contabil_mensal#(tab)            ,#(lf)#(tab)#(tab)#(tab)#(tab)#(tab)  RCM.cod_unidade_orcamentaria#(tab)                ,#(tab)#(tab)#(tab)#(tab)#(lf)#(tab)#(tab)#(tab)#(tab)#(tab)  RCM.cod_destinacao_recurso                    ,#(tab)#(lf)#(tab)#(tab)#(tab)#(tab)#(tab)  sum(RCM.val_previsto)#(tab)    as val_previsto_restitui ,#(lf)#(tab)#(tab)#(tab)#(tab)#(tab)  sum(RCM.val_atual_mensal)#(tab)as val_atual_mensal_restitui ,#(lf)#(tab)#(tab)#(tab)#(tab)#(tab)  sum(RCM.val_realizado_mensal) as val_realizado_mensal_restitui    #(lf)#(tab)#(tab)#(tab)#(tab) from natureza_receita   NR#(lf)#(tab)#(tab)   inner join receita_contabil_mensal  RCM#(lf)#(tab)#(tab)#(tab)#(tab)   on NR.ano_exercicio = RCM.ano_exercicio#(lf)#(tab)#(tab)#(tab)#(tab)  and NR.cod_natureza_receita_restitui = RCM.cod_natureza_receita#(lf)#(tab)#(tab)#(tab)group by  NR.ano_exercicio#(tab)                            ,#(lf)#(tab)#(tab)#(tab)#(tab)#(tab)  NR.cod_natureza_receita#(tab)                    ,#(tab)#(tab)#(tab)#(tab)#(tab)  #(lf)#(tab)#(tab)#(tab)#(tab)#(tab)  cod_natureza_receita_restitui#(tab)                ,#(tab)#(tab)#(tab)#(tab)#(lf)#(tab)#(tab)#(tab)#(tab)#(tab)  RCM.mes_receita_contabil_mensal#(tab)            ,#(lf)#(tab)#(tab)#(tab)#(tab)#(tab)  RCM.cod_unidade_orcamentaria#(tab)                ,#(tab)#(tab)#(tab)#(tab)#(lf)#(tab)#(tab)#(tab)#(tab)#(tab)  RCM.cod_destinacao_recurso  #(lf)#(lf)#(tab)#(tab)) rest#(lf)on  orig.ano_exercicio               = rest.ano_exercicio#(lf)and orig.mes_receita_contabil_mensal = rest.mes_receita_contabil_mensal#(lf)and orig.cod_natureza_receita        = rest.cod_natureza_receita#(lf)and orig.cod_natureza_receita_restitui = rest.cod_natureza_receita_restitui#(lf)and orig.cod_unidade_orcamentaria    = rest.cod_unidade_orcamentaria#(lf)and orig.cod_destinacao_recurso      = rest.cod_destinacao_recurso#(lf)#(lf)#(tab)left join#(lf)#(tab)#(tab)#(lf)#(tab)#(tab)(#(lf)#(lf)#(tab)#(tab)#(tab)   select NR.ano_exercicio#(tab)                            ,#(lf)#(tab)#(tab)#(tab)#(tab)#(tab)  NR.cod_natureza_receita#(tab)                    ,#(tab)#(tab)#(tab)#(tab)#(tab)  #(lf)#(tab)#(tab)#(tab)#(tab)#(tab)  cod_natureza_receita_redutora                 ,#(tab)#(tab)#(tab)#(tab)#(lf)#(tab)#(tab)#(tab)#(tab)#(tab)  RCM.mes_receita_contabil_mensal#(tab)            ,#(lf)#(tab)#(tab)#(tab)#(tab)#(tab)  RCM.cod_unidade_orcamentaria#(tab)                ,#(tab)#(tab)#(tab)#(tab)#(lf)#(tab)#(tab)#(tab)#(tab)#(tab)  RCM.cod_destinacao_recurso                    ,#(tab)#(lf)#(tab)#(tab)#(tab)#(tab)#(tab)  sum(RCM.val_previsto)#(tab)    as val_previsto_redutora ,#(lf)#(tab)#(tab)#(tab)#(tab)#(tab)  sum(RCM.val_atual_mensal)#(tab)as val_atual_mensal_redutora ,#(lf)#(tab)#(tab)#(tab)#(tab)#(tab)  sum(RCM.val_realizado_mensal) as val_realizado_mensal_redutora#(lf)#(tab)#(tab)#(tab)#(tab) from natureza_receita   NR#(lf)#(tab)#(tab)   inner join receita_contabil_mensal  RCM#(lf)#(tab)#(tab)#(tab)#(tab)   on NR.ano_exercicio = RCM.ano_exercicio#(lf)#(tab)#(tab)#(tab)#(tab)  and NR.cod_natureza_receita_redutora = RCM.cod_natureza_receita#(lf)#(tab)#(tab)#(tab)group by  NR.ano_exercicio#(tab)                            ,#(lf)#(tab)#(tab)#(tab)#(tab)#(tab)  NR.cod_natureza_receita#(tab)                    ,#(tab)#(tab)#(tab)#(tab)#(tab)  #(lf)#(tab)#(tab)#(tab)#(tab)#(tab)  cod_natureza_receita_redutora               ,#(tab)#(tab)#(tab)#(tab)#(lf)#(tab)#(tab)#(tab)#(tab)#(tab)  RCM.mes_receita_contabil_mensal#(tab)            ,#(lf)#(tab)#(tab)#(tab)#(tab)#(tab)  RCM.cod_unidade_orcamentaria#(tab)                ,#(tab)#(tab)#(tab)#(tab)#(lf)#(tab)#(tab)#(tab)#(tab)#(tab)  RCM.cod_destinacao_recurso  #(lf)#(lf)#(tab)#(tab)) redut#(lf)on  orig.ano_exercicio               = redut.ano_exercicio#(lf)and orig.mes_receita_contabil_mensal = redut.mes_receita_contabil_mensal#(lf)and orig.cod_natureza_receita        = redut.cod_natureza_receita#(lf)and orig.cod_natureza_receita_redutora = redut.cod_natureza_receita_redutora#(lf)and orig.cod_unidade_orcamentaria    = redut.cod_unidade_orcamentaria#(lf)and orig.cod_destinacao_recurso      = redut.cod_destinacao_recurso#(lf)#(lf)LEFT JOIN vw_natureza_receita vw_natureza_receita#(lf)  ON orig.cod_natureza_receita = vw_natureza_receita.cod_natureza_receita#(lf)  AND orig.ano_exercicio = vw_natureza_receita.ano_exercicio#(lf)#(lf)LEFT JOIN vw_unidade_orcamentaria vw_unidade_orcamentaria#(lf)  ON orig.cod_unidade_orcamentaria = vw_unidade_orcamentaria.cod_unidade_orcamentaria#(lf)  AND orig.ano_exercicio = vw_unidade_orcamentaria.ano_exercicio#(lf)#(lf)LEFT JOIN vw_orgao_orcamento vw_orgao_orcamento#(lf)  ON vw_unidade_orcamentaria.cod_orgao_orcamento = vw_orgao_orcamento.cod_orgao_orcamento#(lf)  AND vw_unidade_orcamentaria.cod_poder_orcamento = vw_orgao_orcamento.cod_poder_orcamento#(lf)  AND vw_unidade_orcamentaria.ano_exercicio_orgao_orcamento = vw_orgao_orcamento.ano_exercicio#(lf)#(lf)LEFT JOIN poder_orcamento poder_orcamento#(lf)  ON vw_orgao_orcamento.cod_poder_orcamento = poder_orcamento.cod_poder_orcamento#(lf)#(lf)LEFT JOIN destinacao_recurso destinacao_recurso#(lf)  ON orig.cod_destinacao_recurso = destinacao_recurso.cod_destinacao_recurso#(lf)#(lf)LEFT JOIN vw_subfonte_recurso vw_subfonte_recurso#(lf)  ON destinacao_recurso.cod_subfonte_recurso = vw_subfonte_recurso.cod_subfonte_recurso#(lf)  AND YEAR(orig.ano_exercicio) = vw_subfonte_recurso.ano_exercicio#(lf)#(lf)LEFT JOIN vw_identificador_uso vw_identificador_uso#(lf)  ON vw_identificador_uso.cod_identificador_uso = destinacao_recurso.cod_identificador_uso#(lf)  AND YEAR(orig.ano_exercicio) = vw_identificador_uso.ano_exercicio#(lf)#(lf)LEFT JOIN tipo_administracao tipo_administracao#(lf)  ON tipo_administracao.cod_tipo_administracao = vw_unidade_orcamentaria.cod_tipo_administracao#(lf)#(lf)WHERE  orig.ano_exercicio >= YEAR(GETDATE()) - 4#(lf)\"]),\n    #\"Colunas Renomeadas\" = Table.RenameColumns(Fonte,{{\"exercicio\", \"Exercicio\"}, {\"ano_exercicio\", \"Ano exercicio\"}, {\"cod_unidade_orcamentaria\", \"Cod unidade orcamentaria\"}, {\"cod_natureza_receita\", \"Cod natureza receita\"}, {\"cod_destinacao_recurso\", \"Cod destinacao recurso\"}, {\"val_previsto\", \"Valor previsto\"}, {\"val_atual_mensal\", \"Valor atual mensal\"}, {\"val_realizado_mensal\", \"Valor realizado mensal\"}, {\"nom_natureza_receita\", \"Nome natureza receita\"}, {\"nom_res_natureza_receita\", \"Nome res natureza receita\"}, {\"cod_natureza_receita_pai\", \"Cod Natureza receita Pai\"}, {\"cod_natureza_receita_redutora\", \"Cod natureza receita redutora\"}, {\"cod_esfera_orcamentaria\", \"Cod esfera orcamentaria\"}, {\"cod_natureza_receita_restitui\", \"Cod natureza receita restituidora\"}, {\"ind_tipo_natureza_receita\", \"Ind tipo natureza receita\"}, {\"nom_unidade_orcamentaria\", \"Nome unidade orcamentaria\"}, {\"num_base_cnpj\", \"Num base CNPJ\"}, {\"nom_res_unidade_orcamentaria\", \"Nome res unidade orcamentaria\"}, {\"cod_poder_orcamento\", \"Cod poder orcamento\"}, {\"num_dig_cnpj\", \"Num digito CNPJ\"}, {\"num_filial_cnpj\", \"Num filial CNPJ\"}, {\"cod_classif_unid_orcamentaria\", \"Cod classif unidade orcamentaria\"}, {\"cod_orgao_orcamento\", \"Cod orgao orcamento\"}, {\"nom_poder_orcamento\", \"Nome poder orcamento\"}, {\"sgl_orgao_orcamento\", \"Sigla orgao orcamento\"}, {\"nom_orgao_orcamento\", \"Nome orgao orcamento\"}, {\"cod_tipo_administracao\", \"Cod tipo administracao\"}, {\"cod_subfonte_recurso\", \"Cod subfonte recurso\"}, {\"cod_fonte_recurso\", \"Cod fonte recurso\"}, {\"cod_identificador_uso\", \"Cod identificador de uso\"}, {\"nom_destinacao_recurso\", \"Nome destinacao recurso\"}, {\"nom_tipo_administracao\", \"Nome tipo administracao\"}, {\"nom_identificador_uso\", \"Nome idenficador de uso\"}, {\"nom_subfonte_recurso\", \"Nome subfonte recurso\"}, {\"mes_receita_contabil_mensal\", \"Mês  Receita\"}, {\"val_previsto_restitui\", \"Valor previsto restituição\"}, {\"val_previsto_reduz\", \"Valor previsto redução\"}, {\"val_atual_mensal_restitui\", \"Valor Atual mensal restituição\"}, {\"val_atual_mensal_reduz\", \"Valor atual mensal redução\"}, {\"val_realizado_mensal_restitui\", \"Valor realizado mensal restituição\"}, {\"val_realizado_mensal_reduz\", \"Valor realizado mensal redução\"}})\nin\n    #\"Colunas Renomeadas\""
+            }
+          }
+        ],
+        "annotations": [
+          {
+            "name": "PBI_ResultType",
+            "value": "Table",
+            "modifiedTime": "2022-06-27T16:43:30.08"
+          },
+          {
+            "name": "PBI_NavigationStepName",
+            "value": "Navegação",
+            "modifiedTime": "2022-05-30T19:05:21.68"
+          }
+        ]
+      },
+      {
+        "name": "DateTableTemplate_0e61febc-ee72-4873-bd2a-57f3c6ce6183",
+        "isHidden": true,
+        "isPrivate": true,
+        "lineageTag": "e2670c82-611b-4e4e-a536-6f038fd0e031",
+        "modifiedTime": "2022-05-30T12:27:45.093333",
+        "structureModifiedTime": "2022-05-30T12:27:42.65",
+        "columns": [
+          {
+            "type": "rowNumber",
+            "name": "RowNumber-2662979B-1795-4F74-8F37-6A1BA8059B61",
+            "dataType": "int64",
+            "isHidden": true,
+            "isUnique": true,
+            "isKey": true,
+            "isNullable": false,
+            "modifiedTime": "2022-05-30T12:27:42.673333",
+            "structureModifiedTime": "2022-05-30T12:27:42.65",
+            "refreshedTime": "1699-12-31T00:00:00",
+            "attributeHierarchy": {
+              "state": "ready",
+              "modifiedTime": "2022-05-30T12:27:55.626667",
+              "refreshedTime": "2022-05-30T12:27:55.626667"
+            }
+          },
+          {
+            "type": "calculatedTableColumn",
+            "name": "Date",
+            "dataType": "dateTime",
+            "isNameInferred": true,
+            "isDataTypeInferred": true,
+            "isHidden": true,
+            "sourceColumn": "[Date]",
+            "lineageTag": "d5cd63f7-10f4-4819-83e6-ddbfaeb89b23",
+            "dataCategory": "PaddedDateTableDates",
+            "summarizeBy": "none",
+            "modifiedTime": "2022-05-30T16:50:12.533333",
+            "structureModifiedTime": "2022-05-30T12:27:42.656667",
+            "refreshedTime": "1699-12-31T00:00:00",
+            "attributeHierarchy": {
+              "state": "ready",
+              "modifiedTime": "2022-05-30T12:27:55.63",
+              "refreshedTime": "2022-05-30T12:27:55.63"
+            },
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "User",
+                "modifiedTime": "2022-05-30T12:27:42.67"
+              }
+            ]
+          },
+          {
+            "type": "calculated",
+            "name": "Ano",
+            "dataType": "int64",
+            "isDataTypeInferred": true,
+            "isHidden": true,
+            "expression": "YEAR([Date])",
+            "lineageTag": "e12a4f9d-0e9a-4730-828e-b6d66b5b4e64",
+            "dataCategory": "Years",
+            "summarizeBy": "none",
+            "modifiedTime": "2022-05-30T16:50:12.533333",
+            "structureModifiedTime": "2022-05-30T12:27:42.656667",
+            "refreshedTime": "2022-05-30T12:27:55.636667",
+            "attributeHierarchy": {
+              "state": "ready",
+              "modifiedTime": "2022-05-30T12:27:55.636667",
+              "refreshedTime": "2022-05-30T12:27:55.636667"
+            },
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "User",
+                "modifiedTime": "2022-05-30T12:27:42.67"
+              },
+              {
+                "name": "TemplateId",
+                "value": "Year",
+                "modifiedTime": "2022-05-30T12:27:42.67"
+              }
+            ]
+          },
+          {
+            "type": "calculated",
+            "name": "MonthNo",
+            "dataType": "int64",
+            "isDataTypeInferred": true,
+            "isHidden": true,
+            "expression": "MONTH([Date])",
+            "lineageTag": "6683b235-f694-49c2-8431-dd2141b6dd1b",
+            "dataCategory": "MonthOfYear",
+            "summarizeBy": "none",
+            "modifiedTime": "2022-05-30T16:50:12.533333",
+            "structureModifiedTime": "2022-05-30T12:27:42.656667",
+            "refreshedTime": "2022-05-30T12:27:55.636667",
+            "attributeHierarchy": {
+              "state": "ready",
+              "modifiedTime": "2022-05-30T12:27:55.636667",
+              "refreshedTime": "2022-05-30T12:27:55.636667"
+            },
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "User",
+                "modifiedTime": "2022-05-30T12:27:42.67"
+              },
+              {
+                "name": "TemplateId",
+                "value": "MonthNumber",
+                "modifiedTime": "2022-05-30T12:27:42.67"
+              }
+            ]
+          },
+          {
+            "type": "calculated",
+            "name": "Mês",
+            "dataType": "string",
+            "isDataTypeInferred": true,
+            "isHidden": true,
+            "expression": "FORMAT([Date], \"MMMM\")",
+            "sortByColumn": "MonthNo",
+            "lineageTag": "beea4466-d8bd-4312-8e82-db7eaf5a5c81",
+            "dataCategory": "Months",
+            "summarizeBy": "none",
+            "modifiedTime": "2022-05-30T12:27:55.64",
+            "structureModifiedTime": "2022-05-30T12:27:42.656667",
+            "refreshedTime": "2022-05-30T12:27:55.64",
+            "attributeHierarchy": {
+              "state": "ready",
+              "modifiedTime": "2022-05-30T12:27:55.64",
+              "refreshedTime": "2022-05-30T12:27:55.64"
+            },
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "User",
+                "modifiedTime": "2022-05-30T12:27:42.67"
+              },
+              {
+                "name": "TemplateId",
+                "value": "Month",
+                "modifiedTime": "2022-05-30T12:27:42.67"
+              }
+            ]
+          },
+          {
+            "type": "calculated",
+            "name": "QuarterNo",
+            "dataType": "int64",
+            "isDataTypeInferred": true,
+            "isHidden": true,
+            "expression": "INT(([MonthNo] + 2) / 3)",
+            "lineageTag": "1cdd5112-64cb-4ab9-8e44-7679a291a8a0",
+            "dataCategory": "QuarterOfYear",
+            "summarizeBy": "none",
+            "modifiedTime": "2022-05-30T16:50:12.533333",
+            "structureModifiedTime": "2022-05-30T12:27:42.656667",
+            "refreshedTime": "2022-05-30T12:27:55.653333",
+            "attributeHierarchy": {
+              "state": "ready",
+              "modifiedTime": "2022-05-30T12:27:55.653333",
+              "refreshedTime": "2022-05-30T12:27:55.653333"
+            },
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "User",
+                "modifiedTime": "2022-05-30T12:27:42.67"
+              },
+              {
+                "name": "TemplateId",
+                "value": "QuarterNumber",
+                "modifiedTime": "2022-05-30T12:27:42.67"
+              }
+            ]
+          },
+          {
+            "type": "calculated",
+            "name": "Trimestre",
+            "dataType": "string",
+            "isDataTypeInferred": true,
+            "isHidden": true,
+            "expression": "\"Trim \" & [QuarterNo]",
+            "sortByColumn": "QuarterNo",
+            "lineageTag": "900234a7-3f52-48c7-9543-6d03e66d53c0",
+            "dataCategory": "Quarters",
+            "summarizeBy": "none",
+            "modifiedTime": "2022-05-30T12:27:55.71",
+            "structureModifiedTime": "2022-05-30T12:27:42.656667",
+            "refreshedTime": "2022-05-30T12:27:55.71",
+            "attributeHierarchy": {
+              "state": "ready",
+              "modifiedTime": "2022-05-30T12:27:55.71",
+              "refreshedTime": "2022-05-30T12:27:55.71"
+            },
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "User",
+                "modifiedTime": "2022-05-30T12:27:42.67"
+              },
+              {
+                "name": "TemplateId",
+                "value": "Quarter",
+                "modifiedTime": "2022-05-30T12:27:42.67"
+              }
+            ]
+          },
+          {
+            "type": "calculated",
+            "name": "Dia",
+            "dataType": "int64",
+            "isDataTypeInferred": true,
+            "isHidden": true,
+            "expression": "DAY([Date])",
+            "lineageTag": "8debbead-8691-4079-96d7-887abbd1c968",
+            "dataCategory": "DayOfMonth",
+            "summarizeBy": "none",
+            "modifiedTime": "2022-05-30T16:50:12.533333",
+            "structureModifiedTime": "2022-05-30T12:27:42.656667",
+            "refreshedTime": "2022-05-30T12:27:55.636667",
+            "attributeHierarchy": {
+              "state": "ready",
+              "modifiedTime": "2022-05-30T12:27:55.636667",
+              "refreshedTime": "2022-05-30T12:27:55.636667"
+            },
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "User",
+                "modifiedTime": "2022-05-30T12:27:42.67"
+              },
+              {
+                "name": "TemplateId",
+                "value": "Day",
+                "modifiedTime": "2022-05-30T12:27:42.67"
+              }
+            ]
+          }
+        ],
+        "partitions": [
+          {
+            "name": "DateTableTemplate_0e61febc-ee72-4873-bd2a-57f3c6ce6183-c8afba5e-8ce9-46b2-b4c9-c63d4c0aebb4",
+            "mode": "import",
+            "state": "ready",
+            "modifiedTime": "2022-05-30T12:27:55.626667",
+            "refreshedTime": "2022-05-30T12:27:55.626667",
+            "source": {
+              "type": "calculated",
+              "expression": "Calendar(Date(2015,1,1), Date(2015,1,1))"
+            }
+          }
+        ],
+        "hierarchies": [
+          {
+            "name": "Hierarquia de datas",
+            "lineageTag": "ac077e69-cac5-4f15-a4ba-3d1d908d9ae9",
+            "state": "ready",
+            "modifiedTime": "2022-05-30T12:27:55.723333",
+            "structureModifiedTime": "2022-05-30T12:27:42.66",
+            "refreshedTime": "2022-05-30T12:27:55.723333",
+            "levels": [
+              {
+                "name": "Ano",
+                "ordinal": 0,
+                "column": "Ano",
+                "lineageTag": "5c776190-db0d-442d-85b2-26a289e1de40",
+                "modifiedTime": "2022-05-30T12:27:45.093333"
+              },
+              {
+                "name": "Trimestre",
+                "ordinal": 1,
+                "column": "Trimestre",
+                "lineageTag": "2cac5947-5cc2-4f99-968f-f8cc34a392d0",
+                "modifiedTime": "2022-05-30T12:27:45.093333"
+              },
+              {
+                "name": "Mês",
+                "ordinal": 2,
+                "column": "Mês",
+                "lineageTag": "1a9761cc-0910-477e-af33-ae827122bec1",
+                "modifiedTime": "2022-05-30T12:27:45.093333"
+              },
+              {
+                "name": "Dia",
+                "ordinal": 3,
+                "column": "Dia",
+                "lineageTag": "dd68b9aa-203e-4855-be05-d68c080144c2",
+                "modifiedTime": "2022-05-30T12:27:45.093333"
+              }
+            ],
+            "annotations": [
+              {
+                "name": "TemplateId",
+                "value": "DateHierarchy",
+                "modifiedTime": "2022-05-30T12:27:42.67"
+              }
+            ]
+          }
+        ],
+        "annotations": [
+          {
+            "name": "__PBI_TemplateDateTable",
+            "value": "true",
+            "modifiedTime": "2022-05-30T12:27:42.67"
+          },
+          {
+            "name": "DefaultItem",
+            "value": "DateHierarchy",
+            "modifiedTime": "2022-05-30T12:27:42.67"
+          }
+        ]
+      },
+      {
+        "name": "Despesa",
+        "lineageTag": "c1e54941-07c8-4ed9-b4a4-788f35d002ea",
+        "modifiedTime": "2022-05-30T16:52:06.026667",
+        "structureModifiedTime": "2022-05-30T18:57:45.923333",
+        "columns": [
+          {
+            "type": "rowNumber",
+            "name": "RowNumber-2662979B-1795-4F74-8F37-6A1BA8059B61",
+            "dataType": "int64",
+            "isHidden": true,
+            "isUnique": true,
+            "isKey": true,
+            "isNullable": false,
+            "modifiedTime": "2022-05-30T13:08:00.6",
+            "structureModifiedTime": "2022-05-30T13:08:00.596667",
+            "refreshedTime": "1699-12-31T00:00:00",
+            "attributeHierarchy": {
+              "state": "ready",
+              "modifiedTime": "2022-05-30T19:16:35.09",
+              "refreshedTime": "2022-05-30T19:16:35.09"
+            }
+          },
+          {
+            "name": "Ano Exercicio",
+            "dataType": "int64",
+            "sourceColumn": "Ano Exercicio",
+            "formatString": "0",
+            "lineageTag": "79a6ae58-16d8-44b7-9fef-50a70f02a43b",
+            "summarizeBy": "sum",
+            "modifiedTime": "2022-06-07T17:19:23.993333",
+            "structureModifiedTime": "2022-05-30T13:08:00.6",
+            "refreshedTime": "1699-12-31T00:00:00",
+            "attributeHierarchy": {
+              "state": "ready",
+              "modifiedTime": "2022-05-30T19:16:35.09",
+              "refreshedTime": "2022-05-30T19:16:35.09"
+            },
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic",
+                "modifiedTime": "2022-05-30T13:08:00.6"
+              }
+            ]
+          },
+          {
+            "name": "Exercicio",
+            "dataType": "dateTime",
+            "sourceColumn": "Exercicio",
+            "formatString": "General Date",
+            "lineageTag": "c951c09b-8136-4d2f-ae54-a8a073cefe1f",
+            "summarizeBy": "none",
+            "modifiedTime": "2022-05-30T13:41:27.486667",
+            "structureModifiedTime": "2022-06-07T17:19:54.893333",
+            "refreshedTime": "1699-12-31T00:00:00",
+            "attributeHierarchy": {
+              "state": "ready",
+              "modifiedTime": "2022-05-30T19:16:35.106667",
+              "refreshedTime": "2022-05-30T19:16:35.106667"
+            },
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic",
+                "modifiedTime": "2022-05-30T13:08:00.6"
+              }
+            ]
+          },
+          {
+            "name": "Num conta dotação orcamentaria anual",
+            "dataType": "string",
+            "sourceColumn": "Num conta dotação orcamentaria anual",
+            "lineageTag": "a4d751e8-2870-4d68-b1d2-9ebfce0362ae",
+            "summarizeBy": "none",
+            "modifiedTime": "2022-05-30T18:52:22.806667",
+            "structureModifiedTime": "2022-05-30T13:08:00.6",
+            "refreshedTime": "1699-12-31T00:00:00",
+            "attributeHierarchy": {
+              "state": "ready",
+              "modifiedTime": "2022-05-30T19:16:37.25",
+              "refreshedTime": "2022-05-30T19:16:37.25"
+            },
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic",
+                "modifiedTime": "2022-05-30T13:08:00.6"
+              }
+            ]
+          },
+          {
+            "name": "Cod Unidade Orcamentaria",
+            "dataType": "int64",
+            "sourceColumn": "Cod Unidade Orcamentaria",
+            "formatString": "0",
+            "lineageTag": "17de0d76-42d8-4e1d-8e1f-858ff039aae0",
+            "summarizeBy": "sum",
+            "modifiedTime": "2022-05-30T18:52:22.846667",
+            "structureModifiedTime": "2022-05-30T13:08:00.6",
+            "refreshedTime": "1699-12-31T00:00:00",
+            "attributeHierarchy": {
+              "state": "ready",
+              "modifiedTime": "2022-05-30T19:16:35.093333",
+              "refreshedTime": "2022-05-30T19:16:35.093333"
+            },
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic",
+                "modifiedTime": "2022-05-30T13:08:00.6"
+              }
+            ]
+          },
+          {
+            "name": "Cod Unidade Gestora",
+            "dataType": "int64",
+            "sourceColumn": "Cod Unidade Gestora",
+            "formatString": "0",
+            "lineageTag": "8f0c9580-9f93-48e4-bf04-bc7a9ef65ced",
+            "summarizeBy": "sum",
+            "modifiedTime": "2022-05-30T18:52:22.876667",
+            "structureModifiedTime": "2022-05-30T13:08:00.6",
+            "refreshedTime": "1699-12-31T00:00:00",
+            "attributeHierarchy": {
+              "state": "ready",
+              "modifiedTime": "2022-05-30T19:16:35.09",
+              "refreshedTime": "2022-05-30T19:16:35.09"
+            },
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic",
+                "modifiedTime": "2022-05-30T13:08:00.6"
+              }
+            ]
+          },
+          {
+            "name": "Cod Unidade Orcamentaria Exercicio",
+            "dataType": "int64",
+            "sourceColumn": "Cod Unidade Orcamentaria Exercicio",
+            "formatString": "0",
+            "lineageTag": "c1d730f6-7766-4174-8098-ca3654b3c102",
+            "summarizeBy": "sum",
+            "modifiedTime": "2022-05-30T18:52:22.92",
+            "structureModifiedTime": "2022-05-30T13:08:00.6",
+            "refreshedTime": "1699-12-31T00:00:00",
+            "attributeHierarchy": {
+              "state": "ready",
+              "modifiedTime": "2022-05-30T19:16:35.093333",
+              "refreshedTime": "2022-05-30T19:16:35.093333"
+            },
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic",
+                "modifiedTime": "2022-05-30T13:08:00.6"
+              }
+            ]
+          },
+          {
+            "name": "Cod Unidade Gestora Exercicio",
+            "dataType": "int64",
+            "sourceColumn": "Cod Unidade Gestora Exercicio",
+            "formatString": "0",
+            "lineageTag": "871530cd-d725-4275-bcdf-e0caa52919a2",
+            "summarizeBy": "sum",
+            "modifiedTime": "2022-05-30T18:52:22.95",
+            "structureModifiedTime": "2022-05-30T13:08:00.6",
+            "refreshedTime": "1699-12-31T00:00:00",
+            "attributeHierarchy": {
+              "state": "ready",
+              "modifiedTime": "2022-05-30T19:16:35.093333",
+              "refreshedTime": "2022-05-30T19:16:35.093333"
+            },
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic",
+                "modifiedTime": "2022-05-30T13:08:00.6"
+              }
+            ]
+          },
+          {
+            "name": "Cod Função Programa Governo",
+            "dataType": "int64",
+            "sourceColumn": "Cod Função Programa Governo",
+            "formatString": "0",
+            "lineageTag": "096f072f-9cad-4ab9-8b1f-0fc7b19d4d95",
+            "summarizeBy": "sum",
+            "modifiedTime": "2022-05-30T18:52:22.983333",
+            "structureModifiedTime": "2022-05-30T13:08:00.6",
+            "refreshedTime": "1699-12-31T00:00:00",
+            "attributeHierarchy": {
+              "state": "ready",
+              "modifiedTime": "2022-05-30T19:16:35.093333",
+              "refreshedTime": "2022-05-30T19:16:35.093333"
+            },
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic",
+                "modifiedTime": "2022-05-30T13:08:00.6"
+              }
+            ]
+          },
+          {
+            "name": "Cod Sub Função Programa Governo",
+            "dataType": "int64",
+            "sourceColumn": "Cod Sub Função Programa Governo",
+            "formatString": "0",
+            "lineageTag": "749f7f8f-c873-4434-9213-dc94dccb6634",
+            "summarizeBy": "sum",
+            "modifiedTime": "2022-05-30T18:52:23.01",
+            "structureModifiedTime": "2022-05-30T13:08:00.6",
+            "refreshedTime": "1699-12-31T00:00:00",
+            "attributeHierarchy": {
+              "state": "ready",
+              "modifiedTime": "2022-05-30T19:16:35.093333",
+              "refreshedTime": "2022-05-30T19:16:35.093333"
+            },
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic",
+                "modifiedTime": "2022-05-30T13:08:00.6"
+              }
+            ]
+          },
+          {
+            "name": "Cod  Programa Governo",
+            "dataType": "int64",
+            "sourceColumn": "Cod  Programa Governo",
+            "formatString": "0",
+            "lineageTag": "e4e90114-6c37-4650-a7ac-54681b4215fe",
+            "summarizeBy": "sum",
+            "modifiedTime": "2022-05-30T18:52:23.043333",
+            "structureModifiedTime": "2022-05-30T13:08:00.6",
+            "refreshedTime": "1699-12-31T00:00:00",
+            "attributeHierarchy": {
+              "state": "ready",
+              "modifiedTime": "2022-05-30T19:16:35.093333",
+              "refreshedTime": "2022-05-30T19:16:35.093333"
+            },
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic",
+                "modifiedTime": "2022-05-30T13:08:00.6"
+              }
+            ]
+          },
+          {
+            "name": "Cod Ação Programa Governo",
+            "dataType": "int64",
+            "sourceColumn": "Cod Ação Programa Governo",
+            "formatString": "0",
+            "lineageTag": "842c0c76-1308-4eb4-8f49-4200bc99665d",
+            "summarizeBy": "sum",
+            "modifiedTime": "2022-05-30T18:52:23.073333",
+            "structureModifiedTime": "2022-05-30T13:08:00.6",
+            "refreshedTime": "1699-12-31T00:00:00",
+            "attributeHierarchy": {
+              "state": "ready",
+              "modifiedTime": "2022-05-30T19:16:35.093333",
+              "refreshedTime": "2022-05-30T19:16:35.093333"
+            },
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic",
+                "modifiedTime": "2022-05-30T13:08:00.6"
+              }
+            ]
+          },
+          {
+            "name": "Cód Região Orcamento",
+            "dataType": "int64",
+            "sourceColumn": "Cód Região Orcamento",
+            "formatString": "0",
+            "lineageTag": "1256ab6f-bd11-433d-8cdc-d43dabc46a2e",
+            "summarizeBy": "sum",
+            "modifiedTime": "2022-05-30T18:52:23.1",
+            "structureModifiedTime": "2022-05-30T13:08:00.6",
+            "refreshedTime": "1699-12-31T00:00:00",
+            "attributeHierarchy": {
+              "state": "ready",
+              "modifiedTime": "2022-05-30T19:16:35.093333",
+              "refreshedTime": "2022-05-30T19:16:35.093333"
+            },
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic",
+                "modifiedTime": "2022-05-30T13:08:00.6"
+              }
+            ]
+          },
+          {
+            "name": "Cod Categoria Economica Orcamento",
+            "dataType": "int64",
+            "sourceColumn": "Cod Categoria Economica Orcamento",
+            "formatString": "0",
+            "lineageTag": "4d67ad33-5eed-4950-a841-133987f22490",
+            "summarizeBy": "sum",
+            "modifiedTime": "2022-05-30T18:52:23.133333",
+            "structureModifiedTime": "2022-05-30T13:08:00.6",
+            "refreshedTime": "1699-12-31T00:00:00",
+            "attributeHierarchy": {
+              "state": "ready",
+              "modifiedTime": "2022-05-30T19:16:35.096667",
+              "refreshedTime": "2022-05-30T19:16:35.096667"
+            },
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic",
+                "modifiedTime": "2022-05-30T13:08:00.6"
+              }
+            ]
+          },
+          {
+            "name": "Cod Modalidade Aplicação Orcamento",
+            "dataType": "int64",
+            "sourceColumn": "Cod Modalidade Aplicação Orcamento",
+            "formatString": "0",
+            "lineageTag": "cc7fedd9-efd5-4611-bd02-4e88228ae0b4",
+            "summarizeBy": "sum",
+            "modifiedTime": "2022-05-30T18:52:23.166667",
+            "structureModifiedTime": "2022-05-30T13:08:00.6",
+            "refreshedTime": "1699-12-31T00:00:00",
+            "attributeHierarchy": {
+              "state": "ready",
+              "modifiedTime": "2022-05-30T19:16:35.093333",
+              "refreshedTime": "2022-05-30T19:16:35.093333"
+            },
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic",
+                "modifiedTime": "2022-05-30T13:08:00.6"
+              }
+            ]
+          },
+          {
+            "name": "Cod Grupo Despesa Orcamento",
+            "dataType": "int64",
+            "sourceColumn": "Cod Grupo Despesa Orcamento",
+            "formatString": "0",
+            "lineageTag": "b93def36-cf8d-4371-8b29-6cc3112e5dee",
+            "summarizeBy": "sum",
+            "modifiedTime": "2022-05-30T18:52:23.2",
+            "structureModifiedTime": "2022-05-30T13:08:00.6",
+            "refreshedTime": "1699-12-31T00:00:00",
+            "attributeHierarchy": {
+              "state": "ready",
+              "modifiedTime": "2022-05-30T19:16:35.093333",
+              "refreshedTime": "2022-05-30T19:16:35.093333"
+            },
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic",
+                "modifiedTime": "2022-05-30T13:08:00.6"
+              }
+            ]
+          },
+          {
+            "name": "Cod Elemento Despesa Orcamento",
+            "dataType": "int64",
+            "sourceColumn": "Cod Elemento Despesa Orcamento",
+            "formatString": "0",
+            "lineageTag": "a2152099-832e-4382-8c5b-60cfb37da7d0",
+            "summarizeBy": "sum",
+            "modifiedTime": "2022-05-30T18:52:23.226667",
+            "structureModifiedTime": "2022-05-30T13:08:00.6",
+            "refreshedTime": "1699-12-31T00:00:00",
+            "attributeHierarchy": {
+              "state": "ready",
+              "modifiedTime": "2022-05-30T19:16:35.093333",
+              "refreshedTime": "2022-05-30T19:16:35.093333"
+            },
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic",
+                "modifiedTime": "2022-05-30T13:08:00.6"
+              }
+            ]
+          },
+          {
+            "name": "Cod Sub Elemento Despesa",
+            "dataType": "int64",
+            "sourceColumn": "Cod Sub Elemento Despesa",
+            "formatString": "0",
+            "lineageTag": "3d7851a6-142e-4a2b-a8e9-6d27da5b7f59",
+            "summarizeBy": "sum",
+            "modifiedTime": "2022-05-30T18:52:23.26",
+            "structureModifiedTime": "2022-05-30T13:08:00.6",
+            "refreshedTime": "1699-12-31T00:00:00",
+            "attributeHierarchy": {
+              "state": "ready",
+              "modifiedTime": "2022-05-30T19:16:35.093333",
+              "refreshedTime": "2022-05-30T19:16:35.093333"
+            },
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic",
+                "modifiedTime": "2022-05-30T13:08:00.6"
+              }
+            ]
+          },
+          {
+            "name": "Cod Destinacao Recurso",
+            "dataType": "string",
+            "sourceColumn": "Cod Destinacao Recurso",
+            "lineageTag": "9bdee718-c91f-4c2c-8e34-be9af7f77b05",
+            "summarizeBy": "none",
+            "modifiedTime": "2022-05-30T18:52:23.286667",
+            "structureModifiedTime": "2022-05-30T13:08:00.6",
+            "refreshedTime": "1699-12-31T00:00:00",
+            "attributeHierarchy": {
+              "state": "ready",
+              "modifiedTime": "2022-05-30T19:16:35.14",
+              "refreshedTime": "2022-05-30T19:16:35.14"
+            },
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic",
+                "modifiedTime": "2022-05-30T13:08:00.6"
+              },
+              {
+                "name": "PBI_ChangedProperties",
+                "value": {
+                  "__powerbi-vcs-embedded-json__": [
+                    "DataType"
+                  ]
+                },
+                "modifiedTime": "2022-05-30T17:08:42.443333"
+              }
+            ]
+          },
+          {
+            "name": "Cod Tipo Recurso Orcamento",
+            "dataType": "int64",
+            "sourceColumn": "Cod Tipo Recurso Orcamento",
+            "formatString": "0",
+            "lineageTag": "21d46365-202f-46bb-bd41-e901401c1052",
+            "summarizeBy": "sum",
+            "modifiedTime": "2022-05-30T18:52:23.32",
+            "structureModifiedTime": "2022-05-30T13:08:00.6",
+            "refreshedTime": "1699-12-31T00:00:00",
+            "attributeHierarchy": {
+              "state": "ready",
+              "modifiedTime": "2022-05-30T19:16:35.093333",
+              "refreshedTime": "2022-05-30T19:16:35.093333"
+            },
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic",
+                "modifiedTime": "2022-05-30T13:08:00.6"
+              }
+            ]
+          },
+          {
+            "name": "Val Orçado Inicial",
+            "dataType": "double",
+            "sourceColumn": "Val Orçado Inicial",
+            "formatString": "0.00",
+            "lineageTag": "61f0968f-af8b-42f9-b9ea-53b0a7ac4607",
+            "summarizeBy": "sum",
+            "modifiedTime": "2022-05-30T18:52:23.35",
+            "structureModifiedTime": "2022-05-30T13:08:00.6",
+            "refreshedTime": "1699-12-31T00:00:00",
+            "attributeHierarchy": {
+              "state": "ready",
+              "modifiedTime": "2022-05-30T19:16:35.093333",
+              "refreshedTime": "2022-05-30T19:16:35.093333"
+            },
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic",
+                "modifiedTime": "2022-05-30T13:08:00.6"
+              },
+              {
+                "name": "PBI_ChangedProperties",
+                "value": {
+                  "__powerbi-vcs-embedded-json__": [
+                    "FormatString"
+                  ]
+                },
+                "modifiedTime": "2022-05-30T17:51:15.643333"
+              }
+            ]
+          },
+          {
+            "name": "Val Orçado Atual",
+            "dataType": "double",
+            "sourceColumn": "Val Orçado Atual",
+            "formatString": "0.00",
+            "lineageTag": "875de9d3-e131-4d3d-aa40-2b9469318e56",
+            "summarizeBy": "sum",
+            "modifiedTime": "2022-05-30T18:52:23.383333",
+            "structureModifiedTime": "2022-05-30T13:08:00.6",
+            "refreshedTime": "1699-12-31T00:00:00",
+            "attributeHierarchy": {
+              "state": "ready",
+              "modifiedTime": "2022-05-30T19:16:35.143333",
+              "refreshedTime": "2022-05-30T19:16:35.143333"
+            },
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic",
+                "modifiedTime": "2022-05-30T13:08:00.6"
+              },
+              {
+                "name": "PBI_ChangedProperties",
+                "value": {
+                  "__powerbi-vcs-embedded-json__": [
+                    "FormatString"
+                  ]
+                },
+                "modifiedTime": "2022-05-30T17:51:08.77"
+              }
+            ]
+          },
+          {
+            "name": "Val Empenhado Total",
+            "dataType": "double",
+            "sourceColumn": "Val Empenhado Total",
+            "formatString": "0.00",
+            "lineageTag": "04fb49d1-97fc-4619-8a0c-9cb3f7872eaa",
+            "summarizeBy": "sum",
+            "modifiedTime": "2022-05-30T18:52:23.413333",
+            "structureModifiedTime": "2022-05-30T13:08:00.6",
+            "refreshedTime": "1699-12-31T00:00:00",
+            "attributeHierarchy": {
+              "state": "ready",
+              "modifiedTime": "2022-05-30T19:16:35.203333",
+              "refreshedTime": "2022-05-30T19:16:35.203333"
+            },
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic",
+                "modifiedTime": "2022-05-30T13:08:00.6"
+              },
+              {
+                "name": "PBI_ChangedProperties",
+                "value": {
+                  "__powerbi-vcs-embedded-json__": [
+                    "FormatString"
+                  ]
+                },
+                "modifiedTime": "2022-05-30T17:50:52.496667"
+              }
+            ]
+          },
+          {
+            "name": "Val Liquidado Total",
+            "dataType": "double",
+            "sourceColumn": "Val Liquidado Total",
+            "formatString": "0.00",
+            "lineageTag": "746db4c3-a9a1-4f1a-b86a-80b58803a4ac",
+            "summarizeBy": "sum",
+            "modifiedTime": "2022-05-30T18:52:23.443333",
+            "structureModifiedTime": "2022-05-30T13:08:00.6",
+            "refreshedTime": "1699-12-31T00:00:00",
+            "attributeHierarchy": {
+              "state": "ready",
+              "modifiedTime": "2022-05-30T19:16:35.196667",
+              "refreshedTime": "2022-05-30T19:16:35.196667"
+            },
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic",
+                "modifiedTime": "2022-05-30T13:08:00.6"
+              },
+              {
+                "name": "PBI_ChangedProperties",
+                "value": {
+                  "__powerbi-vcs-embedded-json__": [
+                    "FormatString"
+                  ]
+                },
+                "modifiedTime": "2022-05-30T17:51:00.856667"
+              }
+            ]
+          },
+          {
+            "name": "Val Pago",
+            "dataType": "double",
+            "sourceColumn": "Val Pago",
+            "formatString": "0.00",
+            "lineageTag": "13738287-0149-417d-a8cc-18d2e0671be2",
+            "summarizeBy": "sum",
+            "modifiedTime": "2022-05-30T18:52:23.473333",
+            "structureModifiedTime": "2022-05-30T13:08:00.6",
+            "refreshedTime": "1699-12-31T00:00:00",
+            "attributeHierarchy": {
+              "state": "ready",
+              "modifiedTime": "2022-05-30T19:16:35.206667",
+              "refreshedTime": "2022-05-30T19:16:35.206667"
+            },
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic",
+                "modifiedTime": "2022-05-30T13:08:00.6"
+              },
+              {
+                "name": "PBI_ChangedProperties",
+                "value": {
+                  "__powerbi-vcs-embedded-json__": [
+                    "FormatString"
+                  ]
+                },
+                "modifiedTime": "2022-05-30T17:51:21.653333"
+              }
+            ]
+          },
+          {
+            "name": "Val Descentralização Recebida",
+            "dataType": "double",
+            "sourceColumn": "Val Descentralização Recebida",
+            "formatString": "0.00",
+            "lineageTag": "ea36ac15-dc10-4eca-8a01-e69256f676a8",
+            "summarizeBy": "sum",
+            "modifiedTime": "2022-05-30T18:52:23.506667",
+            "structureModifiedTime": "2022-05-30T13:08:00.6",
+            "refreshedTime": "1699-12-31T00:00:00",
+            "attributeHierarchy": {
+              "state": "ready",
+              "modifiedTime": "2022-05-30T19:16:35.103333",
+              "refreshedTime": "2022-05-30T19:16:35.103333"
+            },
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic",
+                "modifiedTime": "2022-05-30T13:08:00.6"
+              },
+              {
+                "name": "PBI_ChangedProperties",
+                "value": {
+                  "__powerbi-vcs-embedded-json__": [
+                    "FormatString"
+                  ]
+                },
+                "modifiedTime": "2022-05-30T17:50:40.95"
+              }
+            ]
+          },
+          {
+            "name": "Val Descentralização Concedida",
+            "dataType": "double",
+            "sourceColumn": "Val Descentralização Concedida",
+            "formatString": "0.00",
+            "lineageTag": "c6692c91-9b76-4f69-a7f7-e92688a0a132",
+            "summarizeBy": "sum",
+            "modifiedTime": "2022-05-30T18:52:23.546667",
+            "structureModifiedTime": "2022-05-30T13:08:00.6",
+            "refreshedTime": "1699-12-31T00:00:00",
+            "attributeHierarchy": {
+              "state": "ready",
+              "modifiedTime": "2022-05-30T19:16:35.106667",
+              "refreshedTime": "2022-05-30T19:16:35.106667"
+            },
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic",
+                "modifiedTime": "2022-05-30T13:08:00.6"
+              },
+              {
+                "name": "PBI_ChangedProperties",
+                "value": {
+                  "__powerbi-vcs-embedded-json__": [
+                    "FormatString"
+                  ]
+                },
+                "modifiedTime": "2022-05-30T17:50:27.976667"
+              }
+            ]
+          },
+          {
+            "name": "Natureza Despesa",
+            "dataType": "string",
+            "sourceColumn": "Natureza Despesa",
+            "lineageTag": "b807c6d2-f762-44a6-aeb7-637d6695b4af",
+            "summarizeBy": "none",
+            "modifiedTime": "2022-05-30T18:52:23.593333",
+            "structureModifiedTime": "2022-05-30T13:08:00.6",
+            "refreshedTime": "1699-12-31T00:00:00",
+            "attributeHierarchy": {
+              "state": "ready",
+              "modifiedTime": "2022-05-30T19:16:35.11",
+              "refreshedTime": "2022-05-30T19:16:35.11"
+            },
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic",
+                "modifiedTime": "2022-05-30T13:08:00.6"
+              },
+              {
+                "name": "PBI_ChangedProperties",
+                "value": {
+                  "__powerbi-vcs-embedded-json__": [
+                    "DataType"
+                  ]
+                },
+                "modifiedTime": "2022-05-30T17:09:25.456667"
+              }
+            ]
+          },
+          {
+            "name": "Grupo Fonte",
+            "dataType": "int64",
+            "sourceColumn": "Grupo Fonte",
+            "formatString": "0",
+            "lineageTag": "8f81d7c2-1132-4ae7-a553-99e82616d650",
+            "summarizeBy": "sum",
+            "modifiedTime": "2022-05-30T18:52:23.633333",
+            "structureModifiedTime": "2022-05-30T13:08:00.6",
+            "refreshedTime": "1699-12-31T00:00:00",
+            "attributeHierarchy": {
+              "state": "ready",
+              "modifiedTime": "2022-05-30T19:16:35.11",
+              "refreshedTime": "2022-05-30T19:16:35.11"
+            },
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic",
+                "modifiedTime": "2022-05-30T13:08:00.6"
+              }
+            ]
+          },
+          {
+            "name": "Especificação Fonte",
+            "dataType": "int64",
+            "sourceColumn": "Especificação Fonte",
+            "formatString": "0",
+            "lineageTag": "ad37cf60-a83d-453c-978a-9bc2cb386408",
+            "summarizeBy": "sum",
+            "modifiedTime": "2022-05-30T18:52:23.666667",
+            "structureModifiedTime": "2022-05-30T13:08:00.6",
+            "refreshedTime": "1699-12-31T00:00:00",
+            "attributeHierarchy": {
+              "state": "ready",
+              "modifiedTime": "2022-05-30T19:16:35.11",
+              "refreshedTime": "2022-05-30T19:16:35.11"
+            },
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic",
+                "modifiedTime": "2022-05-30T13:08:00.6"
+              }
+            ]
+          },
+          {
+            "name": "Nome Destinação Recurso",
+            "dataType": "string",
+            "sourceColumn": "Nome Destinação Recurso",
+            "lineageTag": "d187e401-89f1-47cc-8c7d-732027030344",
+            "summarizeBy": "none",
+            "modifiedTime": "2022-05-30T18:52:23.7",
+            "structureModifiedTime": "2022-05-30T13:08:00.6",
+            "refreshedTime": "1699-12-31T00:00:00",
+            "attributeHierarchy": {
+              "state": "ready",
+              "modifiedTime": "2022-05-30T19:16:35.133333",
+              "refreshedTime": "2022-05-30T19:16:35.133333"
+            },
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic",
+                "modifiedTime": "2022-05-30T13:08:00.6"
+              }
+            ]
+          },
+          {
+            "name": "Cod Identificador de Uso",
+            "dataType": "int64",
+            "sourceColumn": "Cod Identificador de Uso",
+            "formatString": "0",
+            "lineageTag": "7e4bece9-2f13-4dbc-ac90-dead1fd7914c",
+            "summarizeBy": "sum",
+            "modifiedTime": "2022-05-30T18:52:23.75",
+            "structureModifiedTime": "2022-05-30T13:08:00.6",
+            "refreshedTime": "1699-12-31T00:00:00",
+            "attributeHierarchy": {
+              "state": "ready",
+              "modifiedTime": "2022-05-30T19:16:35.123333",
+              "refreshedTime": "2022-05-30T19:16:35.123333"
+            },
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic",
+                "modifiedTime": "2022-05-30T13:08:00.6"
+              }
+            ]
+          },
+          {
+            "name": "Cod Fonte Recurso",
+            "dataType": "int64",
+            "sourceColumn": "Cod Fonte Recurso",
+            "formatString": "0",
+            "lineageTag": "cf944cc3-8d1e-4b6f-a27d-73c4eb90e76d",
+            "summarizeBy": "sum",
+            "modifiedTime": "2022-05-30T18:52:23.78",
+            "structureModifiedTime": "2022-05-30T13:08:00.6",
+            "refreshedTime": "1699-12-31T00:00:00",
+            "attributeHierarchy": {
+              "state": "ready",
+              "modifiedTime": "2022-05-30T19:16:35.123333",
+              "refreshedTime": "2022-05-30T19:16:35.123333"
+            },
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic",
+                "modifiedTime": "2022-05-30T13:08:00.6"
+              }
+            ]
+          },
+          {
+            "name": "Cod Subfonte Recurso",
+            "dataType": "int64",
+            "sourceColumn": "Cod Subfonte Recurso",
+            "formatString": "0",
+            "lineageTag": "9c0e1249-1bba-4d00-b9cb-0ba451a0f4c8",
+            "summarizeBy": "sum",
+            "modifiedTime": "2022-05-30T18:52:23.816667",
+            "structureModifiedTime": "2022-05-30T13:08:00.6",
+            "refreshedTime": "1699-12-31T00:00:00",
+            "attributeHierarchy": {
+              "state": "ready",
+              "modifiedTime": "2022-05-30T19:16:35.123333",
+              "refreshedTime": "2022-05-30T19:16:35.123333"
+            },
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic",
+                "modifiedTime": "2022-05-30T13:08:00.6"
+              }
+            ]
+          },
+          {
+            "name": "Cod Unidade Gestora Sicof",
+            "dataType": "int64",
+            "sourceColumn": "Cod Unidade Gestora Sicof",
+            "formatString": "0",
+            "lineageTag": "1908d522-0fd4-428a-b3ac-18b8315c2bc3",
+            "summarizeBy": "sum",
+            "modifiedTime": "2022-05-30T18:52:23.87",
+            "structureModifiedTime": "2022-05-30T13:08:00.6",
+            "refreshedTime": "1699-12-31T00:00:00",
+            "attributeHierarchy": {
+              "state": "ready",
+              "modifiedTime": "2022-05-30T19:16:35.123333",
+              "refreshedTime": "2022-05-30T19:16:35.123333"
+            },
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic",
+                "modifiedTime": "2022-05-30T13:08:00.6"
+              }
+            ]
+          },
+          {
+            "name": "Nome Unidade Gestora",
+            "dataType": "string",
+            "sourceColumn": "Nome Unidade Gestora",
+            "lineageTag": "f41ea141-669c-4563-9c43-e9125a229e07",
+            "summarizeBy": "none",
+            "modifiedTime": "2022-05-30T18:52:23.903333",
+            "structureModifiedTime": "2022-05-30T13:08:00.6",
+            "refreshedTime": "1699-12-31T00:00:00",
+            "attributeHierarchy": {
+              "state": "ready",
+              "modifiedTime": "2022-05-30T19:16:35.13",
+              "refreshedTime": "2022-05-30T19:16:35.13"
+            },
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic",
+                "modifiedTime": "2022-05-30T13:08:00.6"
+              }
+            ]
+          },
+          {
+            "name": "Nome Resumido Unidade Gestora",
+            "dataType": "string",
+            "sourceColumn": "Nome Resumido Unidade Gestora",
+            "lineageTag": "98433aa1-56b0-4587-85b7-da1f050ab3b8",
+            "summarizeBy": "none",
+            "modifiedTime": "2022-05-30T18:52:23.936667",
+            "structureModifiedTime": "2022-05-30T13:08:00.6",
+            "refreshedTime": "1699-12-31T00:00:00",
+            "attributeHierarchy": {
+              "state": "ready",
+              "modifiedTime": "2022-05-30T19:16:35.13",
+              "refreshedTime": "2022-05-30T19:16:35.13"
+            },
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic",
+                "modifiedTime": "2022-05-30T13:08:00.6"
+              }
+            ]
+          },
+          {
+            "name": "Cod Unidade SIRH",
+            "dataType": "int64",
+            "sourceColumn": "Cod Unidade SIRH",
+            "formatString": "0",
+            "lineageTag": "40279ec1-3473-452e-92e2-c78e42d641f8",
+            "summarizeBy": "sum",
+            "modifiedTime": "2022-05-30T18:52:23.966667",
+            "structureModifiedTime": "2022-05-30T13:08:00.6",
+            "refreshedTime": "1699-12-31T00:00:00",
+            "attributeHierarchy": {
+              "state": "ready",
+              "modifiedTime": "2022-05-30T19:16:35.13",
+              "refreshedTime": "2022-05-30T19:16:35.13"
+            },
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic",
+                "modifiedTime": "2022-05-30T13:08:00.6"
+              }
+            ]
+          },
+          {
+            "name": "Num Base CNPJ",
+            "dataType": "string",
+            "sourceColumn": "Num Base CNPJ",
+            "lineageTag": "69f51e1f-44a8-4c84-98d4-55ee4b4a9fd7",
+            "summarizeBy": "none",
+            "modifiedTime": "2022-05-30T18:52:24",
+            "structureModifiedTime": "2022-05-30T13:08:00.6",
+            "refreshedTime": "1699-12-31T00:00:00",
+            "attributeHierarchy": {
+              "state": "ready",
+              "modifiedTime": "2022-05-30T19:16:35.13",
+              "refreshedTime": "2022-05-30T19:16:35.13"
+            },
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic",
+                "modifiedTime": "2022-05-30T13:08:00.6"
+              },
+              {
+                "name": "PBI_ChangedProperties",
+                "value": {
+                  "__powerbi-vcs-embedded-json__": [
+                    "DataType"
+                  ]
+                },
+                "modifiedTime": "2022-05-30T17:21:44.456667"
+              }
+            ]
+          },
+          {
+            "name": "Num Filial CNPJ",
+            "dataType": "string",
+            "sourceColumn": "Num Filial CNPJ",
+            "lineageTag": "bbaed4b5-1693-46c5-9721-22f387d8be7a",
+            "summarizeBy": "none",
+            "modifiedTime": "2022-05-30T18:52:24.033333",
+            "structureModifiedTime": "2022-05-30T13:08:00.6",
+            "refreshedTime": "1699-12-31T00:00:00",
+            "attributeHierarchy": {
+              "state": "ready",
+              "modifiedTime": "2022-05-30T19:16:35.13",
+              "refreshedTime": "2022-05-30T19:16:35.13"
+            },
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic",
+                "modifiedTime": "2022-05-30T13:08:00.6"
+              },
+              {
+                "name": "PBI_ChangedProperties",
+                "value": {
+                  "__powerbi-vcs-embedded-json__": [
+                    "DataType"
+                  ]
+                },
+                "modifiedTime": "2022-05-30T17:22:00.726667"
+              }
+            ]
+          },
+          {
+            "name": "Num Digito CNPJ",
+            "dataType": "string",
+            "sourceColumn": "Num Digito CNPJ",
+            "lineageTag": "216cc9ec-e989-49e5-abc9-d158e44238c7",
+            "summarizeBy": "none",
+            "modifiedTime": "2022-05-30T18:52:24.07",
+            "structureModifiedTime": "2022-05-30T13:08:00.6",
+            "refreshedTime": "1699-12-31T00:00:00",
+            "attributeHierarchy": {
+              "state": "ready",
+              "modifiedTime": "2022-05-30T19:16:35.13",
+              "refreshedTime": "2022-05-30T19:16:35.13"
+            },
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic",
+                "modifiedTime": "2022-05-30T13:08:00.6"
+              },
+              {
+                "name": "PBI_ChangedProperties",
+                "value": {
+                  "__powerbi-vcs-embedded-json__": [
+                    "DataType"
+                  ]
+                },
+                "modifiedTime": "2022-05-30T17:21:52.553333"
+              }
+            ]
+          },
+          {
+            "name": "Ind Processo Extincao",
+            "dataType": "int64",
+            "sourceColumn": "Ind Processo Extincao",
+            "formatString": "0",
+            "lineageTag": "30ba93c5-062a-47b5-9472-b6e339158f48",
+            "summarizeBy": "sum",
+            "modifiedTime": "2022-05-30T18:52:24.103333",
+            "structureModifiedTime": "2022-05-30T13:08:00.6",
+            "refreshedTime": "1699-12-31T00:00:00",
+            "attributeHierarchy": {
+              "state": "ready",
+              "modifiedTime": "2022-05-30T19:16:35.13",
+              "refreshedTime": "2022-05-30T19:16:35.13"
+            },
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic",
+                "modifiedTime": "2022-05-30T13:08:00.6"
+              }
+            ]
+          },
+          {
+            "name": "Ind Integracao Folha Pagamento",
+            "dataType": "int64",
+            "sourceColumn": "Ind Integracao Folha Pagamento",
+            "formatString": "0",
+            "lineageTag": "291c95c1-da82-4592-9606-ea46e03f083f",
+            "summarizeBy": "sum",
+            "modifiedTime": "2022-05-30T18:52:24.133333",
+            "structureModifiedTime": "2022-05-30T13:08:00.6",
+            "refreshedTime": "1699-12-31T00:00:00",
+            "attributeHierarchy": {
+              "state": "ready",
+              "modifiedTime": "2022-05-30T19:16:35.13",
+              "refreshedTime": "2022-05-30T19:16:35.13"
+            },
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic",
+                "modifiedTime": "2022-05-30T13:08:00.6"
+              }
+            ]
+          },
+          {
+            "name": "Nome Grupo Despesa Orcamento",
+            "dataType": "string",
+            "sourceColumn": "Nome Grupo Despesa Orcamento",
+            "lineageTag": "ec0542f1-1596-4511-96a5-8fece1480195",
+            "summarizeBy": "none",
+            "modifiedTime": "2022-05-30T18:52:24.166667",
+            "structureModifiedTime": "2022-05-30T13:08:00.6",
+            "refreshedTime": "1699-12-31T00:00:00",
+            "attributeHierarchy": {
+              "state": "ready",
+              "modifiedTime": "2022-05-30T19:16:35.13",
+              "refreshedTime": "2022-05-30T19:16:35.13"
+            },
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic",
+                "modifiedTime": "2022-05-30T13:08:00.6"
+              }
+            ]
+          },
+          {
+            "name": "Nome Resumido Grupo Despesa Orcamento",
+            "dataType": "string",
+            "sourceColumn": "Nome Resumido Grupo Despesa Orcamento",
+            "lineageTag": "1bd1035f-0b05-4f08-b4f0-4b113b5cc7bd",
+            "summarizeBy": "none",
+            "modifiedTime": "2022-05-30T18:52:24.2",
+            "structureModifiedTime": "2022-05-30T13:08:00.6",
+            "refreshedTime": "1699-12-31T00:00:00",
+            "attributeHierarchy": {
+              "state": "ready",
+              "modifiedTime": "2022-05-30T19:16:35.13",
+              "refreshedTime": "2022-05-30T19:16:35.13"
+            },
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic",
+                "modifiedTime": "2022-05-30T13:08:00.6"
+              }
+            ]
+          },
+          {
+            "name": "Ano Exercicio Elemento Despesa Orcamento",
+            "dataType": "int64",
+            "sourceColumn": "Ano Exercicio Elemento Despesa Orcamento",
+            "formatString": "0",
+            "lineageTag": "b7b5cb80-01a6-4c71-90f1-e188986be081",
+            "summarizeBy": "sum",
+            "modifiedTime": "2022-05-30T18:52:24.233333",
+            "structureModifiedTime": "2022-05-30T13:08:00.6",
+            "refreshedTime": "1699-12-31T00:00:00",
+            "attributeHierarchy": {
+              "state": "ready",
+              "modifiedTime": "2022-05-30T19:16:35.13",
+              "refreshedTime": "2022-05-30T19:16:35.13"
+            },
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic",
+                "modifiedTime": "2022-05-30T13:08:00.6"
+              }
+            ]
+          },
+          {
+            "name": "Nome Sub Elemento Despesa",
+            "dataType": "string",
+            "sourceColumn": "Nome Sub Elemento Despesa",
+            "lineageTag": "5de7caa4-b7a7-48d8-bc36-26d168ffe313",
+            "summarizeBy": "none",
+            "modifiedTime": "2022-05-30T18:52:24.266667",
+            "structureModifiedTime": "2022-05-30T13:08:00.6",
+            "refreshedTime": "1699-12-31T00:00:00",
+            "attributeHierarchy": {
+              "state": "ready",
+              "modifiedTime": "2022-05-30T19:16:35.13",
+              "refreshedTime": "2022-05-30T19:16:35.13"
+            },
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic",
+                "modifiedTime": "2022-05-30T13:08:00.6"
+              }
+            ]
+          },
+          {
+            "name": "Nome Resumido Sub Elemento Despesa",
+            "dataType": "string",
+            "sourceColumn": "Nome Resumido Sub Elemento Despesa",
+            "lineageTag": "7d7dd59b-aa52-4f8b-ad97-b3efdaa1c66b",
+            "summarizeBy": "none",
+            "modifiedTime": "2022-05-30T18:52:24.3",
+            "structureModifiedTime": "2022-05-30T13:08:00.6",
+            "refreshedTime": "1699-12-31T00:00:00",
+            "attributeHierarchy": {
+              "state": "ready",
+              "modifiedTime": "2022-05-30T19:16:35.13",
+              "refreshedTime": "2022-05-30T19:16:35.13"
+            },
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic",
+                "modifiedTime": "2022-05-30T13:08:00.6"
+              }
+            ]
+          },
+          {
+            "name": "Ind Detalhe Unid Custo",
+            "dataType": "int64",
+            "sourceColumn": "Ind Detalhe Unid Custo",
+            "formatString": "0",
+            "lineageTag": "2d05e50b-559a-4ef0-aab6-0d33b0085a17",
+            "summarizeBy": "sum",
+            "modifiedTime": "2022-05-30T18:52:24.336667",
+            "structureModifiedTime": "2022-05-30T13:08:00.6",
+            "refreshedTime": "1699-12-31T00:00:00",
+            "attributeHierarchy": {
+              "state": "ready",
+              "modifiedTime": "2022-05-30T19:16:35.13",
+              "refreshedTime": "2022-05-30T19:16:35.13"
+            },
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic",
+                "modifiedTime": "2022-05-30T13:08:00.6"
+              }
+            ]
+          },
+          {
+            "name": "Nome Unidade Orcamentária",
+            "dataType": "string",
+            "sourceColumn": "Nome Unidade Orcamentária",
+            "lineageTag": "0b7e9e1a-9447-4cba-8704-d6d2715547d8",
+            "summarizeBy": "none",
+            "modifiedTime": "2022-05-30T18:52:24.366667",
+            "structureModifiedTime": "2022-05-30T13:08:00.6",
+            "refreshedTime": "1699-12-31T00:00:00",
+            "attributeHierarchy": {
+              "state": "ready",
+              "modifiedTime": "2022-05-30T19:16:35.13",
+              "refreshedTime": "2022-05-30T19:16:35.13"
+            },
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic",
+                "modifiedTime": "2022-05-30T13:08:00.6"
+              }
+            ]
+          },
+          {
+            "name": "Nome Resumido Unidade Orcamentária",
+            "dataType": "string",
+            "sourceColumn": "Nome Resumido Unidade Orcamentária",
+            "lineageTag": "d6a6251e-d9a2-4ca8-93a7-ebf7f61b714d",
+            "summarizeBy": "none",
+            "modifiedTime": "2022-05-30T18:52:24.406667",
+            "structureModifiedTime": "2022-05-30T13:08:00.6",
+            "refreshedTime": "1699-12-31T00:00:00",
+            "attributeHierarchy": {
+              "state": "ready",
+              "modifiedTime": "2022-05-30T19:16:35.13",
+              "refreshedTime": "2022-05-30T19:16:35.13"
+            },
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic",
+                "modifiedTime": "2022-05-30T13:08:00.6"
+              }
+            ]
+          },
+          {
+            "name": "Cod Poder Orçamento",
+            "dataType": "int64",
+            "sourceColumn": "Cod Poder Orçamento",
+            "formatString": "0",
+            "lineageTag": "da7168a8-6e7b-4522-a067-5b1779c498e3",
+            "summarizeBy": "sum",
+            "modifiedTime": "2022-05-30T18:52:24.436667",
+            "structureModifiedTime": "2022-05-30T13:08:00.6",
+            "refreshedTime": "1699-12-31T00:00:00",
+            "attributeHierarchy": {
+              "state": "ready",
+              "modifiedTime": "2022-05-30T19:16:35.13",
+              "refreshedTime": "2022-05-30T19:16:35.13"
+            },
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic",
+                "modifiedTime": "2022-05-30T13:08:00.6"
+              }
+            ]
+          },
+          {
+            "name": "Nome Poder Orçamento",
+            "dataType": "string",
+            "sourceColumn": "Nome Poder Orçamento",
+            "lineageTag": "75936110-5a42-45eb-b625-5d91cfa6c68d",
+            "summarizeBy": "none",
+            "modifiedTime": "2022-05-30T18:52:24.47",
+            "structureModifiedTime": "2022-05-30T13:08:00.6",
+            "refreshedTime": "1699-12-31T00:00:00",
+            "attributeHierarchy": {
+              "state": "ready",
+              "modifiedTime": "2022-05-30T19:16:35.13",
+              "refreshedTime": "2022-05-30T19:16:35.13"
+            },
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic",
+                "modifiedTime": "2022-05-30T13:08:00.6"
+              }
+            ]
+          },
+          {
+            "name": "Cod Órgão Orçamento",
+            "dataType": "int64",
+            "sourceColumn": "Cod Órgão Orçamento",
+            "formatString": "0",
+            "lineageTag": "f424ab98-0070-4838-b6d5-aab14bbf1be5",
+            "summarizeBy": "sum",
+            "modifiedTime": "2022-05-30T18:52:24.506667",
+            "structureModifiedTime": "2022-05-30T13:08:00.6",
+            "refreshedTime": "1699-12-31T00:00:00",
+            "attributeHierarchy": {
+              "state": "ready",
+              "modifiedTime": "2022-05-30T19:16:35.13",
+              "refreshedTime": "2022-05-30T19:16:35.13"
+            },
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic",
+                "modifiedTime": "2022-05-30T13:08:00.6"
+              }
+            ]
+          },
+          {
+            "name": "Nome Órgão Orçamento",
+            "dataType": "string",
+            "sourceColumn": "Nome Órgão Orçamento",
+            "lineageTag": "7e0c5961-503a-4fe3-9b7a-94c83517dc31",
+            "summarizeBy": "none",
+            "modifiedTime": "2022-05-30T18:52:24.54",
+            "structureModifiedTime": "2022-05-30T13:08:00.6",
+            "refreshedTime": "1699-12-31T00:00:00",
+            "attributeHierarchy": {
+              "state": "ready",
+              "modifiedTime": "2022-05-30T19:16:35.13",
+              "refreshedTime": "2022-05-30T19:16:35.13"
+            },
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic",
+                "modifiedTime": "2022-05-30T13:08:00.6"
+              }
+            ]
+          },
+          {
+            "name": "Sigla Órgão Orçamento",
+            "dataType": "string",
+            "sourceColumn": "Sigla Órgão Orçamento",
+            "lineageTag": "d44eb47e-794d-4783-8f8c-60ea5a698440",
+            "summarizeBy": "none",
+            "modifiedTime": "2022-05-30T18:52:24.573333",
+            "structureModifiedTime": "2022-05-30T13:08:00.6",
+            "refreshedTime": "1699-12-31T00:00:00",
+            "attributeHierarchy": {
+              "state": "ready",
+              "modifiedTime": "2022-05-30T19:16:35.133333",
+              "refreshedTime": "2022-05-30T19:16:35.133333"
+            },
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic",
+                "modifiedTime": "2022-05-30T13:08:00.6"
+              }
+            ]
+          },
+          {
+            "name": "Cod Classif Unid Orcamentaria",
+            "dataType": "int64",
+            "sourceColumn": "Cod Classif Unid Orcamentaria",
+            "formatString": "0",
+            "lineageTag": "3b6be230-8f3b-49be-be16-784d757d5619",
+            "summarizeBy": "sum",
+            "modifiedTime": "2022-05-30T18:52:24.61",
+            "structureModifiedTime": "2022-05-30T13:08:00.6",
+            "refreshedTime": "1699-12-31T00:00:00",
+            "attributeHierarchy": {
+              "state": "ready",
+              "modifiedTime": "2022-05-30T19:16:35.133333",
+              "refreshedTime": "2022-05-30T19:16:35.133333"
+            },
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic",
+                "modifiedTime": "2022-05-30T13:08:00.6"
+              }
+            ]
+          },
+          {
+            "name": "Cod Tipo Administração",
+            "dataType": "int64",
+            "sourceColumn": "Cod Tipo Administração",
+            "formatString": "0",
+            "lineageTag": "82534e88-6fce-4966-bd42-324136d0f97d",
+            "summarizeBy": "sum",
+            "modifiedTime": "2022-05-30T18:52:24.646667",
+            "structureModifiedTime": "2022-05-30T13:08:00.6",
+            "refreshedTime": "1699-12-31T00:00:00",
+            "attributeHierarchy": {
+              "state": "ready",
+              "modifiedTime": "2022-05-30T19:16:35.133333",
+              "refreshedTime": "2022-05-30T19:16:35.133333"
+            },
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic",
+                "modifiedTime": "2022-05-30T13:08:00.6"
+              }
+            ]
+          },
+          {
+            "name": "Nome Ação Programa Governo",
+            "dataType": "string",
+            "sourceColumn": "Nome Ação Programa Governo",
+            "lineageTag": "72446aad-3fea-4087-a50f-8ec3eb5966c6",
+            "summarizeBy": "none",
+            "modifiedTime": "2022-05-30T18:52:24.683333",
+            "structureModifiedTime": "2022-05-30T13:08:00.6",
+            "refreshedTime": "1699-12-31T00:00:00",
+            "attributeHierarchy": {
+              "state": "ready",
+              "modifiedTime": "2022-05-30T19:16:35.133333",
+              "refreshedTime": "2022-05-30T19:16:35.133333"
+            },
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic",
+                "modifiedTime": "2022-05-30T13:08:00.6"
+              }
+            ]
+          },
+          {
+            "name": "Nome Categoria Economica",
+            "dataType": "string",
+            "sourceColumn": "Nome Categoria Economica",
+            "lineageTag": "16aab20f-653c-4777-992e-ad383cb89085",
+            "summarizeBy": "none",
+            "modifiedTime": "2022-05-30T18:52:24.72",
+            "structureModifiedTime": "2022-05-30T13:08:00.6",
+            "refreshedTime": "1699-12-31T00:00:00",
+            "attributeHierarchy": {
+              "state": "ready",
+              "modifiedTime": "2022-05-30T19:16:35.133333",
+              "refreshedTime": "2022-05-30T19:16:35.133333"
+            },
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic",
+                "modifiedTime": "2022-05-30T13:08:00.6"
+              }
+            ]
+          },
+          {
+            "name": "Nome Elemento Despesa Orçamento",
+            "dataType": "string",
+            "sourceColumn": "Nome Elemento Despesa Orçamento",
+            "lineageTag": "823e401e-b532-4b06-856d-778b6b8deda1",
+            "summarizeBy": "none",
+            "modifiedTime": "2022-05-30T18:52:24.75",
+            "structureModifiedTime": "2022-05-30T13:08:00.6",
+            "refreshedTime": "1699-12-31T00:00:00",
+            "attributeHierarchy": {
+              "state": "ready",
+              "modifiedTime": "2022-05-30T19:16:35.143333",
+              "refreshedTime": "2022-05-30T19:16:35.143333"
+            },
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic",
+                "modifiedTime": "2022-05-30T13:08:00.6"
+              }
+            ]
+          },
+          {
+            "name": "Nome Função Programa Governo",
+            "dataType": "string",
+            "sourceColumn": "Nome Função Programa Governo",
+            "lineageTag": "f36048e5-47ba-4c25-a922-d89644c861bd",
+            "summarizeBy": "none",
+            "modifiedTime": "2022-05-30T18:52:24.783333",
+            "structureModifiedTime": "2022-05-30T13:08:00.6",
+            "refreshedTime": "1699-12-31T00:00:00",
+            "attributeHierarchy": {
+              "state": "ready",
+              "modifiedTime": "2022-05-30T19:16:35.133333",
+              "refreshedTime": "2022-05-30T19:16:35.133333"
+            },
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic",
+                "modifiedTime": "2022-05-30T13:08:00.6"
+              }
+            ]
+          },
+          {
+            "name": "Nome  Identificador Uso",
+            "dataType": "string",
+            "sourceColumn": "Nome  Identificador Uso",
+            "lineageTag": "f1fdf587-1b63-4ca0-9c89-d2bb44d099ee",
+            "summarizeBy": "none",
+            "modifiedTime": "2022-05-30T18:52:24.82",
+            "structureModifiedTime": "2022-05-30T13:08:00.6",
+            "refreshedTime": "1699-12-31T00:00:00",
+            "attributeHierarchy": {
+              "state": "ready",
+              "modifiedTime": "2022-05-30T19:16:35.133333",
+              "refreshedTime": "2022-05-30T19:16:35.133333"
+            },
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic",
+                "modifiedTime": "2022-05-30T13:08:00.6"
+              }
+            ]
+          },
+          {
+            "name": "Nome Modalidade Aplicação Orcam",
+            "dataType": "string",
+            "sourceColumn": "Nome Modalidade Aplicação Orcam",
+            "lineageTag": "f1303ee6-6ef6-4406-b2b6-089c2b3ae370",
+            "summarizeBy": "none",
+            "modifiedTime": "2022-05-30T18:52:24.856667",
+            "structureModifiedTime": "2022-05-30T13:08:00.6",
+            "refreshedTime": "1699-12-31T00:00:00",
+            "attributeHierarchy": {
+              "state": "ready",
+              "modifiedTime": "2022-05-30T19:16:35.133333",
+              "refreshedTime": "2022-05-30T19:16:35.133333"
+            },
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic",
+                "modifiedTime": "2022-05-30T13:08:00.6"
+              }
+            ]
+          },
+          {
+            "name": "Nome Programa Governo",
+            "dataType": "string",
+            "sourceColumn": "Nome Programa Governo",
+            "lineageTag": "2273bda8-b69d-4139-b614-7272e23fbce8",
+            "summarizeBy": "none",
+            "modifiedTime": "2022-05-30T18:52:24.89",
+            "structureModifiedTime": "2022-05-30T13:08:00.6",
+            "refreshedTime": "1699-12-31T00:00:00",
+            "attributeHierarchy": {
+              "state": "ready",
+              "modifiedTime": "2022-05-30T19:16:35.133333",
+              "refreshedTime": "2022-05-30T19:16:35.133333"
+            },
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic",
+                "modifiedTime": "2022-05-30T13:08:00.6"
+              }
+            ]
+          },
+          {
+            "name": "Nome Região Orçamento",
+            "dataType": "string",
+            "sourceColumn": "Nome Região Orçamento",
+            "lineageTag": "c2279407-132f-4d31-ac4c-bcc8ccf4aa86",
+            "summarizeBy": "none",
+            "modifiedTime": "2022-05-30T18:52:24.926667",
+            "structureModifiedTime": "2022-05-30T13:08:00.6",
+            "refreshedTime": "1699-12-31T00:00:00",
+            "attributeHierarchy": {
+              "state": "ready",
+              "modifiedTime": "2022-05-30T19:16:35.133333",
+              "refreshedTime": "2022-05-30T19:16:35.133333"
+            },
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic",
+                "modifiedTime": "2022-05-30T13:08:00.6"
+              }
+            ]
+          },
+          {
+            "name": "Nome Subfonte Recurso",
+            "dataType": "string",
+            "sourceColumn": "Nome Subfonte Recurso",
+            "lineageTag": "7eeec76e-b572-4ba1-b28c-621eb5ff0559",
+            "summarizeBy": "none",
+            "modifiedTime": "2022-05-30T18:52:24.963333",
+            "structureModifiedTime": "2022-05-30T13:08:00.6",
+            "refreshedTime": "1699-12-31T00:00:00",
+            "attributeHierarchy": {
+              "state": "ready",
+              "modifiedTime": "2022-05-30T19:16:35.136667",
+              "refreshedTime": "2022-05-30T19:16:35.136667"
+            },
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic",
+                "modifiedTime": "2022-05-30T13:08:00.6"
+              }
+            ]
+          },
+          {
+            "name": "Nome Sub Funcao Programa Gov",
+            "dataType": "string",
+            "sourceColumn": "Nome Sub Funcao Programa Gov",
+            "lineageTag": "60dac47e-e4b1-4570-bcd1-856b8c6a3f4f",
+            "summarizeBy": "none",
+            "modifiedTime": "2022-05-30T18:52:25.016667",
+            "structureModifiedTime": "2022-05-30T13:08:00.6",
+            "refreshedTime": "1699-12-31T00:00:00",
+            "attributeHierarchy": {
+              "state": "ready",
+              "modifiedTime": "2022-05-30T19:16:35.136667",
+              "refreshedTime": "2022-05-30T19:16:35.136667"
+            },
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic",
+                "modifiedTime": "2022-05-30T13:08:00.6"
+              }
+            ]
+          },
+          {
+            "name": "Nome Tipo Administração",
+            "dataType": "string",
+            "sourceColumn": "Nome Tipo Administração",
+            "lineageTag": "aba6513b-180a-4d91-a065-1984850943a9",
+            "summarizeBy": "none",
+            "modifiedTime": "2022-05-30T18:52:25.056667",
+            "structureModifiedTime": "2022-05-30T13:08:00.6",
+            "refreshedTime": "1699-12-31T00:00:00",
+            "attributeHierarchy": {
+              "state": "ready",
+              "modifiedTime": "2022-05-30T19:16:35.136667",
+              "refreshedTime": "2022-05-30T19:16:35.136667"
+            },
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic",
+                "modifiedTime": "2022-05-30T13:08:00.6"
+              }
+            ]
+          },
+          {
+            "name": "Cod Classificação Ação",
+            "dataType": "int64",
+            "sourceColumn": "Cod Classificação Ação",
+            "formatString": "0",
+            "lineageTag": "7a9805d1-40de-467e-abaa-f9d205a28493",
+            "summarizeBy": "sum",
+            "modifiedTime": "2022-05-30T18:52:25.093333",
+            "structureModifiedTime": "2022-05-30T13:08:00.6",
+            "refreshedTime": "1699-12-31T00:00:00",
+            "attributeHierarchy": {
+              "state": "ready",
+              "modifiedTime": "2022-05-30T19:16:35.136667",
+              "refreshedTime": "2022-05-30T19:16:35.136667"
+            },
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic",
+                "modifiedTime": "2022-05-30T13:08:00.6"
+              }
+            ]
+          },
+          {
+            "name": "Nome Classificação Ação",
+            "dataType": "string",
+            "sourceColumn": "Nome Classificação Ação",
+            "lineageTag": "28112654-5986-46bd-99c3-ae93d637c010",
+            "summarizeBy": "none",
+            "modifiedTime": "2022-05-30T18:52:25.126667",
+            "structureModifiedTime": "2022-05-30T13:08:00.6",
+            "refreshedTime": "1699-12-31T00:00:00",
+            "attributeHierarchy": {
+              "state": "ready",
+              "modifiedTime": "2022-05-30T19:16:35.136667",
+              "refreshedTime": "2022-05-30T19:16:35.136667"
+            },
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic",
+                "modifiedTime": "2022-05-30T13:08:00.6"
+              }
+            ]
+          },
+          {
+            "name": "CNPJ Formatado",
+            "dataType": "string",
+            "sourceColumn": "CNPJ Formatado",
+            "lineageTag": "0bef619b-c63b-4d2c-9c01-3c06b14bdad8",
+            "summarizeBy": "none",
+            "modifiedTime": "2022-05-30T18:52:25.23",
+            "structureModifiedTime": "2022-05-30T18:52:25.166667",
+            "refreshedTime": "1699-12-31T00:00:00",
+            "attributeHierarchy": {
+              "state": "ready",
+              "modifiedTime": "2022-05-30T19:16:35.136667",
+              "refreshedTime": "2022-05-30T19:16:35.136667"
+            },
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic",
+                "modifiedTime": "2022-05-30T18:52:25.173333"
+              }
+            ]
+          }
+        ],
+        "partitions": [
+          {
+            "name": "Despesa-fb1f9ae1-757b-4c95-9315-b35b6dc8e093",
+            "mode": "import",
+            "state": "ready",
+            "modifiedTime": "2022-06-26T16:32:07.81",
+            "refreshedTime": "2022-05-30T19:16:34.96",
+            "source": {
+              "type": "m",
+              "expression": "let\n    Fonte = Sql.Database(\"PCORPORATIVO\\BDP_CORPORATIVO\", \"bd_bdce_fiplan\", [Query=\"SELECT#(lf)#(lf)#(lf)#(lf)/* Fonte despesa_contabil_mensal */#(lf)despesa_contabil_mensal.ano_exercicio AS ano_exercicio,#(lf)cast(cast(despesa_contabil_mensal.ano_exercicio as char(4)) + '-' +cast(despesa_contabil_mensal.mes_despesa_contabil_mensal as char(2))+'-1' as date) AS exercicio,#(lf)--input('01'||'/'||put(,z2.)||'/'||put(, 4.), ddmmyy10.) length=8 format=DDMMYY10. label='Exercício' AS exercicio,#(lf)despesa_contabil_mensal.num_cta_dotac_orcam_anual AS num_cta_dotac_orcam_anual,#(lf)despesa_contabil_mensal.cod_unidade_orcamentaria AS cod_unidade_orcamentaria,#(lf)despesa_contabil_mensal.cod_unidade_gestora AS cod_unidade_gestora,#(lf)despesa_contabil_mensal.cod_unidade_orcamentaria_exec AS cod_unidade_orcamentaria_exec,#(lf)despesa_contabil_mensal.cod_unidade_gestora_exec AS cod_unidade_gestora_exec,#(lf)despesa_contabil_mensal.cod_funcao_programa_gov AS cod_funcao_programa_gov,#(lf)despesa_contabil_mensal.cod_sub_funcao_programa_gov AS cod_sub_funcao_programa_gov,#(lf)despesa_contabil_mensal.cod_programa_governo AS cod_programa_governo,#(lf)despesa_contabil_mensal.cod_acao_programa_gov AS cod_acao_programa_gov,#(lf)despesa_contabil_mensal.cod_regiao_orcamento AS cod_regiao_orcamento,#(lf)despesa_contabil_mensal.cod_categoria_economica_orcam AS cod_categoria_economica_orcam,#(lf)despesa_contabil_mensal.cod_modalidade_aplicacao_orcam AS cod_modalidade_aplicacao_orcam,#(lf)despesa_contabil_mensal.cod_grupo_despesa_orcamento AS cod_grupo_despesa_orcamento,#(lf)despesa_contabil_mensal.cod_elemento_despesa_orcamento AS cod_elemento_despesa_orcamento,#(lf)despesa_contabil_mensal.cod_sub_elemento_despesa AS cod_sub_elemento_despesa,#(lf)despesa_contabil_mensal.cod_destinacao_recurso AS cod_destinacao_recurso,#(lf)despesa_contabil_mensal.cod_tipo_recurso_orcamento AS cod_tipo_recurso_orcamento,#(lf)despesa_contabil_mensal.val_orcado_inicial AS val_orcado_inicial,#(lf)despesa_contabil_mensal.val_orcado_atual AS val_orcado_atual,#(lf)despesa_contabil_mensal.val_empenhado_total AS val_empenhado_total,#(lf)despesa_contabil_mensal.val_liquidado_total AS val_liquidado_total,#(lf)despesa_contabil_mensal.val_pago AS val_pago,#(lf)despesa_contabil_mensal.val_descentralizacao_recebida AS val_descentralizacao_recebida,#(lf)despesa_contabil_mensal.val_descentralizacao_concedida AS val_descentralizacao_concedida,#(lf)cast(SUBSTRing(despesa_contabil_mensal.num_cta_dotac_orcam_anual, 26, 8) as int) AS natureza_despesa,#(lf)cast(SUBSTRing(despesa_contabil_mensal.num_cta_dotac_orcam_anual, 35, 1) as tinyint) AS grupo_fonte,#(lf)cast(SUBSTRing(despesa_contabil_mensal.num_cta_dotac_orcam_anual, 36, 2) as tinyint) AS especificacao_fonte,#(lf)#(lf)/* Fonte destinacao_recurso */#(lf)destinacao_recurso.nom_destinacao_recurso AS nom_destinacao_recurso,#(lf)destinacao_recurso.cod_identificador_uso AS cod_identificador_uso,#(lf)destinacao_recurso.cod_fonte_recurso AS cod_fonte_recurso,#(lf)destinacao_recurso.cod_subfonte_recurso AS cod_subfonte_recurso,#(lf)#(lf)#(lf)#(lf)/* Fonte vw_unidade_gestora */#(lf)vw_unidade_gestora.cod_unidade_gestora_sicof AS cod_unidade_gestora_sicof,#(lf)vw_unidade_gestora.nom_unidade_gestora AS nom_unidade_gestora,#(lf)vw_unidade_gestora.nom_res_unidade_gestora AS nom_res_unidade_gestora,#(lf)vw_unidade_gestora.cod_unidade_sirh AS cod_unidade_sirh,#(lf)vw_unidade_gestora.num_base_cnpj AS num_base_cnpj,#(lf)vw_unidade_gestora.num_filial_cnpj AS num_filial_cnpj,#(lf)vw_unidade_gestora.num_dig_cnpj AS num_dig_cnpj,#(lf)cast(vw_unidade_gestora.num_base_cnpj as char(8)) + '/' + RIGHT('000' + rtrim(ltrim(cast(vw_unidade_gestora.num_filial_cnpj as char(4)))),4) + '-' + cast(vw_unidade_gestora.num_dig_cnpj as char(2)) as cnpj_unidade_gestora,#(lf)vw_unidade_gestora.ind_processo_extincao AS ind_processo_extincao,#(lf)vw_unidade_gestora.ind_integracao_folha_pagamento AS ind_integracao_folha_pagamento,#(lf)#(lf)#(lf)#(lf)/* Fonte vw_grupo_despesa_orcamento */#(lf)vw_grupo_despesa_orcamento.nom_grupo_despesa_orcamento AS nom_grupo_despesa_orcamento,#(lf)vw_grupo_despesa_orcamento.nom_res_grupo_despesa_orcam AS nom_res_grupo_despesa_orcam,#(lf)#(lf)/* Fonte vw_sub_elemento_despesa */#(lf)vw_sub_elemento_despesa.ano_exercicio_elem_desp_orcam AS ano_exercicio_elem_desp_orcam,#(lf)vw_sub_elemento_despesa.nom_sub_elemento_despesa AS nom_sub_elemento_despesa,#(lf)vw_sub_elemento_despesa.nom_res_sub_elemento_despesa AS nom_res_sub_elemento_despesa,#(lf)vw_sub_elemento_despesa.ind_detalhe_unid_custo AS ind_detalhe_unid_custo,#(lf)#(lf)#(lf)#(lf)/* Fonte vw_unidade_orcamentaria */#(lf)vw_unidade_orcamentaria.nom_unidade_orcamentaria AS nom_unidade_orcamentaria,#(lf)vw_unidade_orcamentaria.nom_res_unidade_orcamentaria AS nom_res_unidade_orcamentaria,#(lf)vw_unidade_orcamentaria.cod_poder_orcamento AS cod_poder_orcamento,#(lf)#(lf)#(lf)#(lf)/* Fonte poder_orcamento */#(lf)poder_orcamento.nom_poder_orcamento AS nom_poder_orcamento,#(lf)#(lf)#(lf)#(lf)/* Fonte vw_unidade_orcamentaria */#(lf)vw_unidade_orcamentaria.cod_orgao_orcamento AS cod_orgao_orcamento,#(lf)#(lf)/* Fonte vw_orgao_orcamento */#(lf)vw_orgao_orcamento.nom_orgao_orcamento AS nom_orgao_orcamento,#(lf)vw_orgao_orcamento.sgl_orgao_orcamento AS sgl_orgao_orcamento,#(lf)#(lf)#(lf)#(lf)/* Fonte vw_unidade_orcamentaria */#(lf)vw_unidade_orcamentaria.cod_classif_unid_orcamentaria AS cod_classif_unid_orcamentaria,#(lf)vw_unidade_orcamentaria.cod_tipo_administracao AS cod_tipo_administracao,#(lf)#(lf)#(lf)#(lf)/* Fonte vw_acao_programa_gov */#(lf)vw_acao_programa_gov.nom_acao_programa_gov AS nom_acao_programa_gov,#(lf)#(lf)#(lf)#(lf)/* Fonte vw_categoria_economica_orcam */#(lf)vw_categoria_economica_orcam.nom_categoria_economica_orcam AS nom_categoria_economica_orcam,#(lf)#(lf)#(lf)#(lf)/* Fonte vw_elemento_despesa_orcamento */#(lf)vw_elemento_despesa_orcamento.nom_elemento_despesa_orcamento AS nom_elemento_despesa_orcamento,#(lf)#(lf)/* Fonte vw_funcao_programa_gov */#(lf)vw_funcao_programa_gov.nom_funcao_programa_gov AS nom_funcao_programa_gov,#(lf)#(lf)#(lf)#(lf)/* Fonte vw_identificador_uso */#(lf)vw_identificador_uso.nom_identificador_uso AS nom_identificador_uso,#(lf)#(lf)#(lf)#(lf)/* Fonte vw_modalidade_aplicacao_orcam*/#(lf)vw_modalidade_aplicacao_orcam.nom_modalidade_aplicacao_orcam AS nom_modalidade_aplicacao_orcam,#(lf)#(lf)#(lf)#(lf)/* Fonte vw_programa_governo */#(lf)vw_programa_governo.nom_programa_governo AS nom_programa_governo,#(lf)#(lf)#(lf)#(lf)/* Fonte vw_regiao_orcamento */#(lf)vw_regiao_orcamento.nom_regiao_orcamento AS nom_regiao_orcamento,#(lf)#(lf)#(lf)#(lf)/* Fonte vw_subfonte_recurso */#(lf)vw_subfonte_recurso.nom_subfonte_recurso AS nom_subfonte_recurso,#(lf)#(lf)#(lf)#(lf)/* Fonte vw_sub_funcao_programa_gov */#(lf)vw_sub_funcao_programa_gov.nom_sub_funcao_programa_gov AS nom_sub_funcao_programa_gov,#(lf)#(lf)#(lf)#(lf)/* Fonte tipo_administracao */#(lf)tipo_administracao.nom_tipo_administracao AS nom_tipo_administracao,#(lf)#(lf)#(lf)#(lf)/* Fonte classificacao_acao */#(lf)classificacao_acao.cod_classificacao_acao AS cod_classificacao_acao,#(lf)classificacao_acao.nom_classificacao_acao AS nom_classificacao_acao#(lf)#(lf)#(lf)#(lf)FROM despesa_contabil_mensal despesa_contabil_mensal#(lf)#(lf)#(lf)#(lf)LEFT JOIN destinacao_recurso destinacao_recurso ON despesa_contabil_mensal.cod_destinacao_recurso=destinacao_recurso.cod_destinacao_recurso#(lf)#(lf)#(lf)#(lf)LEFT JOIN vw_unidade_gestora vw_unidade_gestora ON despesa_contabil_mensal.ano_exercicio=vw_unidade_gestora.ano_exercicio#(lf)AND despesa_contabil_mensal.cod_unidade_gestora=vw_unidade_gestora.cod_unidade_gestora#(lf)AND despesa_contabil_mensal.cod_unidade_orcamentaria=vw_unidade_gestora#(lf).cod_unidade_orcamentaria#(lf)#(lf)#(lf)#(lf)LEFT JOIN vw_grupo_despesa_orcamento vw_grupo_despesa_orcamento ON despesa_contabil_mensal.cod_grupo_despesa_orcamento=vw_grupo_despesa_orcamento.cod_grupo_despesa_orcamento#(lf)AND despesa_contabil_mensal.ano_exercicio=vw_grupo_despesa_orcamento.ano_exercicio#(lf)#(lf)#(lf)#(lf)LEFT JOIN vw_sub_elemento_despesa vw_sub_elemento_despesa ON despesa_contabil_mensal.ano_exercicio=vw_sub_elemento_despesa.ano_exercicio#(lf)AND despesa_contabil_mensal.cod_sub_elemento_despesa=vw_sub_elemento_despesa.cod_sub_elemento_despesa#(lf)AND despesa_contabil_mensal.cod_elemento_despesa_orcamento=vw_sub_elemento_despesa.cod_elemento_despesa_orcamento#(lf)#(lf)#(lf)#(lf)LEFT JOIN vw_unidade_orcamentaria vw_unidade_orcamentaria ON despesa_contabil_mensal.cod_unidade_orcamentaria=vw_unidade_orcamentaria.cod_unidade_orcamentaria#(lf)AND despesa_contabil_mensal.ano_exercicio=vw_unidade_orcamentaria.ano_exercicio#(lf)#(lf)#(lf)#(lf)LEFT JOIN vw_orgao_orcamento vw_orgao_orcamento ON vw_unidade_orcamentaria.cod_orgao_orcamento=vw_orgao_orcamento.cod_orgao_orcamento#(lf)AND vw_unidade_orcamentaria.cod_poder_orcamento=vw_orgao_orcamento.cod_poder_orcamento#(lf)AND vw_unidade_orcamentaria.ano_exercicio=vw_orgao_orcamento.ano_exercicio#(lf)#(lf)#(lf)#(lf)LEFT JOIN poder_orcamento poder_orcamento ON vw_orgao_orcamento.cod_poder_orcamento=poder_orcamento.cod_poder_orcamento#(lf)#(lf)#(lf)#(lf)LEFT JOIN vw_acao_programa_gov vw_acao_programa_gov ON vw_acao_programa_gov.cod_acao_programa_gov=despesa_contabil_mensal.cod_acao_programa_gov#(lf)AND vw_acao_programa_gov.ano_exercicio=year(despesa_contabil_mensal.ano_exercicio)#(lf)#(lf)LEFT JOIN vw_categoria_economica_orcam vw_categoria_economica_orcam ON vw_categoria_economica_orcam.cod_categoria_economica_orcam=despesa_contabil_mensal.cod_categoria_economica_orcam#(lf)AND vw_categoria_economica_orcam.ano_exercicio=year(despesa_contabil_mensal.ano_exercicio)#(lf)#(lf)LEFT JOIN vw_elemento_despesa_orcamento vw_elemento_despesa_orcamento ON vw_elemento_despesa_orcamento.cod_elemento_despesa_orcamento=despesa_contabil_mensal.cod_elemento_despesa_orcamento#(lf)AND vw_elemento_despesa_orcamento.ano_exercicio=year(despesa_contabil_mensal.ano_exercicio)#(lf)#(lf)#(lf)LEFT JOIN vw_funcao_programa_gov vw_funcao_programa_gov ON vw_funcao_programa_gov.cod_funcao_programa_gov=despesa_contabil_mensal.cod_funcao_programa_gov#(lf)AND vw_funcao_programa_gov.ano_exercicio=year(despesa_contabil_mensal.ano_exercicio)#(lf)#(lf)LEFT JOIN vw_identificador_uso vw_identificador_uso ON vw_identificador_uso.cod_identificador_uso=destinacao_recurso.cod_identificador_uso#(lf)AND vw_identificador_uso.ano_exercicio=year(despesa_contabil_mensal.ano_exercicio)#(lf)#(lf)LEFT JOIN vw_modalidade_aplicacao_orcam vw_modalidade_aplicacao_orcam ON vw_modalidade_aplicacao_orcam.cod_modalidade_aplicacao_orcam=despesa_contabil_mensal.cod_modalidade_aplicacao_orcam#(lf)AND vw_modalidade_aplicacao_orcam.ano_exercicio=year(despesa_contabil_mensal.ano_exercicio)#(lf)#(lf)LEFT JOIN vw_programa_governo vw_programa_governo ON vw_programa_governo.cod_programa_governo=despesa_contabil_mensal.cod_programa_governo#(lf)AND vw_programa_governo.ano_exercicio=year(despesa_contabil_mensal.ano_exercicio)#(lf)#(lf)LEFT JOIN vw_regiao_orcamento vw_regiao_orcamento ON vw_regiao_orcamento.cod_regiao_orcamento=despesa_contabil_mensal.cod_regiao_orcamento#(lf)AND vw_regiao_orcamento.ano_exercicio=year(despesa_contabil_mensal.ano_exercicio)#(lf)#(lf)LEFT JOIN vw_subfonte_recurso vw_subfonte_recurso ON vw_subfonte_recurso.cod_subfonte_recurso=destinacao_recurso.cod_subfonte_recurso#(lf)AND vw_subfonte_recurso.ano_exercicio=year(despesa_contabil_mensal.ano_exercicio)#(lf)#(lf)LEFT JOIN vw_sub_funcao_programa_gov vw_sub_funcao_programa_gov ON vw_sub_funcao_programa_gov.cod_sub_funcao_programa_gov=despesa_contabil_mensal.cod_sub_funcao_programa_gov#(lf)AND vw_sub_funcao_programa_gov.ano_exercicio=year(despesa_contabil_mensal.ano_exercicio)#(lf)#(lf)#(lf)#(lf)LEFT JOIN tipo_administracao tipo_administracao ON tipo_administracao.cod_tipo_administracao=vw_unidade_orcamentaria.cod_tipo_administracao#(lf)#(lf)#(lf)#(lf)LEFT JOIN classificacao_acao classificacao_acao ON classificacao_acao.cod_classificacao_acao=vw_acao_programa_gov.cod_classificacao_acao#(lf)#(lf)#(lf)#(lf)WHERE despesa_contabil_mensal.ano_exercicio >=YEAR(getdate()) - 7\", CommandTimeout=#duration(0, 3, 0, 0)]),\n    #\"Colunas Renomeadas\" = Table.RenameColumns(Fonte,{{\"ano_exercicio\", \"Ano Exercicio\"}, {\"exercicio\", \"Exercicio\"}, {\"num_cta_dotac_orcam_anual\", \"Num conta dotação orcamentaria anual\"}, {\"cod_unidade_orcamentaria\", \"Cod Unidade Orcamentaria\"}, {\"cod_unidade_gestora\", \"Cod Unidade Gestora\"}, {\"cod_unidade_orcamentaria_exec\", \"Cod Unidade Orcamentaria Exercicio\"}, {\"cod_unidade_gestora_exec\", \"Cod Unidade Gestora Exercicio\"}, {\"cod_funcao_programa_gov\", \"Cod Função Programa Governo\"}, {\"cod_sub_funcao_programa_gov\", \"Cod Sub Função Programa Governo\"}, {\"cod_programa_governo\", \"Cod  Programa Governo\"}, {\"cod_acao_programa_gov\", \"Cod Ação Programa Governo\"}, {\"cod_regiao_orcamento\", \"Cód Região Orcamento\"}, {\"cod_categoria_economica_orcam\", \"Cod Categoria Economica Orcamento\"}, {\"cod_modalidade_aplicacao_orcam\", \"Cod Modalidade Aplicação Orcamento\"}, {\"cod_grupo_despesa_orcamento\", \"Cod Grupo Despesa Orcamento\"}, {\"cod_elemento_despesa_orcamento\", \"Cod Elemento Despesa Orcamento\"}, {\"cod_sub_elemento_despesa\", \"Cod Sub Elemento Despesa\"}, {\"cod_destinacao_recurso\", \"Cod Destinacao Recurso\"}, {\"cod_tipo_recurso_orcamento\", \"Cod Tipo Recurso Orcamento\"}, {\"val_orcado_inicial\", \"Val Orçado Inicial\"}, {\"val_orcado_atual\", \"Val Orçado Atual\"}, {\"val_empenhado_total\", \"Val Empenhado Total\"}, {\"val_liquidado_total\", \"Val Liquidado Total\"}, {\"val_pago\", \"Val Pago\"}, {\"val_descentralizacao_recebida\", \"Val Descentralização Recebida\"}, {\"val_descentralizacao_concedida\", \"Val Descentralização Concedida\"}, {\"natureza_despesa\", \"Natureza Despesa\"}, {\"grupo_fonte\", \"Grupo Fonte\"}, {\"especificacao_fonte\", \"Especificação Fonte\"}, {\"nom_destinacao_recurso\", \"Nome Destinação Recurso\"}, {\"cod_identificador_uso\", \"Cod Identificador de Uso\"}, {\"cod_fonte_recurso\", \"Cod Fonte Recurso\"}, {\"cod_subfonte_recurso\", \"Cod Subfonte Recurso\"}, {\"cod_unidade_gestora_sicof\", \"Cod Unidade Gestora Sicof\"}, {\"nom_unidade_gestora\", \"Nome Unidade Gestora\"}, {\"nom_res_unidade_gestora\", \"Nome Resumido Unidade Gestora\"}, {\"cod_unidade_sirh\", \"Cod Unidade SIRH\"}, {\"cnpj_unidade_gestora\", \"CNPJ Formatado\"}, {\"num_base_cnpj\", \"Num Base CNPJ\"}, {\"num_filial_cnpj\", \"Num Filial CNPJ\"}, {\"num_dig_cnpj\", \"Num Digito CNPJ\"}, {\"ind_processo_extincao\", \"Ind Processo Extincao\"}, {\"ind_integracao_folha_pagamento\", \"Ind Integracao Folha Pagamento\"}, {\"nom_grupo_despesa_orcamento\", \"Nome Grupo Despesa Orcamento\"}, {\"nom_res_grupo_despesa_orcam\", \"Nome Resumido Grupo Despesa Orcamento\"}, {\"ano_exercicio_elem_desp_orcam\", \"Ano Exercicio Elemento Despesa Orcamento\"}, {\"nom_sub_elemento_despesa\", \"Nome Sub Elemento Despesa\"}, {\"nom_res_sub_elemento_despesa\", \"Nome Resumido Sub Elemento Despesa\"}, {\"ind_detalhe_unid_custo\", \"Ind Detalhe Unid Custo\"}, {\"nom_unidade_orcamentaria\", \"Nome Unidade Orcamentária\"}, {\"nom_res_unidade_orcamentaria\", \"Nome Resumido Unidade Orcamentária\"}, {\"cod_poder_orcamento\", \"Cod Poder Orçamento\"}, {\"nom_poder_orcamento\", \"Nome Poder Orçamento\"}, {\"cod_orgao_orcamento\", \"Cod Órgão Orçamento\"}, {\"nom_orgao_orcamento\", \"Nome Órgão Orçamento\"}, {\"sgl_orgao_orcamento\", \"Sigla Órgão Orçamento\"}, {\"cod_classif_unid_orcamentaria\", \"Cod Classif Unid Orcamentaria\"}, {\"cod_tipo_administracao\", \"Cod Tipo Administração\"}, {\"nom_acao_programa_gov\", \"Nome Ação Programa Governo\"}, {\"nom_categoria_economica_orcam\", \"Nome Categoria Economica\"}, {\"nom_elemento_despesa_orcamento\", \"Nome Elemento Despesa Orçamento\"}, {\"nom_funcao_programa_gov\", \"Nome Função Programa Governo\"}, {\"nom_identificador_uso\", \"Nome  Identificador Uso\"}, {\"nom_modalidade_aplicacao_orcam\", \"Nome Modalidade Aplicação Orcam\"}, {\"nom_programa_governo\", \"Nome Programa Governo\"}, {\"nom_regiao_orcamento\", \"Nome Região Orçamento\"}, {\"nom_subfonte_recurso\", \"Nome Subfonte Recurso\"}, {\"nom_sub_funcao_programa_gov\", \"Nome Sub Funcao Programa Gov\"}, {\"nom_tipo_administracao\", \"Nome Tipo Administração\"}, {\"cod_classificacao_acao\", \"Cod Classificação Ação\"}, {\"nom_classificacao_acao\", \"Nome Classificação Ação\"}})\nin\n    #\"Colunas Renomeadas\""
+            }
+          }
+        ],
+        "annotations": [
+          {
+            "name": "PBI_ResultType",
+            "value": "Table",
+            "modifiedTime": "2022-05-30T13:08:00.6"
+          },
+          {
+            "name": "PBI_NavigationStepName",
+            "value": "Navegação",
+            "modifiedTime": "2022-05-30T18:52:22.71"
+          }
+        ]
+      },
+      {
+        "name": "Calendário",
+        "lineageTag": "8fd321ff-e701-4abe-aed8-a80e84078cf1",
+        "modifiedTime": "2022-06-07T17:10:20.343333",
+        "structureModifiedTime": "2022-06-07T17:36:55.963333",
+        "columns": [
+          {
+            "type": "rowNumber",
+            "name": "RowNumber-2662979B-1795-4F74-8F37-6A1BA8059B61",
+            "dataType": "int64",
+            "isHidden": true,
+            "isUnique": true,
+            "isKey": true,
+            "isNullable": false,
+            "modifiedTime": "2022-06-27T16:44:46.586667",
+            "structureModifiedTime": "2022-06-07T17:07:22.303333",
+            "refreshedTime": "1699-12-31T00:00:00",
+            "attributeHierarchy": {
+              "state": "ready",
+              "modifiedTime": "2022-06-27T16:44:46.586667",
+              "refreshedTime": "2022-06-27T16:44:46.586667"
+            }
+          },
+          {
+            "type": "calculatedTableColumn",
+            "name": "Date",
+            "dataType": "dateTime",
+            "isNameInferred": true,
+            "isDataTypeInferred": true,
+            "sourceColumn": "[Date]",
+            "formatString": "General Date",
+            "lineageTag": "fd07e87e-a39d-4155-8986-8f04f40788de",
+            "summarizeBy": "none",
+            "modifiedTime": "2022-06-27T16:44:46.586667",
+            "structureModifiedTime": "2022-06-07T17:10:20.29",
+            "refreshedTime": "1699-12-31T00:00:00",
+            "attributeHierarchy": {
+              "state": "ready",
+              "modifiedTime": "2022-06-27T16:44:46.586667",
+              "refreshedTime": "2022-06-27T16:44:46.586667"
+            },
+            "variations": [
+              {
+                "name": "Variation",
+                "relationship": "ca4bbbe5-0891-47de-ac9f-784bedbfe60f",
+                "defaultHierarchy": {
+                  "table": "LocalDateTable_034fbed4-f8a8-4c9d-8339-cfd317e910be",
+                  "hierarchy": "Hierarquia de datas"
+                },
+                "isDefault": true
+              }
+            ],
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic",
+                "modifiedTime": "2022-06-07T17:09:59.12"
+              }
+            ]
+          },
+          {
+            "type": "calculated",
+            "name": "Ano",
+            "dataType": "int64",
+            "isDataTypeInferred": true,
+            "expression": "YEAR('Calendário'[Date])",
+            "formatString": "0",
+            "lineageTag": "c7e0089b-d147-46e1-b6c3-e541bfb4b05c",
+            "summarizeBy": "sum",
+            "modifiedTime": "2022-06-27T16:44:46.606667",
+            "structureModifiedTime": "2022-06-07T17:10:53.573333",
+            "refreshedTime": "2022-06-27T16:44:46.606667",
+            "attributeHierarchy": {
+              "state": "ready",
+              "modifiedTime": "2022-06-27T16:44:46.61",
+              "refreshedTime": "2022-06-27T16:44:46.61"
+            },
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic",
+                "modifiedTime": "2022-06-07T17:10:53.61"
+              }
+            ]
+          }
+        ],
+        "partitions": [
+          {
+            "name": "Calendário-5c98aac5-f369-422c-89cf-c9505ee5cbab",
+            "mode": "import",
+            "state": "ready",
+            "modifiedTime": "2022-06-27T16:44:46.586667",
+            "refreshedTime": "2022-06-27T16:44:46.586667",
+            "source": {
+              "type": "calculated",
+              "expression": "CALENDARAUTO()"
+            }
+          }
+        ],
+        "annotations": [
+          {
+            "name": "PBI_Id",
+            "value": "d15388e832944d53b532e9d5846ec57e",
+            "modifiedTime": "2022-06-07T17:07:22.413333"
+          }
+        ]
+      },
+      {
+        "name": "LocalDateTable_034fbed4-f8a8-4c9d-8339-cfd317e910be",
+        "isHidden": true,
+        "showAsVariationsOnly": true,
+        "lineageTag": "f6a1c491-4a12-440e-8796-bb282c502341",
+        "modifiedTime": "2022-06-07T17:10:20.286667",
+        "structureModifiedTime": "2022-06-07T17:10:20.286667",
+        "columns": [
+          {
+            "type": "rowNumber",
+            "name": "RowNumber-2662979B-1795-4F74-8F37-6A1BA8059B61",
+            "dataType": "int64",
+            "isHidden": true,
+            "isUnique": true,
+            "isKey": true,
+            "isNullable": false,
+            "modifiedTime": "2022-06-27T16:44:46.606667",
+            "structureModifiedTime": "2022-06-07T17:10:20.286667",
+            "refreshedTime": "1699-12-31T00:00:00",
+            "attributeHierarchy": {
+              "state": "ready",
+              "modifiedTime": "2022-06-27T16:44:46.606667",
+              "refreshedTime": "2022-06-27T16:44:46.606667"
+            }
+          },
+          {
+            "type": "calculatedTableColumn",
+            "name": "Date",
+            "dataType": "dateTime",
+            "isNameInferred": true,
+            "isDataTypeInferred": true,
+            "isHidden": true,
+            "sourceColumn": "[Date]",
+            "lineageTag": "20807b17-578b-4452-a459-01729c668ffd",
+            "dataCategory": "PaddedDateTableDates",
+            "summarizeBy": "none",
+            "modifiedTime": "2022-06-27T16:44:46.606667",
+            "structureModifiedTime": "2022-06-07T17:10:20.29",
+            "refreshedTime": "1699-12-31T00:00:00",
+            "attributeHierarchy": {
+              "state": "ready",
+              "modifiedTime": "2022-06-27T16:44:46.606667",
+              "refreshedTime": "2022-06-27T16:44:46.606667"
+            },
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "User",
+                "modifiedTime": "2022-06-07T17:10:20.29"
+              }
+            ]
+          },
+          {
+            "type": "calculated",
+            "name": "Ano",
+            "dataType": "int64",
+            "isDataTypeInferred": true,
+            "isHidden": true,
+            "expression": "YEAR([Date])",
+            "lineageTag": "682eafa4-5cd3-4a58-a7e3-7642d39a99e5",
+            "dataCategory": "Years",
+            "summarizeBy": "none",
+            "modifiedTime": "2022-06-27T16:44:46.61",
+            "structureModifiedTime": "2022-06-07T17:10:20.29",
+            "refreshedTime": "2022-06-27T16:44:46.61",
+            "attributeHierarchy": {
+              "state": "ready",
+              "modifiedTime": "2022-06-27T16:44:46.61",
+              "refreshedTime": "2022-06-27T16:44:46.61"
+            },
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "User",
+                "modifiedTime": "2022-06-07T17:10:20.29"
+              },
+              {
+                "name": "TemplateId",
+                "value": "Year",
+                "modifiedTime": "2022-06-07T17:10:20.29"
+              }
+            ]
+          },
+          {
+            "type": "calculated",
+            "name": "MonthNo",
+            "dataType": "int64",
+            "isDataTypeInferred": true,
+            "isHidden": true,
+            "expression": "MONTH([Date])",
+            "lineageTag": "4feda756-8bd1-42bb-a5f6-6aba79556f26",
+            "dataCategory": "MonthOfYear",
+            "summarizeBy": "none",
+            "modifiedTime": "2022-06-27T16:44:46.61",
+            "structureModifiedTime": "2022-06-07T17:10:20.29",
+            "refreshedTime": "2022-06-27T16:44:46.61",
+            "attributeHierarchy": {
+              "state": "ready",
+              "modifiedTime": "2022-06-27T16:44:46.61",
+              "refreshedTime": "2022-06-27T16:44:46.61"
+            },
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "User",
+                "modifiedTime": "2022-06-07T17:10:20.29"
+              },
+              {
+                "name": "TemplateId",
+                "value": "MonthNumber",
+                "modifiedTime": "2022-06-07T17:10:20.29"
+              }
+            ]
+          },
+          {
+            "type": "calculated",
+            "name": "Mês",
+            "dataType": "string",
+            "isDataTypeInferred": true,
+            "isHidden": true,
+            "expression": "FORMAT([Date], \"MMMM\")",
+            "sortByColumn": "MonthNo",
+            "lineageTag": "ddd1ae46-a9ad-496e-9da5-83be58d06f65",
+            "dataCategory": "Months",
+            "summarizeBy": "none",
+            "modifiedTime": "2022-06-27T16:44:46.613333",
+            "structureModifiedTime": "2022-06-07T17:10:20.29",
+            "refreshedTime": "2022-06-27T16:44:46.613333",
+            "attributeHierarchy": {
+              "state": "ready",
+              "modifiedTime": "2022-06-27T16:44:46.613333",
+              "refreshedTime": "2022-06-27T16:44:46.613333"
+            },
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "User",
+                "modifiedTime": "2022-06-07T17:10:20.29"
+              },
+              {
+                "name": "TemplateId",
+                "value": "Month",
+                "modifiedTime": "2022-06-07T17:10:20.29"
+              }
+            ]
+          },
+          {
+            "type": "calculated",
+            "name": "QuarterNo",
+            "dataType": "int64",
+            "isDataTypeInferred": true,
+            "isHidden": true,
+            "expression": "INT(([MonthNo] + 2) / 3)",
+            "lineageTag": "e256b3b1-fbf1-4baa-a841-09e27f5ec0fd",
+            "dataCategory": "QuarterOfYear",
+            "summarizeBy": "none",
+            "modifiedTime": "2022-06-27T16:44:46.656667",
+            "structureModifiedTime": "2022-06-07T17:10:20.29",
+            "refreshedTime": "2022-06-27T16:44:46.656667",
+            "attributeHierarchy": {
+              "state": "ready",
+              "modifiedTime": "2022-06-27T16:44:46.656667",
+              "refreshedTime": "2022-06-27T16:44:46.656667"
+            },
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "User",
+                "modifiedTime": "2022-06-07T17:10:20.29"
+              },
+              {
+                "name": "TemplateId",
+                "value": "QuarterNumber",
+                "modifiedTime": "2022-06-07T17:10:20.29"
+              }
+            ]
+          },
+          {
+            "type": "calculated",
+            "name": "Trimestre",
+            "dataType": "string",
+            "isDataTypeInferred": true,
+            "isHidden": true,
+            "expression": "\"Trim \" & [QuarterNo]",
+            "sortByColumn": "QuarterNo",
+            "lineageTag": "a22275ab-febb-424b-a761-0b2cf7e2fa2a",
+            "dataCategory": "Quarters",
+            "summarizeBy": "none",
+            "modifiedTime": "2022-06-27T16:44:46.69",
+            "structureModifiedTime": "2022-06-07T17:10:20.29",
+            "refreshedTime": "2022-06-27T16:44:46.69",
+            "attributeHierarchy": {
+              "state": "ready",
+              "modifiedTime": "2022-06-27T16:44:46.703333",
+              "refreshedTime": "2022-06-27T16:44:46.703333"
+            },
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "User",
+                "modifiedTime": "2022-06-07T17:10:20.29"
+              },
+              {
+                "name": "TemplateId",
+                "value": "Quarter",
+                "modifiedTime": "2022-06-07T17:10:20.29"
+              }
+            ]
+          },
+          {
+            "type": "calculated",
+            "name": "Dia",
+            "dataType": "int64",
+            "isDataTypeInferred": true,
+            "isHidden": true,
+            "expression": "DAY([Date])",
+            "lineageTag": "df832945-190f-4188-93c5-8d14fafdd661",
+            "dataCategory": "DayOfMonth",
+            "summarizeBy": "none",
+            "modifiedTime": "2022-06-27T16:44:46.61",
+            "structureModifiedTime": "2022-06-07T17:10:20.29",
+            "refreshedTime": "2022-06-27T16:44:46.61",
+            "attributeHierarchy": {
+              "state": "ready",
+              "modifiedTime": "2022-06-27T16:44:46.61",
+              "refreshedTime": "2022-06-27T16:44:46.61"
+            },
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "User",
+                "modifiedTime": "2022-06-07T17:10:20.29"
+              },
+              {
+                "name": "TemplateId",
+                "value": "Day",
+                "modifiedTime": "2022-06-07T17:10:20.29"
+              }
+            ]
+          }
+        ],
+        "partitions": [
+          {
+            "name": "LocalDateTable_034fbed4-f8a8-4c9d-8339-cfd317e910be-9841d33d-4e44-421b-b656-aba813f31264",
+            "mode": "import",
+            "state": "ready",
+            "modifiedTime": "2022-06-27T16:44:46.606667",
+            "refreshedTime": "2022-06-27T16:44:46.606667",
+            "source": {
+              "type": "calculated",
+              "expression": "Calendar(Date(Year(MIN('Calendário'[Date])), 1, 1), Date(Year(MAX('Calendário'[Date])), 12, 31))"
+            }
+          }
+        ],
+        "hierarchies": [
+          {
+            "name": "Hierarquia de datas",
+            "lineageTag": "cb222ac9-34d3-4af6-816f-be38115405aa",
+            "state": "ready",
+            "modifiedTime": "2022-06-27T16:44:46.706667",
+            "structureModifiedTime": "2022-06-07T17:10:20.29",
+            "refreshedTime": "2022-06-27T16:44:46.706667",
+            "levels": [
+              {
+                "name": "Ano",
+                "ordinal": 0,
+                "column": "Ano",
+                "lineageTag": "536e8c3a-037d-4537-a2fb-3241b2c9729a",
+                "modifiedTime": "2022-06-07T17:10:20.433333"
+              },
+              {
+                "name": "Trimestre",
+                "ordinal": 1,
+                "column": "Trimestre",
+                "lineageTag": "7939f1fa-6bb4-461e-951c-d92e6924eb94",
+                "modifiedTime": "2022-06-07T17:10:20.433333"
+              },
+              {
+                "name": "Mês",
+                "ordinal": 2,
+                "column": "Mês",
+                "lineageTag": "11b62195-8da6-449e-a821-c77da106645c",
+                "modifiedTime": "2022-06-07T17:10:20.433333"
+              },
+              {
+                "name": "Dia",
+                "ordinal": 3,
+                "column": "Dia",
+                "lineageTag": "7bd08e5b-8691-4e83-b266-ed83fe57d562",
+                "modifiedTime": "2022-06-07T17:10:20.433333"
+              }
+            ],
+            "annotations": [
+              {
+                "name": "TemplateId",
+                "value": "DateHierarchy",
+                "modifiedTime": "2022-06-07T17:10:20.29"
+              }
+            ]
+          }
+        ],
+        "annotations": [
+          {
+            "name": "__PBI_LocalDateTable",
+            "value": "true",
+            "modifiedTime": "2022-06-07T17:10:20.29"
+          }
+        ]
+      },
+      {
+        "name": "LocalDateTable_cc1828ec-18c1-4466-8bc0-bf1f7becc7ac",
+        "isHidden": true,
+        "showAsVariationsOnly": true,
+        "lineageTag": "bc3d4927-96e3-4d49-a3d6-e946b7b50df8",
+        "modifiedTime": "2022-06-26T16:32:07.81",
+        "structureModifiedTime": "2022-06-26T16:32:07.696667",
+        "columns": [
+          {
+            "type": "rowNumber",
+            "name": "RowNumber-2662979B-1795-4F74-8F37-6A1BA8059B61",
+            "dataType": "int64",
+            "isHidden": true,
+            "isUnique": true,
+            "isKey": true,
+            "isNullable": false,
+            "modifiedTime": "2022-06-27T16:44:46.586667",
+            "structureModifiedTime": "2022-06-26T16:32:07.696667",
+            "refreshedTime": "1699-12-31T00:00:00",
+            "attributeHierarchy": {
+              "state": "ready",
+              "modifiedTime": "2022-06-27T16:44:46.586667",
+              "refreshedTime": "2022-06-27T16:44:46.586667"
+            }
+          },
+          {
+            "type": "calculatedTableColumn",
+            "name": "Date",
+            "dataType": "dateTime",
+            "isNameInferred": true,
+            "isDataTypeInferred": true,
+            "isHidden": true,
+            "sourceColumn": "[Date]",
+            "lineageTag": "14cce905-1407-4994-9278-fa595ed745f8",
+            "dataCategory": "PaddedDateTableDates",
+            "summarizeBy": "none",
+            "modifiedTime": "2022-06-27T16:44:46.586667",
+            "structureModifiedTime": "2022-06-26T16:32:07.696667",
+            "refreshedTime": "1699-12-31T00:00:00",
+            "attributeHierarchy": {
+              "state": "ready",
+              "modifiedTime": "2022-06-27T16:44:46.586667",
+              "refreshedTime": "2022-06-27T16:44:46.586667"
+            },
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "User",
+                "modifiedTime": "2022-06-26T16:32:07.696667"
+              }
+            ]
+          },
+          {
+            "type": "calculated",
+            "name": "Ano",
+            "dataType": "int64",
+            "isDataTypeInferred": true,
+            "isHidden": true,
+            "expression": "YEAR([Date])",
+            "lineageTag": "843a3196-82a6-4c32-b2c2-9b7bfdb9049a",
+            "dataCategory": "Years",
+            "summarizeBy": "none",
+            "modifiedTime": "2022-06-27T16:44:46.606667",
+            "structureModifiedTime": "2022-06-26T16:32:07.696667",
+            "refreshedTime": "2022-06-27T16:44:46.606667",
+            "attributeHierarchy": {
+              "state": "ready",
+              "modifiedTime": "2022-06-27T16:44:46.606667",
+              "refreshedTime": "2022-06-27T16:44:46.606667"
+            },
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "User",
+                "modifiedTime": "2022-06-26T16:32:07.696667"
+              },
+              {
+                "name": "TemplateId",
+                "value": "Year",
+                "modifiedTime": "2022-06-26T16:32:07.696667"
+              }
+            ]
+          },
+          {
+            "type": "calculated",
+            "name": "MonthNo",
+            "dataType": "int64",
+            "isDataTypeInferred": true,
+            "isHidden": true,
+            "expression": "MONTH([Date])",
+            "lineageTag": "49f033be-5e59-494f-927c-617ef2473490",
+            "dataCategory": "MonthOfYear",
+            "summarizeBy": "none",
+            "modifiedTime": "2022-06-27T16:44:46.606667",
+            "structureModifiedTime": "2022-06-26T16:32:07.696667",
+            "refreshedTime": "2022-06-27T16:44:46.606667",
+            "attributeHierarchy": {
+              "state": "ready",
+              "modifiedTime": "2022-06-27T16:44:46.606667",
+              "refreshedTime": "2022-06-27T16:44:46.606667"
+            },
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "User",
+                "modifiedTime": "2022-06-26T16:32:07.696667"
+              },
+              {
+                "name": "TemplateId",
+                "value": "MonthNumber",
+                "modifiedTime": "2022-06-26T16:32:07.696667"
+              }
+            ]
+          },
+          {
+            "type": "calculated",
+            "name": "Mês",
+            "dataType": "string",
+            "isDataTypeInferred": true,
+            "isHidden": true,
+            "expression": "FORMAT([Date], \"MMMM\")",
+            "sortByColumn": "MonthNo",
+            "lineageTag": "8b494de2-612c-4f89-bc9c-0df84b722527",
+            "dataCategory": "Months",
+            "summarizeBy": "none",
+            "modifiedTime": "2022-06-27T16:44:46.61",
+            "structureModifiedTime": "2022-06-26T16:32:07.696667",
+            "refreshedTime": "2022-06-27T16:44:46.61",
+            "attributeHierarchy": {
+              "state": "ready",
+              "modifiedTime": "2022-06-27T16:44:46.613333",
+              "refreshedTime": "2022-06-27T16:44:46.613333"
+            },
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "User",
+                "modifiedTime": "2022-06-26T16:32:07.696667"
+              },
+              {
+                "name": "TemplateId",
+                "value": "Month",
+                "modifiedTime": "2022-06-26T16:32:07.696667"
+              }
+            ]
+          },
+          {
+            "type": "calculated",
+            "name": "QuarterNo",
+            "dataType": "int64",
+            "isDataTypeInferred": true,
+            "isHidden": true,
+            "expression": "INT(([MonthNo] + 2) / 3)",
+            "lineageTag": "4a45a6fe-6515-4912-af21-4aa29028a9c2",
+            "dataCategory": "QuarterOfYear",
+            "summarizeBy": "none",
+            "modifiedTime": "2022-06-27T16:44:46.656667",
+            "structureModifiedTime": "2022-06-26T16:32:07.696667",
+            "refreshedTime": "2022-06-27T16:44:46.656667",
+            "attributeHierarchy": {
+              "state": "ready",
+              "modifiedTime": "2022-06-27T16:44:46.656667",
+              "refreshedTime": "2022-06-27T16:44:46.656667"
+            },
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "User",
+                "modifiedTime": "2022-06-26T16:32:07.696667"
+              },
+              {
+                "name": "TemplateId",
+                "value": "QuarterNumber",
+                "modifiedTime": "2022-06-26T16:32:07.696667"
+              }
+            ]
+          },
+          {
+            "type": "calculated",
+            "name": "Trimestre",
+            "dataType": "string",
+            "isDataTypeInferred": true,
+            "isHidden": true,
+            "expression": "\"Trim \" & [QuarterNo]",
+            "sortByColumn": "QuarterNo",
+            "lineageTag": "6e9aba8d-3fb9-46b1-bf38-af1ce5a18c85",
+            "dataCategory": "Quarters",
+            "summarizeBy": "none",
+            "modifiedTime": "2022-06-27T16:44:46.69",
+            "structureModifiedTime": "2022-06-26T16:32:07.696667",
+            "refreshedTime": "2022-06-27T16:44:46.69",
+            "attributeHierarchy": {
+              "state": "ready",
+              "modifiedTime": "2022-06-27T16:44:46.69",
+              "refreshedTime": "2022-06-27T16:44:46.69"
+            },
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "User",
+                "modifiedTime": "2022-06-26T16:32:07.696667"
+              },
+              {
+                "name": "TemplateId",
+                "value": "Quarter",
+                "modifiedTime": "2022-06-26T16:32:07.696667"
+              }
+            ]
+          },
+          {
+            "type": "calculated",
+            "name": "Dia",
+            "dataType": "int64",
+            "isDataTypeInferred": true,
+            "isHidden": true,
+            "expression": "DAY([Date])",
+            "lineageTag": "54763df0-2496-4b1c-8b72-780ff370a149",
+            "dataCategory": "DayOfMonth",
+            "summarizeBy": "none",
+            "modifiedTime": "2022-06-27T16:44:46.606667",
+            "structureModifiedTime": "2022-06-26T16:32:07.696667",
+            "refreshedTime": "2022-06-27T16:44:46.606667",
+            "attributeHierarchy": {
+              "state": "ready",
+              "modifiedTime": "2022-06-27T16:44:46.606667",
+              "refreshedTime": "2022-06-27T16:44:46.606667"
+            },
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "User",
+                "modifiedTime": "2022-06-26T16:32:07.696667"
+              },
+              {
+                "name": "TemplateId",
+                "value": "Day",
+                "modifiedTime": "2022-06-26T16:32:07.696667"
+              }
+            ]
+          }
+        ],
+        "partitions": [
+          {
+            "name": "LocalDateTable_cc1828ec-18c1-4466-8bc0-bf1f7becc7ac-23b1fa14-dbaf-4c67-80bb-cd5bdc075826",
+            "mode": "import",
+            "state": "ready",
+            "modifiedTime": "2022-06-27T16:44:46.586667",
+            "refreshedTime": "2022-06-27T16:44:46.586667",
+            "source": {
+              "type": "calculated",
+              "expression": "Calendar(Date(Year(MIN('Receita'[dtc_ultima_atualizacao])), 1, 1), Date(Year(MAX('Receita'[dtc_ultima_atualizacao])), 12, 31))"
+            }
+          }
+        ],
+        "hierarchies": [
+          {
+            "name": "Hierarquia de datas",
+            "lineageTag": "dc6b774e-8937-4e94-96cd-7656c6ff1f5e",
+            "state": "ready",
+            "modifiedTime": "2022-06-27T16:44:46.693333",
+            "structureModifiedTime": "2022-06-26T16:32:07.696667",
+            "refreshedTime": "2022-06-27T16:44:46.693333",
+            "levels": [
+              {
+                "name": "Ano",
+                "ordinal": 0,
+                "column": "Ano",
+                "lineageTag": "0ade6280-e882-45ba-8468-9ee550208390",
+                "modifiedTime": "2022-06-26T16:32:07.81"
+              },
+              {
+                "name": "Trimestre",
+                "ordinal": 1,
+                "column": "Trimestre",
+                "lineageTag": "6eb2c4e5-b989-4f5c-9726-ba7dd5947a5f",
+                "modifiedTime": "2022-06-26T16:32:07.81"
+              },
+              {
+                "name": "Mês",
+                "ordinal": 2,
+                "column": "Mês",
+                "lineageTag": "87edac9c-bfc3-4a26-91ea-09b3725229d4",
+                "modifiedTime": "2022-06-26T16:32:07.81"
+              },
+              {
+                "name": "Dia",
+                "ordinal": 3,
+                "column": "Dia",
+                "lineageTag": "329f5c56-5cb5-435a-9d72-52a6f2eb0705",
+                "modifiedTime": "2022-06-26T16:32:07.81"
+              }
+            ],
+            "annotations": [
+              {
+                "name": "TemplateId",
+                "value": "DateHierarchy",
+                "modifiedTime": "2022-06-26T16:32:07.696667"
+              }
+            ]
+          }
+        ],
+        "annotations": [
+          {
+            "name": "__PBI_LocalDateTable",
+            "value": "true",
+            "modifiedTime": "2022-06-26T16:32:07.696667"
+          }
+        ]
+      }
+    ],
+    "relationships": [
+      {
+        "name": "ca4bbbe5-0891-47de-ac9f-784bedbfe60f",
+        "fromTable": "Calendário",
+        "fromColumn": "Date",
+        "toTable": "LocalDateTable_034fbed4-f8a8-4c9d-8339-cfd317e910be",
+        "toColumn": "Date",
+        "joinOnDateBehavior": "datePartOnly",
+        "state": "ready",
+        "modifiedTime": "2022-06-27T16:44:46.606667",
+        "refreshedTime": "2022-06-27T16:44:46.606667"
+      },
+      {
+        "name": "b184bf76-3596-4b15-aaad-44d59638c6ee",
+        "fromTable": "Receita",
+        "fromColumn": "Exercicio",
+        "toTable": "Calendário",
+        "toColumn": "Date",
+        "state": "ready",
+        "modifiedTime": "2022-06-27T16:44:46.6",
+        "refreshedTime": "2022-06-27T16:44:46.6"
+      },
+      {
+        "name": "679d1287-5e1f-4058-968f-e5a493515107",
+        "fromTable": "Despesa",
+        "fromColumn": "Exercicio",
+        "toTable": "Calendário",
+        "toColumn": "Date",
+        "state": "ready",
+        "modifiedTime": "2022-06-27T16:44:46.59",
+        "refreshedTime": "2022-06-27T16:44:46.59"
+      },
+      {
+        "name": "df84c7a9-9281-4a97-b938-8a9a576b4a18",
+        "fromTable": "Receita",
+        "fromColumn": "dtc_ultima_atualizacao",
+        "toTable": "LocalDateTable_cc1828ec-18c1-4466-8bc0-bf1f7becc7ac",
+        "toColumn": "Date",
+        "joinOnDateBehavior": "datePartOnly",
+        "state": "ready",
+        "modifiedTime": "2022-06-27T16:44:46.596667",
+        "refreshedTime": "2022-06-27T16:44:46.596667"
+      }
+    ],
+    "cultures": [
+      {
+        "name": "pt-BR",
+        "modifiedTime": "2022-05-27T13:21:18.05",
+        "structureModifiedTime": "2022-07-04T18:56:51.27",
+        "linguisticMetadata": {
+          "content": {
+            "Version": "1.0.0",
+            "Language": "en-US",
+            "DynamicImprovement": "HighConfidence"
+          },
+          "contentType": "json",
+          "modifiedTime": "2022-07-04T18:56:51.27"
+        }
+      }
+    ],
+    "annotations": [
+      {
+        "name": "PBIDesktopVersion",
+        "value": "2.106.883.0 (22.06)",
+        "modifiedTime": "2022-07-04T18:56:51.27"
+      },
+      {
+        "name": "PBI_QueryOrder",
+        "value": {
+          "__powerbi-vcs-embedded-json__": [
+            "Receita",
+            "Despesa"
+          ]
+        },
+        "modifiedTime": "2022-05-30T16:52:12.74"
+      },
+      {
+        "name": "__PBI_TimeIntelligenceEnabled",
+        "value": "1",
+        "modifiedTime": "2022-05-30T12:27:42.67"
+      }
+    ]
+  }
+}
